@@ -148,7 +148,7 @@ You can see:
 
 The Workday signature cycle suppresses all email notifications by Adobe Sign. Users are informed of pending actions within their Workday inbox.
 
-Once a document is signed by all Signature Groups, a copy of the signed document is distributed to all members of the Signature Group via email.
+Once a document is signed by all Signature Groups, a copy of the signed document is distributed to all the members of the Signature Group via email.
 
 To suppress this behavior, you may contact your Adobe Sign Success Manager or the [Adobe Sign Support team](https://echosign.zendesk.com/hc/en-us/requests/new?ticket_form_id=34323).
 
