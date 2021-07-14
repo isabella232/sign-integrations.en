@@ -183,4 +183,8 @@ Adobe Sign Customers should contact their Customer Success Manager (CSM) for sup
 
 * [Adding Adobe Text Tags to Documents](https://helpx.adobe.com/sign/using/text-tag.html)
 
+<!-- 
+Link to missing file causes validation to fail
+
 [Get File](images/adobe-sign-for-workday-quick-start-guide-2016.pdf)
+-->
