@@ -1,9 +1,6 @@
 ---
 user-guide-title: Adobe Sign Integrations Guide
-index: no
-hide: no
-role: 
-internal: no
+hide: yes
 ---
 
 # Adobe Sign Integrations Guide {#using}
