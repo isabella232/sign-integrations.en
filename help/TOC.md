@@ -9,5 +9,5 @@ hide: yes
 + [What's new in this guide](whats-new.md)
 + Adobe Sign for Workday {#workday}
   + [Installation Guide](workday/install.md)
-  + [Quick Start Guide](workday/quickstart.md)
+  + [Quick Start Guide](workday/quick-start.md)
   + [Set up a Trial Account](workday/trial-install.md)
