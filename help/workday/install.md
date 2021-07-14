@@ -1,8 +1,6 @@
 ---
 title: Workday Installation Guide
-seo-title: Adobe Sign for Workday Installation Guide
 description: Installation guide for enabling the Adobe Sign integration with Workday
-seo-description: Installation guide for enabling the Adobe Sign integration with Workday
 uuid: 56478222-fe66-4fa5-aac3-0ecdf2863197
 products: SG_ESIGNSERVICES
 topic-tags: EchoSign/Integrations
