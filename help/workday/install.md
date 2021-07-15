@@ -72,7 +72,7 @@ To create a user in Adobe Sign:
 
     It brings you back to the *Users* page that lists the new user with a **CREATED** status. 
 
-    ![A view of the new Created user](images/post-user-creation.png)
+    ![A view of the new created user](images/post-user-creation.png)
 
 To verify the email address of the user with “Created” status:
 
@@ -83,7 +83,7 @@ To verify the email address of the user with “Created” status:
 
 Once you verify the email address, the status of the user changes from "CREATED" to "ACTIVE".
 
-![Image of the new Activated user](images/actived-users-575.png) 
+![Image of the new activated user](images/actived-users-575.png) 
 
 ### Define the Authenticating User {#define-the-authenticating-user}
 
