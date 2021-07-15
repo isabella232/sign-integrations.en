@@ -13,7 +13,7 @@ locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently pu
 
 # Workday Installation Guide{#workday-installation-guide}
 
-[**Contact Adobe Sign Support**](https://echosign.zendesk.com/hc/en-us/requests/new?ticket_form_id=34323)
+[**Contact Adobe Sign Support**](https://helpx.adobe.com/sign/using/adobesign-support-resources.html)
 
 ## Overview {#overview}
 
@@ -21,9 +21,9 @@ BEST
 
 This document explains how to integrate Adobe Sign into your Workday tenant. To use Adobe Sign within Workday, you need to know how to create and modify Workday items such as:
 
-* Business Process Framework
-* Tenant Set-up and configuration
-* Reporting and Workday Studio Integration
+* Business process framework
+* Tenant set-up and configuration
+* Reporting and Workday studio integration
 
 The high-level steps to complete integration are: 
 
@@ -31,7 +31,7 @@ The high-level steps to complete integration are:
 * Configure a Group in Adobe Sign to hold the Workday integration user
 * Establish the OAuth relationship between Workday and Adobe Sign
 
-## Activate Your Adobe Sign Account {#activating-your-adobe-sign-account}
+## Activate your Adobe Sign account {#activating-your-adobe-sign-account}
 
 Existing customers with established accounts can skip to the [Configure Adobe Sign for Workday](#config) step
 
@@ -55,9 +55,9 @@ To configure Adobe Sign for Workday, you need to generate following two dedicate
 
 To create a user in Adobe Sign:
 
-1. Log in to Adobe Sign as the account administrator
-1. Navigate to **Account > Users**
-1. Click the **circled plus sign** to create a new user 
+1. Log in to Adobe Sign as the account administrator.
+1. Navigate to **Account > Users**.
+1. Click the **circled plus sign** to create a new user. 
 
     ![Image of the navigation path to create a new user](images/navigate-to-group-unbranded.png)
 
@@ -66,11 +66,11 @@ To create a user in Adobe Sign:
     * Provide a functional email that you can access.
     * Enter an appropriate First and Last name value.
     * Select **Create a new group for this user** from the User Group.    
-    * Provide the *New Group Name* with an intuitive name like “Workday”
+    * Provide the *New Group Name* with an intuitive name like “Workday”.
 
     ![The Create a User panel](images/create-user.png)
 
-1. Click **Save**
+1. Click **Save**.
 
     It brings you back to the *Users* page that lists the new user with a **CREATED** status. 
 
@@ -96,7 +96,7 @@ To promote the new user in the Workday group:
 
     This opens an *Edit* page for the user permissions.
 
-3. Check the **User is a group administrator box**.
+3. Check the **Group Admin**.
 4. Click **Save**.
 
 ![](images/user-permissions-edit1-575.png) 
@@ -112,7 +112,7 @@ To establish the trusted relationship:
 1. Log in to Workday as an account administrator
 1. Search for Edit Tenant Setup - Business Processes
 
-    It loads the *Edit Tenant Setup - Business Processes* page
+    It loads the *Edit Tenant Setup - Business Processes* page.
 
 1. Locate the eSignature Configuration section:
 
@@ -165,16 +165,16 @@ Adobe Sign is the integration partner, and should be contacted if the integratio
 
 Adobe Sign Customers should contact their Customer Success Manager (CSM) for support. Alternatively, Adobe Technical Support can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
 
-* [Adding Adobe Text Tags to Documents](https://helpx.adobhttps://community.workday.com/node/183242e.com/sign/using/text-tag.html)  
+* [Adding Adobe Text Tags to Documents](https://helpx.adobe.com/sign/using/text-tag.html)  
 
 * [Review Document configuration and examples](https://helpx.adobe.com/sign/using/workday-integration-quick-start-guide.html)
 
 ## Common Questions {#faq}
 
-### Why is the status not being updated within Workday even the document is fully signed? {#why-is-the-status-not-being-updated-within-workday-even-the-document-is-fully-signed}
+### Why is the status not being updated within Workday even when the document is fully signed? {#why-is-the-status-not-being-updated-within-workday-even-the-document-is-fully-signed}
 
-The root of this problem can be that the Candidate has not clicked the Submit button in Workday after signing in Adobe Sign.
+The document status in Workday may not reflect if the candidate does not click the 'Submit' button after signing in Adobe Sign.
 
-Per Workday task Check eSignature Signing Status: "To start the process, the user can submit the associated Inbox task."
+As per Workday task Check eSignature Signing Status: To start the process, the user can submit the associated Inbox task.
 
-Per Workday Development: The original signing completes the process only if the user submits the Inbox task after signing the document. The signers have to always submit the Inbox task in Workday after they complete the signing on Adobe Sign. Post signing, the iframe is closed and the user is redirected to the same task where they can click the submit button to complete the process.
+As per Workday Development: The original signing completes the process only if the user submits the inbox task after signing the document. After signing, the iframe is closed and the user is redirected to the same task where they can click the submit button to complete the process.

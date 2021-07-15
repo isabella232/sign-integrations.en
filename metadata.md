@@ -1,13 +1,11 @@
 ---
 cloud: Document Cloud
-solution-title: Document Cloud Sign
-solution-hub-url: https://helpx.adobe.com/support/sign.html
-getting-started-title: Getting Started
-getting-started-url: https://helpx.adobe.com/sign/using/get-started-guide.html
+solution-title: Sign Integrations
+solution-hub-url: https://helpx.adobe.com/sign/using/integration-guides.html 
 tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/sign/tutorials.html
+tutorials-url: https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/integrations/integrations-overview.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/document-cloud-sign.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/dc-sign-integrations
 index: no
 ---
 

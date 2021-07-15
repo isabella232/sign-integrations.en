@@ -12,7 +12,7 @@ locnotes: All languages; screenshots to follow what's there already (seems there
 
 # Workday Quick Start Guide{#workday-quick-start-guide}
 
-[**Contact Adobe Sign Support**](https://echosign.zendesk.com/hc/en-us/requests/new?ticket_form_id=34323)
+[**Contact Adobe Sign Support**](https://helpx.adobe.com/sign/using/adobesign-support-resources.html)
 
 ## Overview {#overview}
 
@@ -26,7 +26,7 @@ This document is designed to help Workday administrators understand how to custo
 
 Adobe Sign electronic signature capability is surfaced as ‘Review Document step’ action within the Business Process Framework (BPF) and as a Distribute Documents task.
 
-## Review Document Step {#review-document-step}
+## Review document step {#review-document-step}
 
 Adobe Sign for Workday is exposed via the *Review Document step* that you can add to any of over 400 Business Processes within Workday, including *Offer*, *Distribute Documents and Tasks*, *ropose Compensation*, and more.
 
@@ -47,7 +47,7 @@ To configure the Document Review step:
 
 1. Specify the *eSignature Integration type* as *eSign by Adobe*.
 
-1. Add rows to the Signature Grid
+1. Add rows to the Signature Grid.
 
     * The signature grid specifies the serial order in which the document is routed for signature. Each row can contain one or more roles and each row represents a step in the signing process.
     * Every member of the role within a particular step is notified that a signing event is pending.
@@ -78,7 +78,7 @@ The Business Process Framework is powerful; however, you need to ensure that:
 
 * Every step of the business process is executed sequentially.
 
-    You can change the order of a step by changing the order value. For instance, to insert a step between items “c” and “d”, specify a new item as “ca”
+    You can change the order of a step by changing the order value. For instance, to insert a step between items “c” and “d”, specify a new item as “ca”.
 
 ### Example: Offer {#example-offer}
 
@@ -155,7 +155,7 @@ To suppress this behavior, you may contact your Adobe Sign Success Manager or th
 Within Workday, you can access the signed documents on the full process record. You may find:
 
 * Worker documents on the Worker Profile, and
-* Candidate documents (offer letters) on the Candidate profile
+* Candidate documents (offer letters) on the Candidate profile.
 
 The below image shows a signed offer letter for the candidate Chris Foxx. 
 
@@ -163,7 +163,7 @@ The below image shows a signed offer letter for the candidate Chris Foxx.
 
 ## Support {#support}
 
-### Workday Support {#workday-support}
+### Workday support {#workday-support}
 
 Workday is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
 
@@ -175,7 +175,7 @@ The workday community has several good articles on how to troubleshoot the integ
 * [Dynamic Document Generation](https://community.workday.com/node/176443)
 * [Offer Document Generation Configuration tips](https://community.workday.com/node/183242)
 
-### Adobe Sign Support {#adobe-sign-support}
+### Adobe Sign support {#adobe-sign-support}
 
 Adobe Sign is the integration partner, and should be contacted if the integration is failing to obtain signatures, or if notification of pending signatures fails.
 
@@ -183,4 +183,4 @@ Adobe Sign Customers should contact their Customer Success Manager (CSM) for sup
 
 * [Adding Adobe Text Tags to Documents](https://helpx.adobe.com/sign/using/text-tag.html)
 
-[Get File](images/adobe-sign-for-workday-quick-start-guide-2016.pdf)
+[Download PDF](images/adobe-sign-for-workday-quick-start-guide-2016.pdf)
