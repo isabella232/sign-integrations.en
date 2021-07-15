@@ -114,7 +114,7 @@ Within the *Review Document* step, the dynamic document is referenced from the p
 
 The behavior illustrated below will route the dynamically generated document first to the Hiring Manager, and then to the Candidate.
 
-![Workday Signing Groups being defined](images/configure-rd-stepsmaller1-575.png) 
+![Workday Signing Groups being defined](images/configure-rd-stepsmaller-575.png) 
 
 ### Example: Distribute Documents {#example-distribute-documents}
 
@@ -183,4 +183,12 @@ Adobe Sign Customers should contact their Customer Success Manager (CSM) for sup
 
 * [Adding Adobe Text Tags to Documents](https://helpx.adobe.com/sign/using/text-tag.html)
 
+<<<<<<< HEAD
 [Download PDF](images/adobe-sign-for-workday-quick-start-guide-2016.pdf)
+=======
+<!-- 
+Link to missing file causes validation to fail
+
+[Get File](images/adobe-sign-for-workday-quick-start-guide-2016.pdf)
+-->
+>>>>>>> 7b6c667c7b47c9aa742c7a8f0b9a8b64a1dfe6d4

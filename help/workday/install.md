@@ -1,8 +1,6 @@
 ---
 title: Workday Installation Guide
-seo-title: Adobe Sign for Workday Installation Guide
 description: Installation guide for enabling the Adobe Sign integration with Workday
-seo-description: Installation guide for enabling the Adobe Sign integration with Workday
 uuid: 56478222-fe66-4fa5-aac3-0ecdf2863197
 products: SG_ESIGNSERVICES
 topic-tags: EchoSign/Integrations
@@ -105,7 +103,9 @@ To promote the new user in the Workday group:
 
 To complete the connection between the Workday tenant and Adobe Sign, we need to establish a trusted relationship between the services. Once done, we can add a Review Document step that enables the signature process through Adobe Sign.
 
-**Note**: Adobe Sign is branded as Adobe Document Cloud throughout the Workday environment.
+>[!NOTE]
+>
+>Adobe Sign is branded as Adobe Document Cloud throughout the Workday environment.
 
 To establish the trusted relationship:
 
@@ -125,7 +125,9 @@ To establish the trusted relationship:
 1. When asked, provide the credentials for the Adobe Sign Group admin that you created earlier.
 1. Approve the access to Adobe Sign.
 
-**Note**: Make sure that you completely log out of any other Adobe Sign instance before proceeding.
+>[!NOTE]
+>
+>Make sure that you completely log out of any other Adobe Sign instance before proceeding.
 
 Once connected, the Adobe configuration enabled checkbox is set and you can begin using Adobe Sign with Workday.
 
@@ -152,12 +154,13 @@ Workday is the integration owner, and should be your first point of contact for 
 You may refer to the following Workday community articles on how to troubleshoot the integration and generate documents:
 
 * [Troubleshoot eSignature Integrations](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/zhA~hYllD3Hv1wu0CvHH_g)
-
 * [Review Documents Step](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg)
-
 * [Dynamic Document Generation](https://community.workday.com/saml/login?destination=/articles/176443)
 
+<!--
+Commented out - need valid link reference
 * [Offer Document Generation Configuration tips]()
+-->
 
 ### Adobe Sign Support {#adobe-sign-support}
 

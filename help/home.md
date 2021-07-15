@@ -6,9 +6,6 @@ exl-id:
 ---
 # Authoring Guide for Adobe Writers
 
-![banner](assets/overhang_dug_adobe.png)
-
 ## More Resources
 
-* [What's new in this guide](whats-new.md)
 
