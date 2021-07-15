@@ -43,7 +43,7 @@ Within one business day, an Adobe Sign on-boarding specialist provisions your ac
 
 Follow the directions in the email to initialize your account and access your Adobe Sign *Home* page.
 
-![The Adobe Sign Dashboard](images/classic-home.png) 
+![The Adobe Sign dashboard](images/classic-home.png) 
 
 ## Generate an integration key {#generate-an-integration-key}
 
