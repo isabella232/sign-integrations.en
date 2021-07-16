@@ -120,7 +120,7 @@ To install the Integration Key:
 1. Next, complete the installation:
 
     1. Paste your Integration key into the *Adobe Sign API Integration Key* field.
-    1.  Enter the email address of the Adobe Sign administrator into the *Adobe Document Cloud Sender Email Address* field.
+    1. Enter the email address of the Adobe Sign administrator into the *Adobe Document Cloud Sender Email Address* field.
     1. Click **OK**.
 
     ![The Integration Key fields and the key holder email field](images/bp-filled-small.png)

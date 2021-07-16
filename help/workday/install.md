@@ -39,7 +39,7 @@ For customers who are new to Adobe Sign and do not have a pre-existing log-in, a
 
 You need to follow the directions in the email to initialize your account and access your Adobe Sign *Home* page.
 
-![The Adobe Sign Dashboard page](images/classic-home-1.png) 
+![The Adobe Sign Dashboard page](images/classic-home.png) 
 
 ## Configure Adobe Sign for Workday {#config}
 
