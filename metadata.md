@@ -1,19 +1,9 @@
 ---
 cloud: Document Cloud
-<<<<<<< HEAD
-solution-title: Sign Integrations
-solution-hub-url: https://helpx.adobe.com/sign/using/integration-guides.html 
-tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/integrations/integrations-overview.html
-mini-toc-levels: 2
-git-repo: https://git.corp.adobe.com/AdobeDocs/dc-sign-integrations
-index: no
-=======
 type: Documentation
 solution: Document Cloud, Adobe Sign
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/dc-sign-integrations.en
->>>>>>> 7b6c667c7b47c9aa742c7a8f0b9a8b64a1dfe6d4
 ---
 
 # Metadata for internal use
