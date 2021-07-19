@@ -86,7 +86,7 @@ The Offer BP is a subprocess of the Job Application Dynamic BP that needs to be 
 
 In the below example, a Review Document step is using a Dynamic Document step for both North America and Japan.
 
-    ![Example of a Workday Business Process](images/bp-for-offersmaller-575.png)
+![Example of a Workday Business Process](images/bp-for-offersmaller-575.png)
 
 This BP does the following:
 

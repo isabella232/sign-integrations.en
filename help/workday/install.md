@@ -142,7 +142,7 @@ You may add any of these docs with [Adobe Text Tags](https://helpx.adobe.com/sig
 
 Unique to using Adobe Sign with a Review Document step is the ability to have serialized Signer Groups. This allows you to specify role-based groups that sign in sequence. Adobe Sign does not support parallel signing groups.
 
-For assistance configuring the Review Document step, refer to the [Quick Start guide](https://helpx.adobe.com/sign/using/workday-integration-quick-start-guide.html).  
+For assistance configuring the Review Document step, refer to the [Quick Start guide](https://experienceleague.corp.adobe.com/docs/dc-sign-integrations/using/workday/quick-start.html?lang=en){target="_blank"}.  
 
 ## Support {#support}
 
@@ -168,8 +168,7 @@ Adobe Sign is the integration partner, and should be contacted if the integratio
 Adobe Sign Customers should contact their Customer Success Manager (CSM) for support. Alternatively, Adobe Technical Support can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
 
 * [Adding Adobe Text Tags to Documents](https://helpx.adobe.com/sign/using/text-tag.html)  
-
-* [Review Document configuration and examples](https://helpx.adobe.com/sign/using/workday-integration-quick-start-guide.html)
+* [Review Document configuration and examples](https://experienceleague.corp.adobe.com/docs/dc-sign-integrations/using/workday/quick-start.html?lang=en){target="_blank"}
 
 ## Common Questions {#faq}
 
