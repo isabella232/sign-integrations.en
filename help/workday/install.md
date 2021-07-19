@@ -47,7 +47,7 @@ To configure Adobe Sign for Workday, you need to generate following two dedicate
 
 * **An authenticating user to hold the integration key**: A Workday group must have only one group level administrator, who is the authoritative holder of the integration key. We recommend that the administrator use a functional email address such as **HR@MyDomain.com** instead of a personal email to reduce the risk of having the user disabled in future and consequently disabling the integration.
 
-### Create a User and Group in Adobe Sign {#create-a-user-and-group-in-adobe-sign}
+### Create a user and group in Adobe Sign {#create-a-user-and-group-in-adobe-sign}
 
 To create a user in Adobe Sign:
 
@@ -84,7 +84,7 @@ Once you verify the email address, the status of the user changes from "CREATED"
 
 ![Image of the new activated user](images/actived-users-575.png) 
 
-### Define the Authenticating User {#define-the-authenticating-user}
+### Define the authenticating user {#define-the-authenticating-user}
 
 To promote the new user in the Workday group:
 
@@ -98,7 +98,7 @@ To promote the new user in the Workday group:
 
 ![](images/user-permissions-edit1-575.png) 
 
-## Configure the Workday Tenant {#configure-workday}
+## Configure the Workday tenant {#configure-workday}
 
 To complete the connection between the Workday tenant and Adobe Sign, we need to establish a trusted relationship between the services. Once done, we can add a Review Document step that enables the signature process through Adobe Sign.
 
@@ -130,7 +130,7 @@ To establish the trusted relationship:
 
 Once connected, the Adobe configuration enabled checkbox is set and you can begin using Adobe Sign with Workday.
 
-### Configure the Review Document step {#configure-review}
+### Configure the review document step {#configure-review}
 
 The document for the Review Document step can be either one of the following:
 
@@ -146,31 +146,27 @@ For assistance configuring the Review Document step, refer to the [Quick Start g
 
 ## Support {#support}
 
-### Workday Support {#workday-support}
+### Workday support {#workday-support}
 
 Workday is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
 
 You may refer to the following Workday community articles on how to troubleshoot the integration and generate documents:
 
-* [Troubleshoot eSignature Integrations](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/zhA~hYllD3Hv1wu0CvHH_g)
-* [Review Documents Step](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg)
-* [Dynamic Document Generation](https://community.workday.com/saml/login?destination=/articles/176443)
+* [Troubleshoot eSignature integrations](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/zhA~hYllD3Hv1wu0CvHH_g)
+* [Review documents step](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg)
+* [Dynamic document generation](https://community.workday.com/saml/login?destination=/articles/176443)
+* [Offer document generation tips](https://community.workday.com/node/183242)
 
-<!--
-Commented out - need valid link reference
-* [Offer Document Generation Configuration tips]()
--->
-
-### Adobe Sign Support {#adobe-sign-support}
+### Adobe Sign support {#adobe-sign-support}
 
 Adobe Sign is the integration partner, and should be contacted if the integration is failing to obtain signatures, or if notification of pending signatures fails.
 
 Adobe Sign Customers should contact their Customer Success Manager (CSM) for support. Alternatively, Adobe Technical Support can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
 
-* [Adding Adobe Text Tags to Documents](https://helpx.adobe.com/sign/using/text-tag.html)  
-* [Review Document configuration and examples](https://experienceleague.corp.adobe.com/docs/dc-sign-integrations/using/workday/quick-start.html?lang=en){target="_blank"}
+* [Adding Adobe text tags to documents](https://helpx.adobe.com/sign/using/text-tag.html)  
+* [Review document configuration and examples](https://experienceleague.corp.adobe.com/docs/dc-sign-integrations/using/workday/quick-start.html?lang=en){target="_blank"}
 
-## Common Questions {#faq}
+## Common questions {#faq}
 
 ### Why is the status not being updated within Workday even when the document is fully signed? {#why-is-the-status-not-being-updated-within-workday-even-the-document-is-fully-signed}
 

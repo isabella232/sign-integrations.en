@@ -68,7 +68,7 @@ From the related actions menu of a *Review Documents* step, select **Business Pr
 * **Move to Next Step**: To enable security group members to forward a step to the next step in the business process.
 * **Security Groups**: To redirect steps in the business process flow. Security groups that display at this prompt are selected in the business process security policy in the *Redirect* section.
 
-## Business Process Step Notes {#business-process-step-notes}
+## Business process step notes {#business-process-step-notes}
 
 The Business Process Framework is powerful; however, you need to ensure that:
 
@@ -80,7 +80,7 @@ The Business Process Framework is powerful; however, you need to ensure that:
 
     You can change the order of a step by changing the order value. For instance, to insert a step between items “c” and “d”, specify a new item as “ca”.
 
-### Example: Offer {#example-offer}
+### Example: offer {#example-offer}
 
 The Offer BP is a subprocess of the Job Application Dynamic BP that needs to be configured to execute the Offer BP. It is triggered when the Job Application state is moved to “Offer” or “Make Offer”.
 
@@ -102,21 +102,21 @@ This BP does the following:
 
 The Dynamic document being generated in step “ba” is called *Offer Letter* and contains a single text block named *Rapid Offer*. You can add multiple text blocks such as header, salutation, compensation, stock, closing, terms, and more as required.
 
-![Workday View Document page](images/offer-letter-575.png)
+![Workday view document page](images/offer-letter-575.png)
 
 The Dynamic offer letter below is created in the Workday rich text editor. The items highlighted in *gray* are Workday provided objects that reference contextual data.
 
 Items in {{brackets}} are [Adobe Text tags](https://helpx.adobe.com/sign/using/text-tag.html).
 
-![Example Dynamic Form](images/script.png)
+![Example dynamic form](images/script.png)
 
 Within the *Review Document* step, the dynamic document is referenced from the previous step and defines the sequential signature process via two signing groups.
 
 The behavior illustrated below will route the dynamically generated document first to the Hiring Manager, and then to the Candidate.
 
-![Workday Signing Groups being defined](images/configure-rd-stepsmaller-575.png) 
+![Workday signing groups being defined](images/configure-rd-stepsmaller-575.png) 
 
-### Example: Distribute Documents {#example-distribute-documents}
+### Example: Distribute documents {#example-distribute-documents}
 
 Introduced in Workday 30, the Mass Distribute Documents or Tasks task can be used to send a single document to a large group (&lt;20K) of individual signers. It is limited to a single signature per document. Creation of a distribution is performed by accessing the ‘Create Distribute Documents or Tasks’ action from the search bar.
 
@@ -144,7 +144,7 @@ You can see:
 
 ![Example of a Workday Report using three objects](images/workday-reportsmaller-575.png) 
 
-## Signed Documents {#signed-documents}
+## Signed documents {#signed-documents}
 
 The Workday signature cycle suppresses all email notifications by Adobe Sign. Users are informed of pending actions within their Workday inbox.
 
@@ -171,7 +171,6 @@ The workday community has several good articles on how to troubleshoot the integ
 
 * [Troubleshoot eSignature Integrations](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/zhA~hYllD3Hv1wu0CvHH_g)
 * [Review Documents Step](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg)  
-
 * [Dynamic Document Generation](https://community.workday.com/node/176443)
 * [Offer Document Generation Configuration tips](https://community.workday.com/node/183242)
 
