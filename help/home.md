@@ -3,7 +3,7 @@ title: Adobe Sign Integrations
 description: Learn how to set up Adobe Sign Integrations
 audience: External
 ---
-# Adobe Sign Integrations Guide (#home) 
+# Adobe Sign Integrations Guide {#home} 
 
 ## More Resources
 
