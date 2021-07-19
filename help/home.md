@@ -1,10 +1,10 @@
 ---
-title: Authoring Guide for Excellent Adobe® Writers
+title: Adobe Sign Integrations 
 description: Learn how to set up Adobe Sign Integrations
 audience: External
 ---
-# Authoring Guide for Adobe Writers
+# Adobe Sign Integrations Guide (#home) 
 
 ## More Resources
 
-This is a new note.
+Learn how to install, integrate, and use Adobe Sign Solutions to the existing systems, processes, and applications of your organization.

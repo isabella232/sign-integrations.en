@@ -15,8 +15,6 @@ locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently pu
 
 ## Overview {#overview}
 
-BEST
-
 This document explains how to integrate Adobe Sign into your Workday tenant. To use Adobe Sign within Workday, you need to know how to create and modify Workday items such as:
 
 * Business process framework
@@ -31,9 +29,9 @@ The high-level steps to complete integration are:
 
 ## Activate your Adobe Sign account {#activating-your-adobe-sign-account}
 
-Existing customers with established accounts can skip to the [Configure Adobe Sign for Workday](#config) step
+Existing customers with established accounts can skip to the [Configure Adobe Sign for Workday](#config) topic.
 
-For customers who are new to Adobe Sign and do not have a pre-existing log-in, an Adobe on-boarding specialist provisions your account (in Adobe Sign) for Workday. Once complete, you receive a confirmation email:
+For customers who are new to Adobe Sign and do not have a pre-existing log-in, an Adobe on-boarding specialist provisions your account (in Adobe Sign) for Workday. Once complete, you receive a confirmation email as shown below.
 
 ![Image of the Welcome Email from Adobe Sign](images/welcome-email-2020.png)
 
@@ -65,6 +63,7 @@ To create a user in Adobe Sign:
     * Enter an appropriate First and Last name value.
     * Select **Create a new group for this user** from the User Group.    
     * Provide the *New Group Name* with an intuitive name like “Workday”.
+
 
     ![The Create a User panel](images/create-user.png)
 
@@ -176,7 +175,7 @@ Adobe Sign Customers should contact their Customer Success Manager (CSM) for sup
 
 ### Why is the status not being updated within Workday even when the document is fully signed? {#why-is-the-status-not-being-updated-within-workday-even-the-document-is-fully-signed}
 
-The document status in Workday may not reflect if the candidate does not click the 'Submit' button after signing in Adobe Sign.
+The document status in Workday may not reflect if the candidate does not click the 'Submit' button after signing in Adobe Sign. 
 
 As per Workday task Check eSignature Signing Status: To start the process, the user can submit the associated Inbox task.
 
