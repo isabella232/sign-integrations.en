@@ -21,7 +21,7 @@ This document explains how to integrate Adobe Sign into your Workday tenant. To 
 * Tenant set-up and configuration
 * Reporting and Workday studio integration
 
-The high-level steps to complete integration are: 
+The high-level steps to complete the integration are: 
 
 * Activate your Administrative account in Adobe Sign (New Customers Only)
 * Configure a Group in Adobe Sign to hold the Workday integration user
