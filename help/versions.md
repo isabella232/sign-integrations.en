@@ -3,13 +3,13 @@ title: Adobe Sign Integrations Product Versions and Lifecycle
 description: Learn how to set up Adobe Sign Integrations
 audience: External
 ---
-## Product versions and lifecycle (#version)
+# Product versions and lifecycle (#version)
 
 The Adobe Sign versioning convention and support lifecycle for integrated services aligns with other Adobe products that you may be familiar with.
 
 Details of the version lifecycle 
 
-### Version numbers 
+## Version numbers 
 
 The package version uses a three-part numbering system to identify the sequential build number of the released version and the relative import of the upgrade in terms of new or changing content. 
 
@@ -35,7 +35,7 @@ As engineers develop new “builds” of the package, they increment the version
 
 The admins must keep their version up-to-date to ensure that the account has full access to all the features and all known security issues are patched. Adobe Sign may require an upgrade to the latest patched version in the case of a security concern or to address a critical system issue.
 
-### Version support lifecycle
+## Version support lifecycle
 
 The version support lifecycle of an Adobe Sign integration product is defined based on the major version of the package, and indicates the time frame that Adobe Sign is actively supporting the individual version of the integration.
 
@@ -54,7 +54,7 @@ For example, if the current available version of the package is 23.2.1, then:
 
  ![Version chart](images/version_chart.png) 
 
-### Version service lifecycle
+## Version service lifecycle
 
 The version service lifecycle defines the full scope of when the service is usable. The timeline matches the version support lifecycle with the addition of a 90-day grace period that allows customers to complete their upgrade.
 
