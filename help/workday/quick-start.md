@@ -12,7 +12,7 @@ locnotes: All languages; screenshots to follow what's there already (seems there
 
 # Workday Quick Start Guide{#workday-quick-start-guide}
 
-[**Contact Adobe Sign Support**](https://helpx.adobe.com/sign/using/adobesign-support-resources.html)
+[**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
 
 ## Overview {#overview}
 
@@ -106,7 +106,7 @@ The Dynamic document being generated in step “ba” is called *Offer Letter* a
 
 The Dynamic offer letter below is created in the Workday rich text editor. The items highlighted in *gray* are Workday provided objects that reference contextual data.
 
-Items in {{brackets}} are [Adobe Text tags](https://helpx.adobe.com/sign/using/text-tag.html).
+Items in {{brackets}} are [Adobe Text tags](https://adobe.com/go/adobesign_text_tag_guide).
 
 ![Example dynamic form](images/script.png)
 
@@ -150,7 +150,7 @@ The Workday signature cycle suppresses all email notifications by Adobe Sign. Us
 
 Once a document is signed by all Signature Groups, a copy of the signed document is distributed to all the members of the Signature Group via email.
 
-To suppress this behavior, you may contact your Adobe Sign Success Manager or the [Adobe Sign Support team](https://echosign.zendesk.com/hc/en-us/requests/new?ticket_form_id=34323).
+To suppress this behavior, you may contact your Adobe Sign Success Manager or the [Adobe Sign Support team](https://adobe.com/go/adobesign-support-center).
 
 Within Workday, you can access the signed documents on the full process record. You may find:
 
@@ -180,7 +180,7 @@ Adobe Sign is the integration partner, and should be contacted if the integratio
 
 Adobe Sign Customers should contact their Customer Success Manager (CSM) for support. Alternatively, Adobe Technical Support can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
 
-* [Adding Adobe Text Tags to Documents](https://helpx.adobe.com/sign/using/text-tag.html)
+* [Adding Adobe Text Tags to Documents](https://adobe.com/go/adobesign_text_tag_guide)
 
 <!--
 [Download PDF](images/adobe-sign-for-workday-quick-start-guide-2016.pdf)
