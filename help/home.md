@@ -5,7 +5,7 @@ audience: External
 ---
 # Adobe Sign Integrations {#home} 
 
-![banner](images/adobe-sign.png)
+![banner](images/adobe-sign(1).png)
 
 Learn how to install, integrate, and use Adobe Sign solutions to the existing systems, processes, and applications of your organization.
 
@@ -22,6 +22,16 @@ Learn how to install, integrate, and use Adobe Sign solutions to the existing sy
     </div>
     <em>Adobe Sign integration product versioning and lifecycle.</em>
     <br>
+  </td>
+  <td>
+    <a href="workday-tutorial.md">
+      <img alt="Integrating Adobe Sign with Workday" src="images/wd-integration.png" />
+    </a>
+    <div>
+    <a href="workday-tutorial.md"><strong>Integrating Adobe Sign with Workday</strong></a>
+    </div>
+    <br>
+    <em>Learn how to configure Adobe Sign to work within Workday for managing all your documents</em>
   </td>
 </tr>
 </table>

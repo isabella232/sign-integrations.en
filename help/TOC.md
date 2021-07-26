@@ -13,3 +13,5 @@ role: Leader
   + [Installation Guide](workday/install.md)
   + [Quick Start Guide](workday/quick-start.md)
   + [Set up a Trial Account](workday/trial-install.md)
+  + [Workday Tutorial](workday/tutorial.md)
+
