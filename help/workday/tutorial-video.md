@@ -2,9 +2,10 @@
 title: Configure Adobe Sign for Workday
 description: Adobe Sign for Workday integration tutorial
 products: SG_ESIGNSERVICES
-level: Intermediate
-topic-revisit: Integrations
+topic-tags: EchoSign/Integrations
+content-type: reference
 thumbnail: 39372.jpg
+locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently published localized page for guidance) 
 
 ---
 # Configure Adobe Sign for Workday
