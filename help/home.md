@@ -33,7 +33,7 @@ Learn how to install, integrate, and use Adobe Sign solutions to the existing sy
     <em>Learn how to configure Adobe Sign to work within Workday for managing all your documents</em>
   </td>
   <td>
-    <img alt="Spacer" src="../assets/whitespace.png" />
+    <img alt="Spacer" src="images/whitespace.png"/>
     <div>
     <br>
   </td>
