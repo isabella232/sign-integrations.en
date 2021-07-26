@@ -12,6 +12,6 @@ role: Leader
 + Adobe Sign for Workday {#workday}
   + [Installation Guide](workday/install.md)
   + [Quick Start Guide](workday/quick-start.md)
-  + [Set up a Trial Account](workday/trial-install.md)
-  + [Workday Tutorial](workday/tutorial-video.md)
+  + [Trial Account Set-up Guide](workday/trial-install.md)
+  + [Integration Tutorial](workday/tutorial-video.md)
 

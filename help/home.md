@@ -30,8 +30,12 @@ Learn how to install, integrate, and use Adobe Sign solutions to the existing sy
     <div>
     <a href="workday/tutorial-video.md"><strong>Integrating Adobe Sign with Workday</strong></a>
     </div>
-    <br>
     <em>Learn how to configure Adobe Sign to work within Workday for managing all your documents</em>
+  </td>
+  <td>
+    <img alt="Spacer" src="../assets/whitespace.png" />
+    <div>
+    <br>
   </td>
 </tr>
 </table>

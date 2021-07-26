@@ -3,7 +3,7 @@ title: Adobe Sign Integrations Product Versions and Lifecycle
 description: Learn how to set up Adobe Sign Integrations
 audience: External
 ---
-# Product versions and lifecycle (#version)
+# Product versions and lifecycle {#version}
 
 The Adobe Sign versioning convention and support lifecycle for integrated services aligns with other Adobe products that you may be familiar with.
 
