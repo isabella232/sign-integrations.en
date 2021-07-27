@@ -108,8 +108,8 @@ To complete the connection between the Workday tenant and Adobe Sign, we need to
 
 To establish the trusted relationship:
 
-1. Log in to Workday as an account administrator
-1. Search for Edit Tenant Setup - Business Processes
+1. Log in to Workday as an account administrator.
+1. Search for Edit Tenant Setup - Business Processes.
 
     It loads the *Edit Tenant Setup - Business Processes* page.
 

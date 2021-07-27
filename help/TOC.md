@@ -8,7 +8,7 @@ role: Leader
 
 + [Adobe Sign Integrations](home.md)
 + [What's New](whats-new.md)
-+ [Product Versions](versions.md)
++ [Product Versions and Lifecycle](versions.md)
 + Adobe Sign for Workday {#workday}
   + [Installation Guide](workday/install.md)
   + [Quick Start Guide](workday/quick-start.md)

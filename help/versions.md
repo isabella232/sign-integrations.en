@@ -7,8 +7,6 @@ audience: External
 
 The Adobe Sign versioning convention and support lifecycle for integrated services aligns with other Adobe products that you may be familiar with.
 
-Details of the version lifecycle 
-
 ## Version numbers 
 
 The package version uses a three-part numbering system to identify the sequential build number of the released version and the relative import of the upgrade in terms of new or changing content. 
