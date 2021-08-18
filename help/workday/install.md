@@ -15,7 +15,7 @@ locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently pu
 
 ## Overview {#overview}
 
-This document explains how to integrate Adobe Sign into your Workday tenant. To use Adobe Sign within Workday, you need to know how to create and modify Workday items such as:
+This document explains how to integrate [!DNL Adobe Sign] into your [!DNL Workday] tenant. To use [!DNL Adobe Sign] within [!DNL Workday], you need to know how to create and modify [!DNL Workday] items such as:
 
 * Business process framework
 * Tenant set-up and configuration
@@ -39,11 +39,11 @@ You need to follow the directions in the email to initialize your account and ac
 
 ![The Adobe Sign Dashboard page](images/classic-home.png) 
 
-## Configure Adobe Sign for Workday {#config}
+## Configure Adobe Sign for [!DNL Workday] {#config}
 
-To configure Adobe Sign for Workday, you need to generate following two dedicated objects in the Adobe Sign system:
+To configure [!DNL Adobe Sign] for [!DNL Workday], you need to generate following two dedicated objects in the [!DNL Adobe Sign] system:
 
-* **A Workday group**: Workday requires a dedicated “group” within the Adobe Sign account to enable integration functionality. The Adobe Sign group is used to control only the Workday usage of Adobe Sign. Any other potential usage, such as Salesforce.com or Arriba is not impacted. The email notifications are suppressed in Workday group so that the Workday users only receive notifications within their Workday inbox.
+* **A [!DNL Workday] group**: [!DNL Workday] requires a dedicated “group” within the Adobe Sign account to enable integration functionality. The [!DNL Adobe Sign] group is used to control only the Workday usage of [!DNL Adobe Sign]. Any other potential usage, such as [!DNL Salesforce.com] or [!DNL Arriba] is not impacted. The email notifications are suppressed in Workday group so that the Workday users only receive notifications within their Workday inbox.
 
 * **An authenticating user to hold the integration key**: A Workday group must have only one group level administrator, who is the authoritative holder of the integration key. We recommend that the administrator use a functional email address such as **HR@MyDomain.com** instead of a personal email to reduce the risk of having the user disabled in future and consequently disabling the integration.
 
@@ -51,8 +51,8 @@ To configure Adobe Sign for Workday, you need to generate following two dedicate
 
 To create a user in Adobe Sign:
 
-1. Log in to Adobe Sign as the account administrator.
-1. Navigate to **Account > Users**.
+1. Log in to [!DNL Adobe Sign] as the account administrator.
+1. Navigate to **[!UICONTROL Account]** > **[!UICONTROL Users]**.
 1. Click the **circled plus sign** to create a new user. 
 
     ![Image of the navigation path to create a new user](images/navigate-to-group-unbranded.png)
@@ -61,15 +61,14 @@ To create a user in Adobe Sign:
 
     * Provide a functional email that you can access.
     * Enter an appropriate First and Last name value.
-    * Select **Create a new group for this user** from the User Group.    
-    * Provide the *New Group Name* with an intuitive name like “Workday”.
-
+    * Select **[!UICONTROL Create a new group for this user]** from the [!UICONTROL User Group].    
+    * Provide the *[!UICONTROL New Group Name]* with an intuitive name like “Workday”.
 
     ![The Create a User panel](images/create-user.png)
 
-1. Click **Save**.
+1. Click **[!UICONTROL Save]**.
 
-    It brings you back to the *Users* page that lists the new user with a **CREATED** status. 
+    It brings you back to the *[!UICONTROL Users]* page that lists the new user with a **CREATED** status. 
 
     ![A view of the new created user](images/post-user-creation.png)
 
@@ -77,7 +76,7 @@ To verify the email address of the user with “Created” status:
 
 1. Log in to the new user’s email.
 2. Find the “Welcome to Adobe Sign” email.
-3. Click where it says **Click here to set your password**.
+3. Click where it says **[!UICONTROL Click here to set your password]**.
 4. Set the password.
 
 Once you verify the email address, the status of the user changes from "CREATED" to "ACTIVE".
@@ -88,13 +87,13 @@ Once you verify the email address, the status of the user changes from "CREATED"
 
 To promote the new user in the Workday group:
 
-1. Navigate to the *Users* page (if not already there).
+1. Navigate to the *[!UICONTROL Users]* page (if not already there).
 2. Double-click the user in the Workday group.
 
-    This opens an *Edit* page for the user permissions.
+    This opens an *[!UICONTROL Edit]* page for the user permissions.
 
-3. Check the **Group Admin**.
-4. Click **Save**.
+3. Check the **[!UICONTROL Group Admin]**.
+4. Click **[!UICONTROL Save]**.
 
 ![](images/user-permissions-edit1-575.png) 
 
@@ -109,11 +108,11 @@ To complete the connection between the Workday tenant and Adobe Sign, we need to
 To establish the trusted relationship:
 
 1. Log in to Workday as an account administrator.
-1. Search for Edit Tenant Setup - Business Processes.
+1. Search for [!UICONTROL Edit Tenant Setup - Business Processes].
 
-    It loads the *Edit Tenant Setup - Business Processes* page.
+    It loads the *[!UICONTROL Edit Tenant Setup - Business Processes]* page.
 
-1. Locate the eSignature Configuration section:
+1. Locate the [!UICONTROL eSignature Configuration] section:
 
     ![](images/esignature_configurations.png)
 

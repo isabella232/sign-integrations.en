@@ -10,7 +10,7 @@ This page provides information about the latest additions to this guide.
 
 ## June 2021
 
-* Added Salesforce Work.com
-* Introducing Live Sign feature for Microsoft Teams
+* Added [!DNL Salesforce Work.com]
+* Introducing [!DNL Live Sign] feature for [!DNL Microsoft Teams]
 
 

@@ -3,7 +3,7 @@ cloud: Document Cloud
 type: Documentation
 solution: Document Cloud, Adobe Sign
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/dc-sign-integrations.en
+git-repo: https://github.com/AdobeDocs/sign-integrations.en
 ---
 
 # Metadata for internal use
