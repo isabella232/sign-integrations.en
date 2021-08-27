@@ -1,58 +1,60 @@
 ---
 title: Workday Quick Start Guide
-seo-title: Adobe Sign for Workday Quick Start Guide
 description: A quick start guide for customer that wants to use Adobe Sign in their Workday environments.
-seo-description: A quick start guide for customer that want to use Adobe Sign in their Workday environments.
 uuid: 10bf8ee8-9075-44d1-a836-e454950e2d9a
-products: SG_ESIGNSERVICES
+products: Adobe Sign
 content-type: reference
 discoiquuid: 13135c88-4c39-4707-b7ba-63ff94769258
 locnotes: All languages; screenshots to follow what's there already (seems there is a mix within a given language version of the article) 
+type: Documentation
+solution: Adobe Sign
+role: User, Developer
+topic: Integrations
 ---
 
-# Workday Quick Start Guide{#workday-quick-start-guide}
+# [!DNT Workday] Quick Start Guide{#workday-quick-start-guide}
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
 
 ## Overview {#overview}
 
-This document is designed to help Workday administrators understand how to customize the Workday Business Processes to include Adobe Sign for obtaining e-signatures. To use Adobe Sign within Workday, you need to know how to create and modify Workday items such as:
+This document is designed to help [!DNT Workday] administrators understand how to customize the [!DNT Workday] Business Processes to include Adobe Sign for obtaining e-signatures. To use Adobe Sign within [!DNT Workday], you need to know how to create and modify [!DNT Workday] items such as:
 
 * Business Process Framework
 * Tenant Set-up and configuration
-* Reporting and Workday Studio Integration
+* Reporting and [!DNT Workday] Studio Integration
 
-## Accessing Adobe Sign within Workday {#access-adobe-sign}
+## Accessing Adobe Sign within [!DNT Workday] {#access-adobe-sign}
 
-Adobe Sign electronic signature capability is surfaced as ‘Review Document step’ action within the Business Process Framework (BPF) and as a Distribute Documents task.
+Adobe Sign electronic signature capability is surfaced as [!UICONTROL Review Document Step] action within the Business Process Framework (BPF) and as a Distribute Documents task.
 
-## Review document step {#review-document-step}
+## [!UICONTROL Review Document Step] {#review-document-step}
 
-Adobe Sign for Workday is exposed via the *Review Document step* that you can add to any of over 400 Business Processes within Workday, including *Offer*, *Distribute Documents and Tasks*, *ropose Compensation*, and more.
+Adobe Sign for [!DNT Workday] is exposed via the [!UICONTROL Review Document Step] that you can add to any of over 400 Business Processes within [!DNT Workday], including Offer, Distribute Documents and Tasks, ropose Compensation, and more.
 
-You may refer to the [Workday community articles on *Review Document* step](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg).
+You may refer to the [[!DNT Workday] community articles on [!UICONTROL Review Document Step]](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg).
 
-There is a 1:1 relationship between *Review Document* steps and billable transactions with Adobe Sign. You can combine multiple documents within a single *Review Document* step and they are presented as a single package for signature. 
+There is a 1:1 relationship between [!UICONTROL [!UICONTROL Review Document Step]s] and billable transactions with Adobe Sign. You can combine multiple documents within a single [!UICONTROL Review Document Step] and they are presented as a single package for signature. 
 
-**Note**: Only a single *dynamic* document can be referenced within a specific *Review Document* step.
+**Note**: Only a single *Dynamic* document can be referenced within a specific [!UICONTROL Review Document Step].
 
-To define a functional Review Document step:
+To define a functional [!UICONTROL Review Document Step]:
 
-1. Insert a **Review Document** step.
-1. Specify the Groups (roles) that can act upon the Review Document step.
+1. Insert a [!UICONTROL Review Document Step].
+1. Specify the Groups (roles) that can act upon the [!UICONTROL Review Document Step].
 
 ![The Business Process steps](images/insert-review-doc-steptornm-575.png)
 
-To configure the Document Review step:
+To configure the [!UICONTROL Review Document Step]:
 
-1. Specify the *eSignature Integration type* as *eSign by Adobe*.
+1. Specify the *[!UICONTROL eSignature Integration type]* as *[!UICONTROL eSign by Adobe]*.
 
 1. Add rows to the Signature Grid.
 
     * The signature grid specifies the serial order in which the document is routed for signature. Each row can contain one or more roles and each row represents a step in the signing process.
     * Every member of the role within a particular step is notified that a signing event is pending.
     * Once a single person from the role signs, the row step is completed and the document is moved to the next row step.
-    * When all rows have been signed, the Review Document step is complete.
+    * When all rows have been signed, the [!UICONTROL Review Document Step] is complete.
 
 1. Specify the document to be signed. If this is an Offer BP, you can use the document from a Generate Document step. Otherwise, choose an existing document or report.
 
@@ -60,13 +62,13 @@ To configure the Document Review step:
 
     ![Configure Review Document Step](images/configure-rd-stepsmaller-575.png)
 
-1. Optionally, add a ‘redirect user’ for capturing ‘decline to sign’ actions. When users decline, Workday reroutes the documents to a configured security group for review.
+1. Optionally, add a ‘redirect user’ for capturing ‘decline to sign’ actions. When users decline, [!DNT Workday] reroutes the documents to a configured security group for review.
 
-From the related actions menu of a *Review Documents* step, select **Business Process &gt; Maintain Redirect**. Next, select one of the following:
+From the related actions menu of a [!UICONTROL Review Document Step], select **[!UICONTROL Business Process]** > **[!UICONTROL Maintain Redirect]**. Next, select one of the following:
 
-* **Send Back**: To enable security group members to send a step back to a prior step in the business process. The business process restarts from that step.
-* **Move to Next Step**: To enable security group members to forward a step to the next step in the business process.
-* **Security Groups**: To redirect steps in the business process flow. Security groups that display at this prompt are selected in the business process security policy in the *Redirect* section.
+* **[!UICONTROL Send Back]**: To enable security group members to send a step back to a prior step in the business process. The business process restarts from that step.
+* **[!UICONTROL Move to Next Step]**: To enable security group members to forward a step to the next step in the business process.
+* **[!UICONTROL Security Groups]**: To redirect steps in the business process flow. Security groups that display at this prompt are selected in the business process security policy in the Redirect section.
 
 ## Business process step notes {#business-process-step-notes}
 
@@ -82,11 +84,11 @@ The Business Process Framework is powerful; however, you need to ensure that:
 
 ### Example: offer {#example-offer}
 
-The Offer BP is a subprocess of the Job Application Dynamic BP that needs to be configured to execute the Offer BP. It is triggered when the Job Application state is moved to “Offer” or “Make Offer”.
+The Offer BP is a sub process of the Job Application Dynamic BP that needs to be configured to execute the Offer BP. It is triggered when the Job Application state is moved to “Offer” or “Make Offer”.
 
-In the below example, a Review Document step is using a Dynamic Document step for both North America and Japan.
+In the below example, a [!UICONTROL Review Document Step] is using a Dynamic Document step for both North America and Japan.
 
-![Example of a Workday Business Process](images/bp-for-offersmaller-575.png)
+![Example of a [!DNT Workday] Business Process](images/bp-for-offersmaller-575.png)
 
 This BP does the following:
 
@@ -97,20 +99,20 @@ This BP does the following:
     
     If false, it executes step “bb” which uses a Japanese language document.
 
-* Defines the signature process in the Document Review step “bc”.
+* Defines the signature process in the [!UICONTROL Review Document Step] “bc”.
 * Defines the decision point to make an offer in the required completion step “d”.
 
-The Dynamic document being generated in step “ba” is called *Offer Letter* and contains a single text block named *Rapid Offer*. You can add multiple text blocks such as header, salutation, compensation, stock, closing, terms, and more as required.
+The Dynamic document being generated in step “ba” is called [!UICONTROL Offer Letter] and contains a single text block named [!UICONTROL Rapid Offer]. You can add multiple text blocks such as header, salutation, compensation, stock, closing, terms, and more as required.
 
 ![Workday view document page](images/offer-letter-575.png)
 
-The Dynamic offer letter below is created in the Workday rich text editor. The items highlighted in *gray* are Workday provided objects that reference contextual data.
+The Dynamic offer letter below is created in the [!DNT Workday] rich text editor. The items highlighted in *gray* are [!DNT Workday] provided objects that reference contextual data.
 
 Items in {{brackets}} are [Adobe Text tags](https://adobe.com/go/adobesign_text_tag_guide).
 
 ![Example dynamic form](images/script.png)
 
-Within the *Review Document* step, the dynamic document is referenced from the previous step and defines the sequential signature process via two signing groups.
+Within the [!UICONTROL Review Document Step], the dynamic document is referenced from the previous step and defines the sequential signature process via two signing groups.
 
 The behavior illustrated below will route the dynamically generated document first to the Hiring Manager, and then to the Candidate.
 
@@ -118,7 +120,7 @@ The behavior illustrated below will route the dynamically generated document fir
 
 ### Example: Distribute documents {#example-distribute-documents}
 
-Introduced in Workday 30, the Mass Distribute Documents or Tasks task can be used to send a single document to a large group (&lt;20K) of individual signers. It is limited to a single signature per document. Creation of a distribution is performed by accessing the ‘Create Distribute Documents or Tasks’ action from the search bar.
+Introduced in [!DNT Workday] 30, the Mass Distribute Documents or Tasks task can be used to send a single document to a large group (&lt;20K) of individual signers. It is limited to a single signature per document. Creation of a distribution is performed by accessing the ‘[!UICONTROL Create Distribute Documents or Tasks]’ action from the search bar.
 
 Example: Send an employee equity choice form to all managers with Global Modern Services. You can further filter it to individual managers, if desired.
 
@@ -128,13 +130,13 @@ You can also access the **View Distribute Documents or Tasks** report to track t
 
 ### Example: Reporting {#example-reporting}
 
-Workday has a rich reporting infrastructure. To look at the details of the Adobe Sign process, inspect the elements of the *Review Document Event*.
+[!DNT Workday] has a rich reporting infrastructure. To look at the details of the Adobe Sign process, inspect the elements of the *Review Document Event*.
 
 Below is a simple custom report that can be run across all BPs looking for Adobe Sign transactions and their status.
 
 ![Example of a Workday Custom Report](images/review-document-eventsmaller-575.png)
 
-The following report was generated by looking at *Offer*, *Onboarding*, and *Propose Compensation* BPs within an implementation tenant.
+The following report was generated by looking at Offer, Onboarding, and Propose Compensation BPs within an implementation tenant.
 
 You can see:
 
@@ -146,13 +148,13 @@ You can see:
 
 ## Signed documents {#signed-documents}
 
-The Workday signature cycle suppresses all email notifications by Adobe Sign. Users are informed of pending actions within their Workday inbox.
+The [!DNT Workday] signature cycle suppresses all email notifications by Adobe Sign. Users are informed of pending actions within their [!DNT Workday] inbox.
 
 Once a document is signed by all Signature Groups, a copy of the signed document is distributed to all the members of the Signature Group via email.
 
 To suppress this behavior, you may contact your Adobe Sign Success Manager or the [Adobe Sign Support team](https://adobe.com/go/adobesign-support-center).
 
-Within Workday, you can access the signed documents on the full process record. You may find:
+Within [!DNT Workday], you can access the signed documents on the full process record. You may find:
 
 * Worker documents on the Worker Profile, and
 * Candidate documents (offer letters) on the Candidate profile.
@@ -163,11 +165,11 @@ The below image shows a signed offer letter for the candidate Chris Foxx.
 
 ## Support {#support}
 
-### Workday support {#workday-support}
+### [!DNT Workday] support {#workday-support}
 
-Workday is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
+[!DNT Workday] is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
 
-The workday community has several good articles on how to troubleshoot the integration and generate documents:
+The [!DNT Workday] community has several good articles on how to troubleshoot the integration and generate documents:
 
 * [Troubleshoot eSignature Integrations](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/zhA~hYllD3Hv1wu0CvHH_g)
 * [Review Documents Step](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg)  

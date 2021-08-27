@@ -2,6 +2,11 @@
 title: Adobe Sign Integrations 
 description: Learn how to set up Adobe Sign Integrations
 audience: External
+products: Adobe Sign
+type: Documentation
+solution: Adobe Sign
+role: User, Developer
+topic: Integrations
 ---
 # Adobe Sign Integrations {#home} 
 

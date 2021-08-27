@@ -1,33 +1,35 @@
 ---
 title: Workday Trial Installation
-seo-title: Adobe Sign Trial and Install Guide for Workday
 description: Workday Installation guide for a Trial account in Adobe Sign
-seo-description: Workday Installation guide for a Trial account in Adobe Sign
 uuid: 0c51f329-b7c1-44a2-88a3-670be7673747
-products: SG_ESIGNSERVICES
+products: Adobe Sign
 topic-tags: EchoSign/Integrations
 content-type: reference
 discoiquuid: 63ed2d5b-9d82-4f87-97e1-2dde23501e89
 locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently published localized page for guidance) 
+type: Documentation
+solution: Adobe Sign
+role: User, Developer
+topic: Integrations
 ---
 
-# Workday Trial Installation{#workday-trial-installation}
+# [!DNT Workday] Trial Installation{#workday-trial-installation}
 
 ## Overview {#overview}
 
-This document is designed to help Workday customers learn how to activate a trial account with Adobe Sign and then integrate it into Workday tenant. To use Adobe Sign within Workday, you need to know how to create and modify Workday items such as:
+This document is designed to help [!DNT Workday] customers learn how to activate a trial account with Adobe Sign and then integrate it into [!DNT Workday] tenant. To use Adobe Sign within [!DNT Workday], you need to know how to create and modify [!DNT Workday] items such as:
 
 * Business process framework
 * Tenant set-up and configuration
-* Reporting and Workday Studio integration
+* Reporting and [!DNT Workday] Studio integration
 
-**Note**: If you have an existing Adobe Sign account, there is no need to start a trial. You may contact your Client Success Manager to request Workday integration.
+**Note**: If you have an existing Adobe Sign account, there is no need to start a trial. You may contact your Client Success Manager to request [!DNT Workday] integration.
 
 The high-level steps to complete integration are:
 
 * Activate your trial account with Adobe Sign
 * Generate an integration key in Adobe Sign
-* Install the integration key into the Workday Tenant
+* Install the integration key into the [!DNT Workday] Tenant
 
 ## Activate your Adobe Sign trial account {#activate-sign-trial-account}
 
@@ -37,29 +39,29 @@ To request a 30-day trial of Adobe Sign, you need to fill this [registration for
 
 ![The Trial request form](images/trial-land.png)
 
-Within one business day, an Adobe Sign on-boarding specialist provisions your account (in Adobe Sign) for Workday. Once complete, you receive a confirmation email as shown below.
+Within one business day, an Adobe Sign on-boarding specialist provisions your account (in Adobe Sign) for [!DNT Workday]. Once complete, you receive a confirmation email as shown below.
 
 ![The Welcome email from Adobe Sign](images/welcome-email-2020.png)
 
-Follow the directions in the email to initialize your account and access your Adobe Sign *Home* page.
+Follow the directions in the email to initialize your account and access your Adobe Sign [!UICONTROL Home] page.
 
 ![The Adobe Sign dashboard](images/classic-home.png) 
 
 ## Generate an integration key {#generate-an-integration-key}
 
-For new installations, you need to generate an integration key in Adobe Sign and then enter it into Workday. This key authenticates the Adobe Sign and Workday environments to trust each other and share content.
+For new installations, you need to generate an integration key in Adobe Sign and then enter it into [!DNT Workday]. This key authenticates the Adobe Sign and [!DNT Workday] environments to trust each other and share content.
 
 To generate an Integration Key in Adobe Sign:
 
 1. Log in to your administrator in Adobe Sign.
-1. Navigate to **Account &gt; Personal Preferences &gt; Access Tokens**.
+1. Navigate to **[!UICONTROL **Account]** &gt; **[!UICONTROL Personal Preferences]** &gt; **[!UICONTROL Access Tokens**]**.
 1. Click the **circled plus icon** on the right side of the window.
    
-   It opens the *Create Integration Key* interface.
+   It opens the [!UICONTROL Create Integration Key] interface.
 
     ![Image of the navigation to the Access Tokens page](images/navigate-to-group-accesstokens.png)
 
-1. Provide an intuitive name for your key, such as Workday.
+1. Provide an intuitive name for your key, such as [!DNT Workday].
 
     The Integration Key must have the following elements enabled:
 
@@ -71,77 +73,75 @@ To generate an Integration Key in Adobe Sign:
 
     ![The Create Integration Key panel](images/create-integration-key-575.png)
 
-1. Click **Save**.
+1. Click **[!UICONTROL Save]**.
 
-    The *Access Tokens* page is exposed showing the keys designed in your account.
+    The [!UICONTROL Access Tokens] page is exposed showing the keys designed in your account.
 
-1. Click the key definition created for Workday.
+1. Click the key definition created for [!DNT Workday].
 
-    The *Integration Key* link is exposed at the top of the definition.
+    The [!UICONTROL Integration Key] link is exposed at the top of the definition.
 
-1. Click the **Integration Key** link.
+1. Click the **[!UICONTROL Integration Key]** link.
 
     It exposes the integration key.
 
     ![The Integration Key Link](images/integration-key.png)
 
 1. Copy this key and save in a secure place for the next step.
-1. Click **OK**.
+1. Click **[!UICONTROL OK]**.
 
     ![The Integration Key panel](images/copy-the-key-575.png) 
 
-## Configure the Workday tenant {#configuring-the-workday-tenant}
+## Configure the [!DNT Workday] tenant {#configuring-the-workday-tenant}
 
 ### Install the integration key {#install-the-integration-key}
 
-Installing the Integration Key into the Workday tenant establishes the trust relationship with Adobe Sign. Once that relationship is in place, any Business Process can have a *Review Document* step added that enables the signature process.
+Installing the Integration Key into the [!DNT Workday] tenant establishes the trust relationship with Adobe Sign. Once that relationship is in place, any Business Process can have a [!UICONTROL Review Document Step] added that enables the signature process.
 
-**Note**: Adobe Sign is branded as “Adobe Document Cloud” throughout the Workday environment.
+**Note**: Adobe Sign is branded as “Adobe Document Cloud” throughout the [!DNT Workday] environment.
 
 To install the Integration Key:
 
-1. Log in to Workday as an account administrator.
-1. Search for **Edit Tenant Setup - Business Processes**.
-
-    It opens the *Edit Tenant Setup - Business Processes* page.
+1. Log in to [!DNT Workday] as an account administrator.
+1. Search for and open the **[!UICONTROL Edit Tenant Setup - Business Processes]** page.
 
 1. Provide information for the following four fields:
 
-    * **Adobe Document Cloud Acknowledgment**: A fixed text acknowledgment of the integration.
+    * **[!UICONTROL Adobe Document Cloud Acknowledgment]**: A fixed text acknowledgment of the integration.
 
-    * **Adobe Document Cloud API Key**: Where the Integration Key is installed
+    * **[!UICONTROL Adobe Document Cloud API Key]**: Where the Integration Key is installed
 
-    * **Adobe Document Cloud Sender Email Address**: The email address of the group level administrator in Adobe Sign
+    * **[!UICONTROL Adobe Document Cloud Sender Email Address]**: The email address of the group level administrator in Adobe Sign
 
-    * **Remove documents awaiting eSignature when Document is Canceled**: An optional configuration that removes documents from the signature cycle if a document is canceled in Workday.
+    * **[!UICONTROL Remove documents awaiting eSignature when Document is Cancelled]**: An optional configuration that removes documents from the signature cycle if a document is cancelled in [!DNT Workday].
 
     ![The fields for the Adobe Sign Integration Key](images/bp-filled-torn2-575.png)
 
 1. Next, complete the installation:
 
-    1. Paste your Integration key into the *Adobe Sign API Integration Key* field.
-    1. Enter the email address of the Adobe Sign administrator into the *Adobe Document Cloud Sender Email Address* field.
-    1. Click **OK**.
+    1. Paste your Integration key into the [!UICONTROL Adobe Sign API Integration Key] field.
+    1. Enter the email address of the Adobe Sign administrator into the [!UICONTROL Adobe Document Cloud Sender Email Address] field.
+    1. Click **[!UICONTROL OK]**.
 
     ![The Integration Key fields and the key holder email field](images/bp-filled-small.png)
 
-Adobe Sign functionality can now be added to any Business Process by adding a *Review Document* step and configuring it to use “**eSign by Adobe**” as the eSignature type.
+Adobe Sign functionality can now be added to any Business Process by adding a [!UICONTROL Review Document Step] and configuring it to use **[!UICONTROL eSign by Adobe]** as the eSignature type.
 
-### Configure the review document step {#configure-the-review-document-step}
+### Configure the Review Document Step {#configure-the-review-document-step}
 
-The document for the Review Document step can be a static document; a document generated by a Generate Document step within the same business process; or, a formatted report created with the Workday Report Designer. All of these cases can be augmented with [Adobe Text Tags](https://adobe.com/go/adobesign_text_tag_guide) to control the look and position of the Adobe Signing specific components. The document source must be specified within the business process definition. It is not possible to upload an ad hoc document while the business process is executing.
+The document for the Review Document Step can be a static document; a document generated by a Generate Document step within the same business process; or, a formatted report created with the [!DNT Workday] Report Designer. All of these cases can be augmented with [Adobe Text Tags](https://adobe.com/go/adobesign_text_tag_guide) to control the look and position of the Adobe Signing specific components. The document source must be specified within the business process definition. It is not possible to upload an ad hoc document while the business process is executing.
 
-Unique to using Adobe Sign with a Review Document step is the ability to have serialized Signer Groups. Signer groups allow you to specify role-based groups that sign in sequence. Adobe Sign does not support parallel signing groups.
+Unique to using Adobe Sign with a Review Document Step is the ability to have serialized Signer Groups. Signer groups allow you to specify role-based groups that sign in sequence. Adobe Sign does not support parallel signing groups.
 
-For assistance configuring the Review Document step, you may refer to the [Quick Start Guide](https://experienceleague.adobe.com/docs/dc-sign-integrations/using/workday/quick-start.html).
+For assistance configuring the Review Document Step, you may refer to the [Quick Start Guide](https://adobe.com//go/adobesign_workday_quick_start){target="_blank"}.
 
 ## Support {#support}
 
 ### Workday support {#workday-support}
 
-Workday is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
+[!DNT Workday] is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
 
-The workday community has several good articles on how to troubleshoot the integration and generate documents:
+The [!DNT Workday] community has several good articles on how to troubleshoot the integration and generate documents:
 
 * [Troubleshoot eSignature Integrations](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/zhA~hYllD3Hv1wu0CvHH_g)
 * [Review Documents Step](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg)

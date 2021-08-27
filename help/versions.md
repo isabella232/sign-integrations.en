@@ -1,7 +1,12 @@
 ---
 title: Adobe Sign Integrations Product Versions and Lifecycle
-description: Learn how to set up Adobe Sign Integrations
+description: Learn about Adobe Sign Integrations versions and support lifecycle
 audience: External
+products: Adobe Sign
+type: Documentation
+solution: Adobe Sign
+role: User, Developer
+topic: Integrations
 ---
 # Product versions and lifecycle {#version}
 
