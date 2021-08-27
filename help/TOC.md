@@ -1,6 +1,6 @@
 ---
 user-guide-title: Adobe Sign Integrations Guide
-index: no
+index: yes
 role: Leader
 ---
 

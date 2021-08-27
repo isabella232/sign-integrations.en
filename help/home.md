@@ -12,7 +12,7 @@ topic: Integrations
 
 ![banner](images/sign-banner.png)
 
-Learn how to install, integrate, and use Adobe Sign solutions to the existing systems, processes, and applications of your organization.
+Learn how to install, integrate, and use [!DNL Adobe Sign] solutions to the existing systems, processes, and applications of your organization.
 
 ## Featured Articles
 
