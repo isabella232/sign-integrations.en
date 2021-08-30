@@ -12,27 +12,27 @@ role: User, Developer
 topic: Integrations
 ---
 
-# [!DNT Workday] Quick Start Guide{#workday-quick-start-guide}
+# [!DNL Workday] Quick Start Guide{#workday-quick-start-guide}
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
 
 ## Overview {#overview}
 
-This document is designed to help [!DNT Workday] administrators understand how to customize the [!DNT Workday] Business Processes to include Adobe Sign for obtaining e-signatures. To use Adobe Sign within [!DNT Workday], you need to know how to create and modify [!DNT Workday] items such as:
+This document is designed to help [!DNL Workday] administrators understand how to customize the [!DNL Workday] Business Processes to include Adobe Sign for obtaining e-signatures. To use Adobe Sign within [!DNL Workday], you need to know how to create and modify [!DNL Workday] items such as:
 
 * Business Process Framework
 * Tenant Set-up and configuration
-* Reporting and [!DNT Workday] Studio Integration
+* Reporting and [!DNL Workday] Studio Integration
 
-## Accessing Adobe Sign within [!DNT Workday] {#access-adobe-sign}
+## Accessing Adobe Sign within [!DNL Workday] {#access-adobe-sign}
 
 Adobe Sign electronic signature capability is surfaced as [!UICONTROL Review Document Step] action within the Business Process Framework (BPF) and as a Distribute Documents task.
 
 ## [!UICONTROL Review Document Step] {#review-document-step}
 
-Adobe Sign for [!DNT Workday] is exposed via the [!UICONTROL Review Document Step] that you can add to any of over 400 Business Processes within [!DNT Workday], including Offer, Distribute Documents and Tasks, ropose Compensation, and more.
+Adobe Sign for [!DNL Workday] is exposed via the [!UICONTROL Review Document Step] that you can add to any of over 400 Business Processes within [!DNL Workday], including Offer, Distribute Documents and Tasks, ropose Compensation, and more.
 
-You may refer to the [[!DNT Workday] community articles on [!UICONTROL Review Document Step]](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg).
+You may refer to the [[!DNL Workday] community articles on [!UICONTROL Review Document Step]](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg).
 
 There is a 1:1 relationship between [!UICONTROL [!UICONTROL Review Document Step]s] and billable transactions with Adobe Sign. You can combine multiple documents within a single [!UICONTROL Review Document Step] and they are presented as a single package for signature. 
 
@@ -62,7 +62,7 @@ To configure the [!UICONTROL Review Document Step]:
 
     ![Configure Review Document Step](images/configure-rd-stepsmaller-575.png)
 
-1. Optionally, add a ‘redirect user’ for capturing ‘decline to sign’ actions. When users decline, [!DNT Workday] reroutes the documents to a configured security group for review.
+1. Optionally, add a ‘redirect user’ for capturing ‘decline to sign’ actions. When users decline, [!DNL Workday] reroutes the documents to a configured security group for review.
 
 From the related actions menu of a [!UICONTROL Review Document Step], select **[!UICONTROL Business Process]** > **[!UICONTROL Maintain Redirect]**. Next, select one of the following:
 
@@ -88,7 +88,7 @@ The Offer BP is a sub process of the Job Application Dynamic BP that needs to be
 
 In the below example, a [!UICONTROL Review Document Step] is using a Dynamic Document step for both North America and Japan.
 
-![Example of a [!DNT Workday] Business Process](images/bp-for-offersmaller-575.png)
+![Example of a [!DNL Workday] Business Process](images/bp-for-offersmaller-575.png)
 
 This BP does the following:
 
@@ -106,7 +106,7 @@ The Dynamic document being generated in step “ba” is called [!UICONTROL Offe
 
 ![Workday view document page](images/offer-letter-575.png)
 
-The Dynamic offer letter below is created in the [!DNT Workday] rich text editor. The items highlighted in *gray* are [!DNT Workday] provided objects that reference contextual data.
+The Dynamic offer letter below is created in the [!DNL Workday] rich text editor. The items highlighted in *gray* are [!DNL Workday] provided objects that reference contextual data.
 
 Items in {{brackets}} are [Adobe Text tags](https://adobe.com/go/adobesign_text_tag_guide).
 
@@ -120,7 +120,7 @@ The behavior illustrated below will route the dynamically generated document fir
 
 ### Example: Distribute documents {#example-distribute-documents}
 
-Introduced in [!DNT Workday] 30, the Mass Distribute Documents or Tasks task can be used to send a single document to a large group (&lt;20K) of individual signers. It is limited to a single signature per document. Creation of a distribution is performed by accessing the ‘[!UICONTROL Create Distribute Documents or Tasks]’ action from the search bar.
+Introduced in [!DNL Workday] 30, the Mass Distribute Documents or Tasks task can be used to send a single document to a large group (&lt;20K) of individual signers. It is limited to a single signature per document. Creation of a distribution is performed by accessing the ‘[!UICONTROL Create Distribute Documents or Tasks]’ action from the search bar.
 
 Example: Send an employee equity choice form to all managers with Global Modern Services. You can further filter it to individual managers, if desired.
 
@@ -130,7 +130,7 @@ You can also access the **View Distribute Documents or Tasks** report to track t
 
 ### Example: Reporting {#example-reporting}
 
-[!DNT Workday] has a rich reporting infrastructure. To look at the details of the Adobe Sign process, inspect the elements of the *Review Document Event*.
+[!DNL Workday] has a rich reporting infrastructure. To look at the details of the Adobe Sign process, inspect the elements of the *Review Document Event*.
 
 Below is a simple custom report that can be run across all BPs looking for Adobe Sign transactions and their status.
 
@@ -148,13 +148,13 @@ You can see:
 
 ## Signed documents {#signed-documents}
 
-The [!DNT Workday] signature cycle suppresses all email notifications by Adobe Sign. Users are informed of pending actions within their [!DNT Workday] inbox.
+The [!DNL Workday] signature cycle suppresses all email notifications by Adobe Sign. Users are informed of pending actions within their [!DNL Workday] inbox.
 
 Once a document is signed by all Signature Groups, a copy of the signed document is distributed to all the members of the Signature Group via email.
 
 To suppress this behavior, you may contact your Adobe Sign Success Manager or the [Adobe Sign Support team](https://adobe.com/go/adobesign-support-center).
 
-Within [!DNT Workday], you can access the signed documents on the full process record. You may find:
+Within [!DNL Workday], you can access the signed documents on the full process record. You may find:
 
 * Worker documents on the Worker Profile, and
 * Candidate documents (offer letters) on the Candidate profile.
@@ -165,11 +165,11 @@ The below image shows a signed offer letter for the candidate Chris Foxx.
 
 ## Support {#support}
 
-### [!DNT Workday] support {#workday-support}
+### [!DNL Workday] support {#workday-support}
 
-[!DNT Workday] is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
+[!DNL Workday] is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
 
-The [!DNT Workday] community has several good articles on how to troubleshoot the integration and generate documents:
+The [!DNL Workday] community has several good articles on how to troubleshoot the integration and generate documents:
 
 * [Troubleshoot eSignature Integrations](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/zhA~hYllD3Hv1wu0CvHH_g)
 * [Review Documents Step](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg)  

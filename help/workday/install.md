@@ -19,23 +19,23 @@ topic: Integrations
 
 ## Overview {#overview}
 
-This document explains how to integrate Adobe Sign into your [!DNT Workday] tenant. To use Adobe Sign within [!DNT Workday], you need to know how to create and modify [!DNT Workday] items such as:
+This document explains how to integrate Adobe Sign into your [!DNL Workday] tenant. To use Adobe Sign within [!DNL Workday], you need to know how to create and modify [!DNL Workday] items such as:
 
 * Business process framework
 * Tenant set-up and configuration
-* Reporting and [!DNT Workday] studio integration
+* Reporting and [!DNL Workday] studio integration
 
 The high-level steps to complete the integration are: 
 
 * Activate your Administrative account in Adobe Sign (New Customers Only)
-* Configure a Group in Adobe Sign to hold the [!DNT Workday] integration user
-* Establish the OAuth relationship between [!DNT Workday] and Adobe Sign
+* Configure a Group in Adobe Sign to hold the [!DNL Workday] integration user
+* Establish the OAuth relationship between [!DNL Workday] and Adobe Sign
 
 ## Activate your Adobe Sign account {#activating-your-adobe-sign-account}
 
 Existing customers with established accounts can skip to the [Configure Adobe Sign for Workday](#config) topic.
 
-For customers who are new to Adobe Sign and do not have a pre-existing log-in, an Adobe on-boarding specialist provisions your account (in Adobe Sign) for [!DNT Workday]. Once complete, you receive a confirmation email as shown below.
+For customers who are new to Adobe Sign and do not have a pre-existing log-in, an Adobe on-boarding specialist provisions your account (in Adobe Sign) for [!DNL Workday]. Once complete, you receive a confirmation email as shown below.
 
 ![Image of the Welcome Email from Adobe Sign](images/welcome-email-2020.png)
 
@@ -43,13 +43,13 @@ You need to follow the directions in the email to initialize your account and ac
 
 ![The Adobe Sign Dashboard page](images/classic-home.png) 
 
-## Configure Adobe Sign for [!DNT Workday] {#config}
+## Configure Adobe Sign for [!DNL Workday] {#config}
 
-To configure Adobe Sign for [!DNT Workday], you need to generate following two dedicated objects in the Adobe Sign system:
+To configure Adobe Sign for [!DNL Workday], you need to generate following two dedicated objects in the Adobe Sign system:
 
-* **A [!DNT Workday] group**: [!DNT Workday] requires a dedicated “group” within the Adobe Sign account to enable integration functionality. The Adobe Sign group is used to control only the [!DNT Workday] usage of Adobe Sign. Any other potential usage, such as Salesforce.com or Arriba is not impacted. The email notifications are suppressed in [!DNT Workday] group so that the [!DNT Workday] users only receive notifications within their [!DNT Workday] inbox.
+* **A [!DNL Workday] group**: [!DNL Workday] requires a dedicated “group” within the Adobe Sign account to enable integration functionality. The Adobe Sign group is used to control only the [!DNL Workday] usage of Adobe Sign. Any other potential usage, such as Salesforce.com or Arriba is not impacted. The email notifications are suppressed in [!DNL Workday] group so that the [!DNL Workday] users only receive notifications within their [!DNL Workday] inbox.
 
-* **An authenticating user to hold the integration key**: A [!DNT Workday] group must have only one group level administrator, who is the authoritative holder of the integration key. We recommend that the administrator use a functional email address such as `HR@MyDomain.com` instead of a personal email to reduce the risk of having the user disabled in future and consequently disabling the integration.
+* **An authenticating user to hold the integration key**: A [!DNL Workday] group must have only one group level administrator, who is the authoritative holder of the integration key. We recommend that the administrator use a functional email address such as `HR@MyDomain.com` instead of a personal email to reduce the risk of having the user disabled in future and consequently disabling the integration.
 
 ### Create a user and group in Adobe Sign {#create-a-user-and-group-in-adobe-sign}
 
@@ -66,7 +66,7 @@ To create a user in Adobe Sign:
     * Provide a functional email that you can access.
     * Enter an appropriate First and Last name value.
     * Select **[!UICONTROL Create a new group for this user]** from the User Group.    
-    * Provide the **[!UICONTROL New Group Name]** with an intuitive name like *[!DNT Workday]*.
+    * Provide the **[!UICONTROL New Group Name]** with an intuitive name like *[!DNL Workday]*.
 
     ![The Create a User panel](images/create-user.png)
 
@@ -89,10 +89,10 @@ Once you verify the email address, the status of the user changes from [!UICONTR
 
 ### Define the authenticating user {#define-the-authenticating-user}
 
-To promote the new user in the [!DNT Workday] group:
+To promote the new user in the [!DNL Workday] group:
 
 1. Navigate to the [!UICONTROL Users] page (if not already there).
-2. Double-click the user in the [!DNT Workday] group.
+2. Double-click the user in the [!DNL Workday] group.
 
     This opens an [!UICONTROL Edit] page for the user permissions.
 
@@ -101,19 +101,18 @@ To promote the new user in the [!DNT Workday] group:
 
 ![](images/user-permissions-edit1-575.png) 
 
-## Configure the [!DNT Workday] tenant {#configure-workday}
+## Configure the [!DNL Workday] tenant {#configure-workday}
 
-To complete the connection between the [!DNT Workday] tenant and Adobe Sign, we need to establish a trusted relationship between the services. Once done, we can add a Review Document Step that enables the signature process through Adobe Sign.
+To complete the connection between the [!DNL Workday] tenant and Adobe Sign, we need to establish a trusted relationship between the services. Once done, we can add a Review Document Step that enables the signature process through Adobe Sign.
 
 >[!NOTE]
 >
->Adobe Sign is branded as Adobe Document Cloud throughout the [!DNT Workday] environment.
+>Adobe Sign is branded as Adobe Document Cloud throughout the [!DNL Workday] environment.
 
 To establish the trusted relationship:
 
-1. Log in to [!DNT Workday] as an account administrator.
+1. Log in to [!DNL Workday] as an account administrator.
 1. Open the **[!UICONTROL Edit Tenant Setup - Business Processes]** page.
-
 1. Locate the [!UICONTROL eSignature Configuration] section:
 
     ![](images/esignature_configurations.png)
@@ -129,7 +128,7 @@ To establish the trusted relationship:
 >
 >Make sure that you completely log out of any other Adobe Sign instance before proceeding.
 
-Once connected, the Adobe configuration enabled checkbox is set and you can begin using Adobe Sign with [!DNT Workday].
+Once connected, the Adobe configuration enabled checkbox is set and you can begin using Adobe Sign with [!DNL Workday].
 
 ### Configure the Review Document Step {#configure-review}
 
@@ -137,7 +136,7 @@ The document for the Review Document Step can be either one of the following:
 
 * A static document
 * A document generated by a Generate Document step within the same business process
-* A formatted report created with the [!DNT Workday] Report Designer
+* A formatted report created with the [!DNL Workday] Report Designer
 
 You may add any of these docs with [Adobe Text Tags](https://adobe.com/go/adobesign_text_tag_guide) to control the look and position of the Adobe Signing specific components. The document source must be specified within the business process definition. It is not possible to upload an ad-hoc document while the business process is executing.
 
@@ -147,11 +146,11 @@ For assistance configuring the Review Document Step, refer to the [Quick Start g
 
 ## Support {#support}
 
-### [!DNT Workday] support {#workday-support}
+### [!DNL Workday] support {#workday-support}
 
-[!DNT Workday] is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
+[!DNL Workday] is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
 
-You may refer to the following [!DNT Workday] community articles on how to troubleshoot the integration and generate documents:
+You may refer to the following [!DNL Workday] community articles on how to troubleshoot the integration and generate documents:
 
 * [Troubleshoot eSignature integrations](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/zhA~hYllD3Hv1wu0CvHH_g)
 * [Review documents step](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg)
@@ -169,10 +168,10 @@ Adobe Sign Customers should contact their Customer Success Manager (CSM) for sup
 
 ## Common questions {#faq}
 
-### Why is the status not being updated within [!DNT Workday] even when the document is fully signed? {#why-is-the-status-not-being-updated-within-workday-even-the-document-is-fully-signed}
+### Why is the status not being updated within [!DNL Workday] even when the document is fully signed? {#why-is-the-status-not-being-updated-within-workday-even-the-document-is-fully-signed}
 
-The document status in [!DNT Workday] may not reflect if the candidate does not click the '[!UICONTROL Submit]' button after signing in Adobe Sign. 
+The document status in [!DNL Workday] may not reflect if the candidate does not click the '[!UICONTROL Submit]' button after signing in Adobe Sign. 
 
-As per [!DNT Workday] task Check eSignature Signing Status: To start the process, the user can submit the associated Inbox task.
+As per [!DNL Workday] task Check eSignature Signing Status: To start the process, the user can submit the associated Inbox task.
 
-As per [!DNT Workday] Development: The original signing completes the process only if the user submits the inbox task after signing the document. After signing, the iframe is closed and the user is redirected to the same task where they can click the [!UICONTROL Submit] button to complete the process.
+As per [!DNL Workday] Development: The original signing completes the process only if the user submits the inbox task after signing the document. After signing, the iframe is closed and the user is redirected to the same task where they can click the [!UICONTROL Submit] button to complete the process.
