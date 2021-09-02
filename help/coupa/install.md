@@ -35,13 +35,13 @@ The high-level steps to complete the integration are:
 
 To have a dedicated usage of Adobe Sign for [!DNL Coupa] within your organization, the administrators must create an Adobe Sign group specifically for [!DNL Coupa BSM Suite] usage. This Adobe Sign group should have a single group admin user account that acts as the service account. Since this service account is used for all signature requests, it should be kept anonymous, for instance `Legal@xyz.com`, `Purchasing@xyz.com`, `CoupaCLM@xyz.com`, or else, rather than personal, such as `Bob.Smith@xyz.com`.  
 
-### Create a User and Group in Adobe Sign {#create-sign user-group}
+### Create a User and Group in Adobe Sign {#create-sign-user-group}
 
 To create a user in Adobe Sign:
 
 1. Log in to Adobe Sign as the account administrator.
 1. Navigate to **[!UICONTROL Account]** > **[!UICONTROL Users]**.
-1. Click the ![plus icon image](images/icon_plus.png) to create a new user. 
+1. To create a new user, click the ![plus icon image](images/icon_plus.png) to create a new user. 
 
     ![Image of the navigation path to create a new user](images/navigate-to-group.png)
 
@@ -49,7 +49,7 @@ To create a user in Adobe Sign:
 
     * Provide a functional email that you can access.
         * This user establishes and maintains the OAuth relationship
-        * The email address needs to be an actual address for verification.
+        * The email address must be an actual address for verification.
     * Enter an appropriate First and Last name value.
     * Select **[!UICONTROL Create a new group for this user]** from the User Group.    
     * Provide the **[!UICONTROL New Group Name]** with an intuitive name like *[!DNL Coupa BSM Suite]*.
@@ -67,7 +67,7 @@ The [!UICONTROL CREATED] status indicates that the user has not yet verified the
 1. Log in to the new user’s email.
 2. Find the “Welcome to Adobe Sign” email.
 
-    Note: You may need to check spam/junk folders.
+    Note: You may check spam/junk folders.
 
 3. Click where it says **[!UICONTROL Click here to set your password]**.
 4. Set the password.
@@ -78,7 +78,7 @@ Once you verify the email address, the status of the user changes from [!UICONTR
 
 ### Define the authenticating user {#define-authenticating-user}
 
-Once you create a Group and a User in that group, you need to make the user a ‘Group Admin’.
+Once you create a Group and a User in that group, you must make the user a ‘Group Admin’.
 
 To promote the new user in the [!DNL Coupa BSM Suite] group:
 
