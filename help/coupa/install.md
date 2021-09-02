@@ -11,29 +11,29 @@ role: User, Developer
 topic: Integrations
 ---
 
-# [!DNT Coupa] Installation Guide{#coupa-installation-guide}
+# [!DNL Coupa] Installation Guide{#coupa-installation-guide}
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
 
 ## Overview {#overview}
 
-This document explains how to configure your Adobe Sign account to integrate [!DNT Coupa BSM Suite] instance for getting signatures.
+This document explains how to configure your Adobe Sign account to integrate [!DNL Coupa BSM Suite] instance for getting signatures.
 
 Prerequisites:
 
 * Subscription to Adobe Sign Enterprise, Adobe Sign Developer Edition, or Adobe Sign Enterprise Trial
 * Adobe Sign administrator access
-* [!DNT Coupa BSM Suite] Standard or Advanced instance
+* [!DNL Coupa BSM Suite] Standard or Advanced instance
 
 The high-level steps to complete the integration are:
 
-* Configure an Adobe Sign Group for use with [!DNT Coupa BSM Suite]
-* Connect [!DNT Coupa BSM Suite] to Adobe Sign 
-* Create an Adobe Sign webhook for notifying your [!DNT Coupa BSM Suite] instance
+* Configure an Adobe Sign Group for use with [!DNL Coupa BSM Suite]
+* Connect [!DNL Coupa BSM Suite] to Adobe Sign 
+* Create an Adobe Sign webhook for notifying your [!DNL Coupa BSM Suite] instance
 
-## Configure Adobe Sign Group for [!DNT Coupa BSM Suite] {#configure-adobe-sign-for-coupa}
+## Configure Adobe Sign Group for [!DNL Coupa BSM Suite] {#configure-adobe-sign-for-coupa}
 
-To have a dedicated usage of Adobe Sign for [!DNT Coupa] within your organization, the administrators must create an Adobe Sign group specifically for [!DNT Coupa BSM Suite] usage. This Adobe Sign group should have a single group admin user account that acts as the service account. Since this service account is used for all signature requests, it should be kept anonymous, for instance `Legal@xyz.com`, `Purchasing@xyz.com`, `CoupaCLM@xyz.com`, or else, rather than personal, such as `Bob.Smith@xyz.com`.  
+To have a dedicated usage of Adobe Sign for [!DNL Coupa] within your organization, the administrators must create an Adobe Sign group specifically for [!DNL Coupa BSM Suite] usage. This Adobe Sign group should have a single group admin user account that acts as the service account. Since this service account is used for all signature requests, it should be kept anonymous, for instance `Legal@xyz.com`, `Purchasing@xyz.com`, `CoupaCLM@xyz.com`, or else, rather than personal, such as `Bob.Smith@xyz.com`.  
 
 ### Create a User and Group in Adobe Sign {#create-sign user-group}
 
@@ -52,7 +52,7 @@ To create a user in Adobe Sign:
         * The email address needs to be an actual address for verification.
     * Enter an appropriate First and Last name value.
     * Select **[!UICONTROL Create a new group for this user]** from the User Group.    
-    * Provide the **[!UICONTROL New Group Name]** with an intuitive name like *[!DNT Coupa BSM Suite]*.
+    * Provide the **[!UICONTROL New Group Name]** with an intuitive name like *[!DNL Coupa BSM Suite]*.
 
     ![The Create a User panel](images/create-user.png)
 
@@ -80,7 +80,7 @@ Once you verify the email address, the status of the user changes from [!UICONTR
 
 Once you create a Group and a User in that group, you need to make the user a ‘Group Admin’.
 
-To promote the new user in the [!DNT Coupa BSM Suite] group:
+To promote the new user in the [!DNL Coupa BSM Suite] group:
 
 1. Navigate to the [!UICONTROL Users] page (if not already there).
 2. Double-click on the user.
@@ -97,12 +97,12 @@ To promote the new user in the [!DNT Coupa BSM Suite] group:
 
 To complete the connection between the [!DNL Coupa BSM Suite ] instance and Adobe Sign, a trusted relationship must be established between the services. 
 
-To configure the [!DNT Coupa BSM Suite]:
+To configure the [!DNL Coupa BSM Suite]:
 
-1. Connect your [!DNT Coupa BSM Suite] instance to your Adobe Sign service account that you created above.
+1. Connect your [!DNL Coupa BSM Suite] instance to your Adobe Sign service account that you created above.
 1. Create an Adobe Sign webhook instance to notify your Coupa BSM Suite instance about updates to agreements.
 
-For more details on how to connect the [!DNT Coupa BSM Suite] and how to create and register webhook, refer to [Adobe Sign Coupa BSM Suite Instance support documentation](https://success.coupa.com/Support/Docs/Power_Apps/CLM_Standard/Signing_and_Approvals/Enable_E-Signatures_Through_Adobe_Sign_and_DocuSign){target="_blank"}.
+For more details on how to connect the [!DNL Coupa BSM Suite] and how to create and register webhook, refer to [Adobe Sign Coupa BSM Suite Instance support documentation](https://success.coupa.com/Support/Docs/Power_Apps/CLM_Standard/Signing_and_Approvals/Enable_E-Signatures_Through_Adobe_Sign_and_DocuSign){target="_blank"}.
 
 ## Support {#support}
 
