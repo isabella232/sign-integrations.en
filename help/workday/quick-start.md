@@ -18,7 +18,7 @@ topic: Integrations
 
 ## Overview {#overview}
 
-This document is designed to help [!DNL Workday] administrators understand how to customize the [!DNL Workday] Business Processes to include Adobe Sign for obtaining e-signatures. To use Adobe Sign within [!DNL Workday], you need to know how to create and modify [!DNL Workday] items such as:
+This document is designed to help [!DNL Workday] administrators understand how to customize the [!DNL Workday] Business Processes to include Adobe Sign for obtaining e-signatures. To use Adobe Sign within [!DNL Workday], you must know how to create and modify [!DNL Workday] items such as:
 
 * Business Process Framework
 * Tenant Set-up and configuration
@@ -30,7 +30,7 @@ Adobe Sign electronic signature capability is surfaced as [!UICONTROL Review Doc
 
 ## [!UICONTROL Review Document Step] {#review-document-step}
 
-Adobe Sign for [!DNL Workday] is exposed via the [!UICONTROL Review Document Step] that you can add to any of over 400 Business Processes within [!DNL Workday], including Offer, Distribute Documents and Tasks, ropose Compensation, and more.
+Adobe Sign for [!DNL Workday] is exposed via the [!UICONTROL Review Document Step] that you can add to any of over 400 Business Processes within [!DNL Workday], including Offer, Distribute Documents and Tasks, Propose Compensation, and more.
 
 You may refer to the [[!DNL Workday] community articles on [!UICONTROL Review Document Step]](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg).
 
@@ -72,7 +72,7 @@ From the related actions menu of a [!UICONTROL Review Document Step], select **[
 
 ## Business process step notes {#business-process-step-notes}
 
-The Business Process Framework is powerful; however, you need to ensure that:
+The Business Process Framework is powerful; however, you must ensure that:
 
 * Every Business Process must have a completion step, which is ideally at the end of the business process.
 
