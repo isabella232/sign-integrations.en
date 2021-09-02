@@ -35,7 +35,7 @@ The high-level steps to complete the integration are:
 
 To have a dedicated usage of Adobe Sign for [!DNL Coupa] within an organization, the administrators must create an Adobe Sign group specifically for [!DNL Coupa BSM Suite] usage. This Adobe Sign group should have a single group admin user account that acts as the service account. Since this service account is used for all signature requests, it should be kept anonymous, for instance, `Legal@xyz.com`, `Purchasing@xyz.com`, or `CoupaCLM@xyz.com`, rather than personal, such as `Bob.Smith@xyz.com`.  
 
-### Create a User and Group in Adobe Sign {#create-sign-user-group}
+### Create a Group and a User in Adobe Sign {#create-sign-user-group}
 
 To create a user in Adobe Sign:
 
@@ -93,7 +93,7 @@ To promote the new user in the [!DNL Coupa BSM Suite] group:
 4. Deselect the **[!UICONTROL User is an account admin]** and **[!UICONTROL User can sign documents]** options.
 5. Click **[!UICONTROL Save]**.
 
-![](images/user-settings.png) 
+    ![Image of user settings](images/user-settings.png) 
 
 ## Configure the [!DNL Coupa BSM Suite] instance {#configure-coupa}
 
