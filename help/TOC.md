@@ -14,6 +14,6 @@ role: Leader
   + [Quick Start Guide](workday/quick-start.md)
   + [Trial Account Set-up Guide](workday/trial-install.md)
   + [Integration Tutorial](workday/tutorial-video.md)
-+ Adobe Sign for Coupa BSM Suit {#coupa}
++ Adobe Sign for Coupa BSM Suite {#coupa}
   + [Installation Guide](coupa/install.md)
 
