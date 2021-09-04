@@ -7,6 +7,7 @@ type: Documentation
 solution: Adobe Sign
 role: User, Developer
 topic: Integrations
+exl-id: c1f22848-7951-4066-84d4-f8cf6c2f3a6f
 ---
 # Product versions and lifecycle {#version}
 
