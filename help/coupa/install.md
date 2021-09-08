@@ -21,7 +21,7 @@ This document explains how to configure your Adobe Sign account to integrate [!D
 
 Prerequisites:
 
-* Subscription to Adobe Sign Enterprise, Adobe Sign Developer Edition, or Adobe Sign Enterprise Trial
+* Subscription to Adobe Sign Enterprise, [Adobe Sign Developer Edition](https://www.adobe.com/sign/developer-form.html), or [Adobe Sign Enterprise Trial](https://www.adobe.com/sign/business.html)
 * Adobe Sign administrator access
 * [!DNL Coupa BSM Suite] Standard or Advanced instance
 
@@ -42,19 +42,16 @@ To create a user in Adobe Sign:
 1. Log in to Adobe Sign as the account administrator.
 1. Navigate to **[!UICONTROL Account]** > **[!UICONTROL Users]**.
 1. To create a new user, click the ![plus icon image](images/icon_plus.png) icon. 
-
-    ![Image of the navigation path to create a new user](images/navigate-to-group.png)
-
 1. In the dialog that opens, provide the new user details:
 
-    * Provide a functional email that you can access.
+    1. Provide a functional email that you can access.
 
         * This user establishes and maintains the OAuth relationship.
         * The email address must be an actual address for verification.
 
-    * Enter appropriate values for [!UICONTROL First Name] and [!UICONTROL Last Name].
-    * In the [!UICONTROL Primary Group] field, select **[!UICONTROL Create a new group for this user]**.    
-    * In the [!UICONTROL New Group Name] field, provide an intuitive group name like *[!DNL Coupa BSM Suite]*.
+    1. Enter appropriate values for [!UICONTROL First Name] and [!UICONTROL Last Name].
+    1. In the [!UICONTROL Primary Group] field, select **[!UICONTROL Create a new group for this user]**.    
+    1. In the [!UICONTROL New Group Name] field, provide an intuitive group name like *[!DNL Coupa BSM Suite]*.
 
     ![The Create a User panel](images/create-user.png)
 
@@ -65,14 +62,12 @@ To create a user in Adobe Sign:
     ![A view of the new created user](images/post-user-creation.png)
 
     The [!UICONTROL CREATED] status indicates that the user has not yet verified their email address. 
+
 1. To verify the email address:
     1. Log in to the new user’s email.
-    2. Find the “Welcome to Adobe Sign” email.
-
-    Note: You may check spam/junk folders.
-
-1. Click where it says **[!UICONTROL Click here to set your password]**.
-1. Set the password.
+    2. Find the “Welcome to Adobe Sign” email. Check spam/junk folders if needed.
+    3. Click where it says **[!UICONTROL Click here to set your password]**
+    4. Set the password.
 
     Once you verify the email address, the status of the user changes from [!UICONTROL CREATED] to [!UICONTROL ACTIVE].
 
@@ -118,5 +113,8 @@ For any queries, contact [Coupa Support](https://success.coupa.com/Support/Welco
 
 Adobe Sign is the integration partner and should be contacted if the integration is failing to obtain signatures, or if notification of pending signatures fails.
 
-For help with using or configuring Adobe Sign, you may contact your Customer Success Manager (CSM) or Adobe Support. Alternatively, Adobe Technical Support can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).Adobe Sign administrators can open tickets and obtain support via the Help (?) in the upper right of the Adobe Sign portal.
+For help with using or configuring Adobe Sign, you may contact your Customer Success Manager (CSM) or contact [Adobe Sign support](https://adobe.com/go/adobesign-support-center).  
+
+Adobe Sign administrators can also open tickets and obtain support via the Help (?) in the upper right of the Adobe Sign portal.
+
 ![Image of Adobe Sign portal help](images/sign-portal-help.png)
