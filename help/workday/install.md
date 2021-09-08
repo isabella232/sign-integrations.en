@@ -6,13 +6,13 @@ product: Adobe Sign
 topic-tags: EchoSign/Integrations
 content-type: reference
 discoiquuid: 29d55a25-6e2f-4c59-ae7c-c21bb82cecba
-locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently published localized page for guidance) 
+locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently published localized page for guidance)
 type: Documentation
 solution: Adobe Sign
 role: User, Developer
 topic: Integrations
+exl-id: 8f12b524-2123-45d4-98d5-b2b23580a5ea
 ---
-
 # Workday Installation Guide{#workday-installation-guide}
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
