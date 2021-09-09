@@ -16,4 +16,6 @@ role: Leader
   + [Integration Tutorial](workday/tutorial-video.md)
 + Adobe Sign for Coupa BSM Suite {#coupa}
   + [Installation Guide](coupa/install.md)
-
++ Adobe Sign for Veeva Vault {veeva}
+  + [Installation Guide](veeva/install.md)
+  + [User Guide](veeva/user.md)

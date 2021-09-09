@@ -1,5 +1,5 @@
 ---
-title: Veeva Vault Installation Guide
+title: [!DNL Veeva Vault] Installation Guide
 description: Installation guide for enabling the Adobe Sign integration with Veeva
 product: Adobe Sign
 topic-tags: EchoSign/Integrations
@@ -11,30 +11,30 @@ role: User, Developer
 topic: Integrations
 ---
 
-# Veeva Vault Installation Guide{#veeva-installation-guide}
+# [!DNL Veeva Vault] Installation Guide{#veeva-installation-guide}
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
 
 ## Overview {#overview}
 
-This document explains how to establish integration of Adobe Sign with [!DNL Veeva Vault] platform. [!DNL Veeva Vault] is an Enterprise Content Management (ECM) platform built for life sciences. A "Vault" is a content and data repository with typical usage for regulatory filings, research reporting, grants applications, general contracting, and more. A single enterprise can have multiple 'vaults' that need to be maintained separately.
+This document explains how to establish integration of Adobe Sign with [!DNL [!DNL Veeva Vault]] platform. [!DNL [!DNL Veeva Vault]] is an Enterprise Content Management (ECM) platform built for life sciences. A "Vault" is a content and data repository with typical usage for regulatory filings, research reporting, grants applications, general contracting, and more. A single enterprise can have multiple 'vaults' that need to be maintained separately.
 
-## Configure Veeva Vault
+## Configure [!DNL Veeva Vault]
 
-To configure [!DNL Veeva Vault] for integration with Adobe Sign, we create certain objects that help track the history of an agreement lifecycle in Vault. Admins need to create the following objects:
+To configure [!DNL [!DNL Veeva Vault]] for integration with Adobe Sign, we create certain objects that help track the history of an agreement lifecycle in Vault. Admins need to create the following objects:
 
 * Signature
 * Signatory
 * Signature Event
 * Process Locker
 
-### Create Signature object  
+### Create Signature object  {#create-signature-object}
 
 Signature object is created to store agreement related information. A Signaure object is a database that contains information under following specific fields:
 
 **Signature object fields**
 
-Field |Label |Type |Description
+Field |Label |Type |Description |
 --- | --- | ---| ---
 external_id__c |Agreement Id|String (100) |Holds the Adobe Sign’s unique agreement id
 file_hash__c |File Hash|String (50) |Holds the md5 chcksum of the file that has been sent to Adobe Sign
@@ -49,13 +49,13 @@ viewable_rendition_used__c|Viewable Rendition Used|Boolean|Flag that indicates i
 
 ![Image of signature object details](images/signature-object-details.png) 
 
-### Create Signatory object  
+### Create Signatory object {#create-signatory-object}
 
 Signatory object is created to store information related to the participants in an agreement. It contains information under following specific fields:
 
 **Signatory object fields**
 
-Field |Label |Type |Description
+Field |Label |Type |Description |
 --- | --- | ---| ---
 email__c |Email |String (120) |Holds the Adobe Sign’s unique agreement id
 external_id__c |Participant Id |String (80) |Holds Adobe Sign unique participant’s identifier
@@ -68,11 +68,11 @@ user__c |User |Object (User) |Holds the reference to the signatory’s user reco
 
 ![Image of signatory details](images/signatory-object-details.png) 
 
-### Create Signature Event object  
+### Create Signature Event object  {#create-signature-event}
 
 Signaure Event object is created to store an agreement's event related information. It contains information under following specific fields:
 
-Field |Label |Type |Description
+Field |Label |Type |Description |
 --- | --- | ---| ---
 acting_user_email__c|Acting User Email|String|Holds the email of Adobe Sign user that performed the action that caused event to be generated
 acting_user_name__c|Acting User Name|String|Holds the name of Adobe Sign user that performed the action that caused event to be generated
@@ -87,13 +87,13 @@ signature__c|Signature|Object (Signature)|Holds the reference to the signature p
 
 ![Image of signature event details](images/signature-event-object-details.png) 
 
-### Create Process Locker object  
+### Create Process Locker object  {#create-process-locker}
 
 A Process Locker object is created to lock the Adobe Sign integration process. It does not require any custom fields.
 
 ![Image of signature event details](images/process-locker-details.png) 
 
-## Create Security profiles {security-profiles}
+## Create Security profiles{#security-profiles}
 
 For successful integration of the Vault, a new security profile called *Adobe Sign Integration Profile* is created and its permission is set for *Adobe Sign Admin Actions*. The Adobe Sign Integration Profile is assigned to the system account and is used by the integration when calling Vault APIs. This profile allows permissions for:
 
@@ -112,7 +112,7 @@ To configure Adobe Sign for [!DNL Vault], a new group called *Adobe Sign Admin G
 
 ![Image of signature event details](images/create-admin-group.png)
 
-## Create User {create-user}
+## Create User {#create-user}
 
 The Vault system account user of Adobe Sign integration must:
 
@@ -123,13 +123,13 @@ The Vault system account user of Adobe Sign integration must:
 
 To ensure that system account user belongs to the Adobe Sign Admin Group for the specific document lifecycle, you need to create User Role Setup records.
 
-## Create Application Roles {create-user}
+## Create Application Roles {#create-application-roles}
 
 You need to create application role called *Adobe Sign Admin Role*. This role must be defined in lifecycle of each document type that is eligible for Adobe Signature. For each of Adobe Sign specific lifecycle states, Adobe Sign Admin Role is added and configured with the appropriate permissions.
 
 ![Image of create application roles](images/create-application-roles.png)
 
-## Create Document Fields {create-fields}
+## Create Document Fields {#create-fields}
 
 To establish integration with Adobe Sign, admins need to create following two new shared document fields:
 
@@ -146,7 +146,7 @@ Admins need to add the existing shared field *Disable Vault Overlays (disable_va
 
 ![Image of allow adobe sign user actions](images/allow-adobe-sign-user-actions.png)
 
-## Create Document Renditions {create-renditions}
+## Create Document Renditions {#create-renditions}
 
 Admins need to create a new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c)*, which is used by Vault integration to upload signed PDF documents to Adobe Sign. The Adobe Sign rendition should be declared for each document type that is eligible for Adobe Signature.
 
@@ -154,7 +154,7 @@ Admins need to create a new rendition type called *Adobe Sign Rendition (adobe_s
 
 ![Image of rendition types](images/edit-details-clinical-type.png)
 
-## Configure web actions {web-actions}
+## Configure web actions {#web-actions}
 
 Adobe Sign and Vault integration requires you to create and configure following two web actions:
 
@@ -170,11 +170,11 @@ Adobe Sign and Vault integration requires you to create and configure following 
     Target: Display within Vault
     URL: <https://{integrationDomain}/adobe-sign-int/cancel?docId=${Document.id}&majVer=${Document.major_version_number__v}&minVer=${Document.minor_version_number__v}&sessionId=${Session.id}&vaultId=${Vault.Id>}
 
-## Update document lifecycle {document-lifecycle}
+## Update document lifecycle {#document-lifecycle}
 
 For each document type eligible for Adobe Signature, corresponding document lifecycle must be updated by adding new lifecycle role and states. 
 
-### Lifecycle role {lifecycle-role}
+### Lifecycle role {l#ifecycle-role}
 
 Adobe Sign Admin application role must be added in all lifecycles used by documents eligible for Adobe Signature. This role should be created with the following options:
 
@@ -183,7 +183,7 @@ Adobe Sign Admin application role must be added in all lifecycles used by docume
 
 ![Image of lifecycle admin roles](images/document-lifecycle-admin-role.png)
 
-### Lifecycle states {lifecycle-states}
+### Lifecycle states {#lifecycle-states}
 
 Adobe Sign agreement lifecycle has following states: 
 
@@ -239,15 +239,15 @@ Following diagram illustrates the mappings between Adobe Sign agreement and Vaul
 
 ![Image of Adobe Sign Vault mappints](images/sign-vault-mappings.png)
 
-## Create Document Type Group and User Role Setup  {document-type-group-user-role}
+## Create Document Type Group and User Role Setup  {#document-type-group-user-role}
 
-### Create Document Type Group
+### Create Document Type Group {#create-document-type-group}
 
 Admins need to create new Document Type Group record called “Adobe Sign Document”. This document type group is added for all document classifications that are eligible for Adobe Sign process. Since document type group property is not inherited from type to sub-type nor from sub-type to classification level, it must be set for each document’s classification that is eligible for Adobe Sign.
 
 ![Image of document type](images/document-type.png)
 
-### Create User Role Setup
+### Create User Role Setup {#create-user-role-setup}
 
 Once lifecycle(s) is(are) properly configured, the system should ensure that Adobe Sign Admin user is added by DAC for all documents that are eligible for Adobe Sign process. This is done by creating the appropriate User Role Setup record that specifies:
 
@@ -261,9 +261,9 @@ Once lifecycle(s) is(are) properly configured, the system should ensure that Ado
 >
 >If User Role Setup object does not contain the field that refers to Document Type Group object, then this field should be added.
 
-## Package deployment lifecycle {deployment-lifecycle}
+## Package deployment lifecycle {#deployment-lifecycle}
 
-### General deployment lifecycle {general-deployment}
+### General deployment lifecycle {#general-deployment}
 
 **Step 1.** Create a new application Role called 'Adobe Sign Admin Role'.
 
@@ -287,7 +287,7 @@ Once lifecycle(s) is(are) properly configured, the system should ensure that Ado
 
 **Step 11.** Once all configurations are complete, the system should ensure that Adobe Sign Admin user is added by DAC for all documents that are eligible for Adobe Sign process. This is done by creating the appropriate User Role Setup record that specifies the Document Type Group as 'Adobe Sign Document', Application Role as 'Adobe Sign Admin Role' and an integration user.
 
-### Specific deployment lifecycle {specific-deployment}
+### Specific deployment lifecycle {#specific-deployment}
 
 **Step 1.** Create a new Application Role called 'Adobe Sign Admin Role'.
 
