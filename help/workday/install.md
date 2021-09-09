@@ -13,7 +13,7 @@ role: User, Developer
 topic: Integrations
 exl-id: 8f12b524-2123-45d4-98d5-b2b23580a5ea
 ---
-# Workday Installation Guide{#workday-installation-guide}
+# [!DNL Workday] Installation Guide{#workday-installation-guide}
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
 
@@ -33,7 +33,7 @@ The high-level steps to complete the integration are:
 
 ## Activate your Adobe Sign account {#activating-your-adobe-sign-account}
 
-Existing customers with established accounts can skip to the [Configure Adobe Sign for Workday](#config) topic.
+Existing customers with established accounts can skip to the [Configure Adobe Sign for [!DNL Workday]](#config) topic.
 
 For customers who are new to Adobe Sign and do not have a pre-existing log-in, an Adobe on-boarding specialist provisions your account (in Adobe Sign) for [!DNL Workday]. Once complete, you receive a confirmation email as shown below.
 

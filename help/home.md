@@ -31,12 +31,12 @@ Learn how to install, integrate, and use [!DNL Adobe Sign] solutions to the exis
   </td>
   <td>
     <a href="workday/tutorial-video.md">
-      <img alt="Integrating Adobe Sign with Workday" src="images/wd-integration.png"/>
+      <img alt="Integrating Adobe Sign with [!DNL Workday]" src="images/wd-integration.png"/>
     </a>
     <div>
-    <a href="workday/tutorial-video.md"><strong>Integrating Adobe Sign with Workday</strong></a>
+    <a href="workday/tutorial-video.md"><strong>Integrating Adobe Sign with [!DNL Workday]</strong></a>
     </div>
-    <em>Learn how to configure Adobe Sign to work within Workday for managing all your documents</em>
+    <em>Learn how to configure Adobe Sign to work within [!DNL Workday] for managing all your documents</em>
   </td>
   <td>
     <img alt="Spacer" src="images/whitespace.png"/>

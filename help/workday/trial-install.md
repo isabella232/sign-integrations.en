@@ -137,7 +137,7 @@ For assistance configuring the Review Document Step, you may refer to the [Quick
 
 ## Support {#support}
 
-### Workday support {#workday-support}
+### [!DNL Workday] support {#workday-support}
 
 [!DNL Workday] is the integration owner, and should be your first point of contact for questions about the scope of the integration, feature requests, or problems in day to day function of the integration.
 
