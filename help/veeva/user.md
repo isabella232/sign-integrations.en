@@ -32,4 +32,4 @@ Adobe Sign integration with Veeva Vault streamlines and expedite your document a
 
 ## Send an Agreement using Adobe Sign for Veeva Vault {#send-sign-vault-agreement}
 
-To send a
+To send an agreement using Adobe Sign for Veeva:
