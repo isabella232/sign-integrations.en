@@ -28,7 +28,7 @@ Adobe Sign integration with [!DNL Veeva Vault] streamlines and expedite your doc
 * Send contracts for e-signature or approval from [!DNL Veeva Vault], access real-time contract history, and view saved contracts.
 * Track the deals in real-time across your organization and get updates when agreements are viewed, signed, canceled, or declined.
 * eSign in over 20 languages and support fax-back service in 50+ locales worldwide.
-* Create reusable Agreement Templates for sending options and enable one-click 'Send for Signature’ buttons.
+* Create reusable Agreement Templates for sending options.
 
 ## Send an Agreement using Adobe Sign for [!DNL Veeva Vault] {#send-sign-vault-agreement}
 
@@ -124,5 +124,5 @@ To send an agreement using Adobe Sign for Veeva:
 
     ![](images/cancel-reviewed.png)
 
-After the document status changed to Review, you can again send it out for signature.
+After the document status changes to Review, you can again send it out for signature.
 
