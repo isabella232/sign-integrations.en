@@ -4,13 +4,13 @@ description: Installation guide for enabling the Adobe Sign integration with Vee
 product: Adobe Sign
 topic-tags: EchoSign/Integrations
 content-type: reference
-locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently published localized page for guidance) 
+locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently published localized page for guidance)
 type: Documentation
 solution: Adobe Sign
 role: User, Developer
 topic: Integrations
+exl-id: 5d61a428-06e4-413b-868a-da296532c964
 ---
-
 # [!DNL Veeva Vault] Installation Guide{#veeva-installation-guide}
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
@@ -298,4 +298,3 @@ Once lifecycle(s) is(are) properly configured, the system should ensure that Ado
 **Step 4.** Create a new User Managed Group called 'Adobe Sign Admin Group'.
 
 **Step 5.** Create one Integration User profile with Security profile called 'Adobe Sign Integration Profile' and assign to Adobe Sign Admin Group.
-
