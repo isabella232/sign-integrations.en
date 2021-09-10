@@ -34,18 +34,18 @@ Signature object is created to store agreement related information. A Signaure o
 
 **Signature object fields**
 
-Field |Label |Type |Description |
---- | --- | ---| ---
-external_id__c |Agreement Id|String (100) |Holds the Adobe Sign’s unique agreement id
-file_hash__c |File Hash|String (50) |Holds the md5 chcksum of the file that has been sent to Adobe Sign
-name__v|Name|String (128)|Holds the agreement name
-sender__c  |Sender  |Object (User)  |Holds the reference to the Vault user that has created the agreement
-signature_status__c  |Signature Status  |String (75) |Holds the agreement’s status in Adobe Sign
-signature_type__c|Signature Type|String (20)|Holds the agreement’s signature type in Adobe Sign (WRITTEN or ESIGN)
-start_date__c|Start Date|DateTime|Date when agreement has been sent for signature
-cancellation_date__c|Cancellation Date|DateTime|Holds the date when agreement has been cancelled.
-completion_date__c|Completion Date|DateTime|Holds the date when agreement has been completed.
-viewable_rendition_used__c|Viewable Rendition Used|Boolean|Flag that indicates if viewable rendition has been sent for signature. (by default, it is true)
+| Field | Label | Type | Description |
+| --- | --- | ---| --- | 
+|external_id__c |Agreement Id|String (100) |Holds the Adobe Sign’s unique agreement id|
+|file_hash__c |File Hash|String (50) |Holds the md5 chcksum of the file that has been sent to Adobe Sign|
+|name__v|Name|String (128)|Holds the agreement name|
+|sender__c  |Sender  |Object (User)  |Holds the reference to the Vault user that has created the agreement|
+|signature_status__c  |Signature Status  |String (75) |Holds the agreement’s status in Adobe Sign|
+|signature_type__c|Signature Type|String (20)|Holds the agreement’s signature type in Adobe Sign (WRITTEN or ESIGN)|
+|start_date__c|Start Date|DateTime|Date when agreement has been sent for signature|
+|cancellation_date__c|Cancellation Date|DateTime|Holds the date when agreement has been cancelled.|
+|completion_date__c|Completion Date|DateTime|Holds the date when agreement has been completed.|
+|viewable_rendition_used__c|Viewable Rendition Used|Boolean|Flag that indicates if viewable rendition has been sent for signature. (by default, it is true)|
 
 ![Image of signature object details](images/signature-object-details.png) 
 
@@ -55,16 +55,16 @@ Signatory object is created to store information related to the participants in 
 
 **Signatory object fields**
 
-Field |Label |Type |Description |
---- | --- | ---| ---
-email__c |Email |String (120) |Holds the Adobe Sign’s unique agreement id
-external_id__c |Participant Id |String (80) |Holds Adobe Sign unique participant’s identifier
-name__v |Name |String (128) |Holds Adobe Sign participant’s name
-order__c |Order |Number |Holds Adobe Sign agreement participant’s order number
-role__c |Role |String (30) |Holds Adobe Sign agreement participant’s role
-signature__c |Signature |Object (Signature) |Holds the reference to the signature parent record
-signature_status__c |Signature Status |String (100) |Holds Adobe Sign agreement participant’s status
-user__c |User |Object (User) |Holds the reference to the signatory’s user record if participant is a Vault user
+| Field | Label | Type | Description |
+| --- | --- | ---| --- | 
+|email__c |Email |String (120) |Holds the Adobe Sign’s unique agreement id|
+|external_id__c |Participant Id |String (80) |Holds Adobe Sign unique participant’s identifier|
+|name__v |Name |String (128) |Holds Adobe Sign participant’s name|
+|order__c |Order |Number |Holds Adobe Sign agreement participant’s order number|
+|role__c |Role |String (30) |Holds Adobe Sign agreement participant’s role|
+|signature__c |Signature |Object (Signature) |Holds the reference to the signature parent record|
+|signature_status__c |Signature Status |String (100) |Holds Adobe Sign agreement participant’s status|
+|user__c |User |Object (User) |Holds the reference to the signatory’s user record if participant is a Vault user|
 
 ![Image of signatory details](images/signatory-object-details.png) 
 
@@ -72,18 +72,18 @@ user__c |User |Object (User) |Holds the reference to the signatory’s user reco
 
 Signaure Event object is created to store an agreement's event related information. It contains information under following specific fields:
 
-Field |Label |Type |Description |
---- | --- | ---| ---
-acting_user_email__c|Acting User Email|String|Holds the email of Adobe Sign user that performed the action that caused event to be generated
-acting_user_name__c|Acting User Name|String|Holds the name of Adobe Sign user that performed the action that caused event to be generated
-description__c|Description|String|Holds the Adobe Sign event’s description
-event_date__c|Event Date|DateTime|Holds the Adobe Sign event’s date and time
-event_type__c|Event type|String|Holds the Adobe Sign event’s type
-name__v|Name|String|Auto-generated event name
-participant_comment__c|Participant comment|String|Holds the Adobe Sign participant’s comment if any
-participant_email__c|Participant Email|String|Holds the Adobe Sign participant’s email
-participant_role__c|Participant Role|String|Holds the Adobe Sign participant’s role
-signature__c|Signature|Object (Signature)|Holds the reference to the signature parent record
+| Field | Label | Type | Description |
+| --- | --- | ---| --- | 
+|acting_user_email__c|Acting User Email|String|Holds the email of Adobe Sign user that performed the action that caused event to be generated|
+|acting_user_name__c|Acting User Name|String|Holds the name of Adobe Sign user that performed the action that caused event to be generated|
+|description__c|Description|String|Holds the Adobe Sign event’s description|
+|event_date__c|Event Date|DateTime|Holds the Adobe Sign event’s date and time|
+|event_type__c|Event type|String|Holds the Adobe Sign event’s type|
+|name__v|Name|String|Auto-generated event name|
+|participant_comment__c|Participant comment|String|Holds the Adobe Sign participant’s comment if any|
+|participant_email__c|Participant Email|String|Holds the Adobe Sign participant’s email|
+|participant_role__c|Participant Role|String|Holds the Adobe Sign participant’s role|
+|signature__c|Signature|Object (Signature)|Holds the reference to the signature parent record|
 
 ![Image of signature event details](images/signature-event-object-details.png) 
 
@@ -174,7 +174,7 @@ Adobe Sign and Vault integration requires you to create and configure following 
 
 For each document type eligible for Adobe Signature, corresponding document lifecycle must be updated by adding new lifecycle role and states. 
 
-### Lifecycle role {l#ifecycle-role}
+### Lifecycle role {#lifecycle-role}
 
 Adobe Sign Admin application role must be added in all lifecycles used by documents eligible for Adobe Signature. This role should be created with the following options:
 
