@@ -101,6 +101,30 @@ To configure the [!DNL Coupa BSM Suite]:
 
 For more details on how to connect the [!DNL Coupa BSM Suite] and how to create and register webhook, refer to [Adobe Sign Coupa BSM Suite Instance support documentation](https://success.coupa.com/Support/Docs/Power_Apps/CLM_Standard/Signing_and_Approvals/Enable_E-Signatures_Through_Adobe_Sign_and_DocuSign){target="_blank"}.
 
+## Create [!DNT Webhook] in Adobe Sign {#create-webhook}
+
+The Coupa CLM integration uses webhook notifications from Adobe Sign to send updates about the state of the agreement. It's critical to complete the webhook setup else the agreements sent for signature stay incomplete or the signed agreements are not delivered back into Coupa CLM.
+
+To create webhook in Adobe Sign:
+
+1. Log in to Adobe Sign using the group admin user created above, for example `coupaclm@MyDomain.com`. 
+
+1. Navigate to **Groups** > **Webhooks**.
+
+    ![Image of user settings](images/webhook-login.png) 
+
+1. To create a new connection, select the ![plus icon image](images/icon_plus.png) icon.
+
+1. In the Create dialog that opens, fill in the required fields. 
+
+    **Note:** You need to obtain the Url for the webhook handler from Coupa.
+
+    ![Image of user settings](images/webhook-create.png)
+
+1. Select the required notification parameters.
+
+1. Select **Save**.
+
 ## Support {#support}
 
 ### [!DNL Coupa BSM Suite] support {#coupa-support}

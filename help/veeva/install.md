@@ -17,11 +17,11 @@ topic: Integrations
 
 ## Overview {#overview}
 
-This document explains how to establish integration of Adobe Sign with [!DNL [!DNL Veeva Vault]] platform. [!DNL [!DNL Veeva Vault]] is an Enterprise Content Management (ECM) platform built for life sciences. A "Vault" is a content and data repository with typical usage for regulatory filings, research reporting, grants applications, general contracting, and more. A single enterprise can have multiple 'vaults' that need to be maintained separately.
+This document explains how to establish integration of Adobe Sign with [!DNL Veeva Vault] platform. [!DNL Veeva Vault] is an Enterprise Content Management (ECM) platform built for life sciences. A "Vault" is a content and data repository with typical usage for regulatory filings, research reporting, grants applications, general contracting, and more. A single enterprise can have multiple 'vaults' that need to be maintained separately.
 
 ## Configure [!DNL Veeva Vault]
 
-To configure [!DNL [!DNL Veeva Vault]] for integration with Adobe Sign, we create certain objects that help track the history of an agreement lifecycle in Vault. Admins need to create the following objects:
+To configure [!DNL Veeva Vault] for integration with Adobe Sign, we create certain objects that help track the history of an agreement lifecycle in Vault. Admins need to create the following objects:
 
 * Signature
 * Signatory
@@ -158,7 +158,7 @@ Admins need to create a new rendition type called *Adobe Sign Rendition (adobe_s
 
 Adobe Sign and Vault integration requires you to create and configure following two web actions:
 
-* **Adobe Sign**: It creates or displays Adobe Sign Agreement.
+* **Create Adobe Sign**: It creates or displays Adobe Sign Agreement.
 
     Type: Document
     Target: Display within Vault
