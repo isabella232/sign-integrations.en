@@ -164,7 +164,7 @@ Adobe Sign is the integration partner, and should be contacted if the integratio
 Adobe Sign Customers should contact their Customer Success Manager (CSM) for support. Alternatively, Adobe Technical Support can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
 
 * [Adding Adobe text tags to documents](https://adobe.com/go/adobesign_text_tag_guide)  
-* [Review document configuration and examples](https://experienceleague.adobe.com/docs/dc-sign-integrations/using/workday/quick-start.html?lang=en){target="_blank"}
+* [Review document configuration and examples](https://www.adobe.com/go/adobesign_workday_quick_start)
 
 ## Common questions {#faq}
 
