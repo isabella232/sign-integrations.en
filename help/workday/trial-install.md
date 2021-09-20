@@ -157,6 +157,6 @@ Adobe Sign Customers should contact their Customer Success Manager (CSM) for sup
 
 * [Adding Adobe Text Tags to Documents](https://adobe.com/go/adobesign_text_tag_guide)  
 
-* [Review Document configuration and examples](https://www.adobe.com/go/adobesign_workday_quick_start)
+* [Review Document configuration and examples](https://www.adobe.com//go/adobesign_workday_quick_start)
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
