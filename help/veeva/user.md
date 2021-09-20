@@ -3,13 +3,13 @@ title: Veeva Vault User Guide
 description: Veeva Vault customers user guide on how to user Adobe Sign integration with Veeva
 products: Adobe Sign
 content-type: reference
-locnotes: All languages; screenshots to follow what's there already (seems there is a mix within a given language version of the article) 
+locnotes: All languages; screenshots to follow what's there already (seems there is a mix within a given language version of the article)
 type: Documentation
 solution: Adobe Sign
 role: User, Developer
 topic: Integrations
+exl-id: 39a43637-af3f-432e-a784-8f472aa86df5
 ---
-
 # Adobe Sign for [!DNL Veeva Vault]: User Guide {#veeva-vault-user-guide}
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
@@ -125,4 +125,3 @@ To send an agreement using Adobe Sign for Veeva:
     ![](images/cancel-reviewed.png)
 
 After the document status changes to Review, you can again send it out for signature.
-
