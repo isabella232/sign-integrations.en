@@ -279,7 +279,7 @@ Once lifecycle(s) is(are) properly configured, the system should ensure that Ado
 
 An Adobe Sign account administrator must follow the below steps to connect [!DNL Veeva Vault] to Adobe Sign using middleware:
 
-1. [Go to the Adobe Sign for [!DNL Veeva Vault] Home page](https://static.adobesigncdn.com/veevavaultintsvc/index.html).
+1. Go to the Adobe Sign for [!DNL Veeva Vault] Home page.
 1. Select **[!UICONTROL Login]** from the top-right corner. 
 
     ![Image of middleware login](images/middleware_login.png)
