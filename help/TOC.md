@@ -19,3 +19,6 @@ role: Leader
 + Adobe Sign for Veeva Vault {#veeva}
   + [Installation Guide](veeva/install.md)
   + [User Guide](veeva/user.md)
++ Adobe Sign for NetSuite {#netsuite}
++   [Adobe Sign for NetSuite Release Notes](release-notes.md)
++   [Adobe Sign for NetSuite Installation Guide](netsuite/install.md)
