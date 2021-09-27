@@ -17,13 +17,13 @@ exl-id: beafe6c0-262f-4f5b-9315-a023a4eef4a2
 
 ## Overview {#overview}
 
-This document is designed to help [!DNL Workday] customers learn how to activate a trial account with Adobe Sign and then integrate it into [!DNL Workday] tenant. To use Adobe Sign within [!DNL Workday], you need to know how to create and modify [!DNL Workday] items such as:
+This document is designed to help [!DNL Workday] customers learn how to activate a trial account with Adobe Sign and then integrate it into [!DNL Workday] tenant. To use Adobe Sign within [!DNL Workday], you must know how to create and modify [!DNL Workday] items such as:
 
 * Business process framework
 * Tenant set-up and configuration
 * Reporting and [!DNL Workday] Studio integration
 
-**Note**: If you have an existing Adobe Sign account, there is no need to start a trial. You may contact your Client Success Manager to request [!DNL Workday] integration.
+**Note**: If you have an existing Adobe Sign account, there is no must start a trial. You may contact your Client Success Manager to request [!DNL Workday] integration.
 
 The high-level steps to complete integration are:
 
@@ -33,9 +33,9 @@ The high-level steps to complete integration are:
 
 ## Activate your Adobe Sign trial account {#activate-sign-trial-account}
 
-To request a 30-day trial of Adobe Sign, you need to fill this [registration form](https://land.echosign.com/esign-trial-workday-registration.html).
+To request a 30-day trial of Adobe Sign, you must fill this [registration form](https://land.echosign.com/esign-trial-workday-registration.html).
 
-**Note**: We strongly recommend that you use a valid functional email address to create the trial and not a temporary email. You need to access this email to verify the account, so the address must to be valid.
+**Note**: We strongly recommend that you use a valid functional email address to create the trial and not a temporary email. You must access this email to verify the account, so the address must to be valid.
 
 ![The Trial request form](images/trial-land.png)
 
@@ -43,13 +43,13 @@ Within one business day, an Adobe Sign on-boarding specialist provisions your ac
 
 ![The Welcome email from Adobe Sign](images/welcome-email-2020.png)
 
-Follow the directions in the email to initialize your account and access your Adobe Sign [!UICONTROL Home] page.
+To initialize your account and access your Adobe Sign [!UICONTROL Home] page, follow the directions in the email .
 
 ![The Adobe Sign dashboard](images/classic-home.png) 
 
 ## Generate an integration key {#generate-an-integration-key}
 
-For new installations, you need to generate an integration key in Adobe Sign and then enter it into [!DNL Workday]. This key authenticates the Adobe Sign and [!DNL Workday] environments to trust each other and share content.
+For new installations, you must generate an integration key in Adobe Sign and then enter it into [!DNL Workday]. This key authenticates the Adobe Sign and [!DNL Workday] environments to trust each other and share content.
 
 To generate an Integration Key in Adobe Sign:
 
@@ -159,4 +159,4 @@ Adobe Sign Customers should contact their Customer Success Manager (CSM) for sup
 
 * [Review Document configuration and examples](https://www.adobe.com//go/adobesign_workday_quick_start){target="_blank"}
 
-[**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
+[**Contact Adobe Sign Support**](https://www.adobe.com/go/adobesign-support-center)
