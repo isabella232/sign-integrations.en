@@ -14,7 +14,7 @@ exl-id: 8b6fa8b4-e240-4ebe-ae2a-8807d75a6c69
 ---
 # [!DNL Workday] Quick Start Guide{#workday-quick-start-guide}
 
-[**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
+[**Contact Adobe Sign Support**](https://www.adobe.com/go/adobesign-support-center)
 
 ## Overview {#overview}
 
@@ -56,7 +56,7 @@ To configure the [!UICONTROL Review Document Step]:
     * Once a single person from the role signs, the row step is completed and the document is moved to the next row step.
     * When all rows have been signed, the [!UICONTROL Review Document Step] is complete.
 
-1. Specify the document to be signed. If this is an [!UICONTROL Offer BP], you can use the document from a Generate Document step. Otherwise, choose an existing document or report.
+1. Specify the document to be signed. If the document is an [!UICONTROL Offer BP], you can use it from a Generate Document step. Otherwise, choose an existing document or report.
 
 1. Repeat step 3 for as many documents as you require.
 
@@ -76,7 +76,7 @@ From the related actions menu of a [!UICONTROL Review Document Step], select **[
 
 * Every Business Process must have a completion step, which is ideally at the end of the business process.
 
-* A completion step is set off of the related actions menu of the search icon. This is possible only while “viewing” the BP and not while “editing” it.
+* A completion step is set off the related actions menu of the search icon. This is possible only while “viewing” the BP and not while “editing” it.
 
 * Every step of the business process is executed sequentially.
 
@@ -84,7 +84,7 @@ From the related actions menu of a [!UICONTROL Review Document Step], select **[
 
 ### Example: offer {#example-offer}
 
-The Offer BP is a sub process of the [!UICONTROL Job Application Dynamic BP] that needs to be configured to execute the Offer BP. It is triggered when the Job Application state is moved to “[!UICONTROL Offer]” or “[!UICONTROL Make Offer]”.
+The Offer BP is a sub process of the [!UICONTROL Job Application Dynamic BP] that must be configured to execute the Offer BP. It is triggered when the Job Application state is moved to “[!UICONTROL Offer]” or “[!UICONTROL Make Offer]”.
 
 In the below example, a [!UICONTROL Review Document Step] is using a Dynamic Document step for both North America and Japan.
 
@@ -114,7 +114,7 @@ Items in {{brackets}} are [Adobe Text tags](https://adobe.com/go/adobesign_text_
 
 Within the [!UICONTROL Review Document Step], the dynamic document is referenced from the previous step and defines the sequential signature process via two signing groups.
 
-The behavior illustrated below will route the dynamically generated document first to the Hiring Manager, and then to the Candidate.
+The behavior illustrated below routes the dynamically generated document first to the Hiring Manager, and then to the Candidate.
 
 ![[!DNL Workday] signing groups being defined](images/configure-rd-stepsmaller-575.png) 
 
@@ -182,7 +182,7 @@ Adobe Sign is the integration partner, and should be contacted if the integratio
 
 Adobe Sign Customers should contact their Customer Success Manager for support. Alternatively, [!UICONTROL Adobe Technical Support] can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
 
-* [Adding Adobe Text Tags to Documents](https://adobe.com/go/adobesign_text_tag_guide)
+* [Adding Adobe Text Tags to Documents](https://www.adobe.com/go/adobesign_text_tag_guide)
 
 <!--
 [Download PDF](images/adobe-sign-for-workday-quick-start-guide-2016.pdf)
