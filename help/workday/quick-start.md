@@ -20,17 +20,17 @@ exl-id: 8b6fa8b4-e240-4ebe-ae2a-8807d75a6c69
 
 This document is designed to help [!DNL Workday] administrators understand how to customize the [!DNL Workday] Business Processes to include Adobe Sign for obtaining e-signatures. To use Adobe Sign within [!DNL Workday], you must know how to create and modify [!DNL Workday] items such as:
 
-* Business Process Framework
+* [!UICONTROL Business Process Framework]
 * Tenant Set-up and configuration
 * Reporting and [!DNL Workday] Studio Integration
 
 ## Accessing Adobe Sign within [!DNL Workday] {#access-adobe-sign}
 
-Adobe Sign electronic signature capability is surfaced as [!UICONTROL Review Document Step] action within the Business Process Framework (BPF) and as a Distribute Documents task.
+[!UICONTROL Adobe Sign electronic signature capability] is surfaced as [!UICONTROL Review Document Step] action within the [!UICONTROL Business Process Framework (BPF)] and as a Distribute Documents task.
 
 ## [!UICONTROL Review Document Step] {#review-document-step}
 
-Adobe Sign for [!DNL Workday] is exposed via the [!UICONTROL Review Document Step] that you can add to any of over 400 Business Processes within [!DNL Workday], including Offer, Distribute Documents and Tasks, Propose Compensation, and more.
+Adobe Sign for [!DNL Workday] is exposed via the [!UICONTROL Review Document Step] that you can add to any of over 400 Business Processes within [!DNL Workday], including [!UICONTROL Offer], [!UICONTROL Distribute Documents and Tasks], [!UICONTROL Propose Compensation], and more.
 
 You may refer to the [[!DNL Workday] community articles on [!UICONTROL Review Document Step]](https://doc.workday.com/#/reader/3DMnG~27o049IYFWETFtTQ/TboWWKQemecNipWgxLAjqg).
 
@@ -56,7 +56,7 @@ To configure the [!UICONTROL Review Document Step]:
     * Once a single person from the role signs, the row step is completed and the document is moved to the next row step.
     * When all rows have been signed, the [!UICONTROL Review Document Step] is complete.
 
-1. Specify the document to be signed. If this is an Offer BP, you can use the document from a Generate Document step. Otherwise, choose an existing document or report.
+1. Specify the document to be signed. If this is an [!UICONTROL Offer BP], you can use the document from a Generate Document step. Otherwise, choose an existing document or report.
 
 1. Repeat step 3 for as many documents as you require.
 
@@ -72,7 +72,7 @@ From the related actions menu of a [!UICONTROL Review Document Step], select **[
 
 ## Business process step notes {#business-process-step-notes}
 
-The Business Process Framework is powerful; however, you must ensure that:
+[!UICONTROL The Business Process Framework] is powerful; however, you must ensure that:
 
 * Every Business Process must have a completion step, which is ideally at the end of the business process.
 
@@ -84,7 +84,7 @@ The Business Process Framework is powerful; however, you must ensure that:
 
 ### Example: offer {#example-offer}
 
-The Offer BP is a sub process of the Job Application Dynamic BP that needs to be configured to execute the Offer BP. It is triggered when the Job Application state is moved to “Offer” or “Make Offer”.
+The Offer BP is a sub process of the [!UICONTROL Job Application Dynamic BP] that needs to be configured to execute the Offer BP. It is triggered when the Job Application state is moved to “[!UICONTROL Offer]” or “[!UICONTROL Make Offer]”.
 
 In the below example, a [!UICONTROL Review Document Step] is using a Dynamic Document step for both North America and Japan.
 
@@ -122,7 +122,7 @@ The behavior illustrated below will route the dynamically generated document fir
 
 Introduced in [!DNL Workday] 30, the Mass Distribute Documents or Tasks task can be used to send a single document to a large group (&lt;20K) of individual signers. It is limited to a single signature per document. Creation of a distribution is performed by accessing the ‘[!UICONTROL Create Distribute Documents or Tasks]’ action from the search bar.
 
-Example: Send an employee equity choice form to all managers with Global Modern Services. You can further filter it to individual managers, if desired.
+Example: Send an employee equity choice form to all managers with [!UICONTROL Global Modern Services]. You can further filter it to individual managers, if desired.
 
 You can also access the **View Distribute Documents or Tasks** report to track the progress of the distribution.
 
@@ -152,7 +152,7 @@ The [!DNL Workday] signature cycle suppresses all email notifications by Adobe S
 
 Once a document is signed by all Signature Groups, a copy of the signed document is distributed to all the members of the Signature Group via email.
 
-To suppress this behavior, you may contact your Adobe Sign Success Manager or the [Adobe Sign Support team](https://adobe.com/go/adobesign-support-center).
+To suppress this behavior, you may contact your [!UICONTROL Adobe Sign Success Manager] or the [Adobe Sign Support team](https://adobe.com/go/adobesign-support-center).
 
 Within [!DNL Workday], you can access the signed documents on the full process record. You may find:
 
@@ -180,7 +180,7 @@ The [!DNL Workday] community has several good articles on how to troubleshoot th
 
 Adobe Sign is the integration partner, and should be contacted if the integration is failing to obtain signatures, or if notification of pending signatures fails.
 
-Adobe Sign Customers should contact their Customer Success Manager (CSM) for support. Alternatively, Adobe Technical Support can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
+Adobe Sign Customers should contact their Customer Success Manager for support. Alternatively, [!UICONTROL Adobe Technical Support] can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
 
 * [Adding Adobe Text Tags to Documents](https://adobe.com/go/adobesign_text_tag_guide)
 

@@ -26,7 +26,7 @@ The Adobe Sign icon has been updated to the new graphic.
 ### Adobe Sign for NetSuite 4.0.2 
 
 Rebranded to **Adobe Sign** (from *Adobe Document Cloud eSign services*)  
-You’ll see *Adobe Sign* where you previously saw *Adobe eSign Services* as evidence of the rebranding.
+You now see *Adobe Sign* where you previously saw *Adobe eSign Services* as evidence of the rebranding.
 
 ### Adobe Sign for NetSuite 4.0.1 
 
@@ -38,19 +38,19 @@ Customers are encouraged to update to the newest package.
 
 **Added auto provisioning of users through NetSuite**
 
-A new custom preferences has been added for v4.0. When enabled, users who send agreements in NetSuite are automatically auto-provisioned with an Adobe Document Cloud eSign services user account.
+A new custom preference has been added for v4.0. When enabled, users who send agreements in NetSuite are automatically auto-provisioned with an Adobe Document Cloud eSign services user account.
 
 **Certified with 'Built for NetSuite'**
 
-This version achieved the 'Built for Netsuite' certification and meets all the latest NetSuite design best practices.
+This version achieved the 'Built for NetSuite' certification and meets all the latest NetSuite design best practices.
 
 **Rebranded to Adobe Document Cloud eSign services (from EchoSign)** 
 
-You’ll see Adobe Document Cloud eSign Services (or Adobe eSign Services for short) where you previously saw Adobe EchoSign as evidence of the rebranding.
+You now see Adobe Document Cloud eSign Services (or Adobe eSign Services for short) where you previously saw Adobe EchoSign as evidence of the rebranding.
 
 **Implemented enhanced security with OAuth** 
 
-To improve data security, eSign services now uses OAuth 2.0 to authenticate your Adobe Document Cloud eSign services account within NetSuite. This new protocol lets NetSuite talk to eSign services without requesting your eSign services password. Since sensitive information is not being shared directly between the apps, your account is less likely to be compromised. This improvement will not impact your implementation, but you will need to do a one-time setup to authorize your NetSuite package to communicate with the Adobe Document Cloud. This is done during the installation process. For customers upgrading from a previous version of the package—v3.5.9 and prior—the API key previously used will be replaced by an OAuth token generated during the authorization process.
+To improve data security, eSign services now use OAuth 2.0 to authenticate your Adobe Document Cloud eSign services account within NetSuite. This new protocol lets NetSuite talk to eSign services without requesting your eSign services password. Since sensitive information is not being shared directly between the apps, your account is less likely to be compromised. This improvement does not impact your implementation, but you must do a one-time setup to authorize your NetSuite package to communicate with the Adobe Document Cloud. This is done during the installation process. For customers upgrading from a previous version of the package—v3.5.9 and prior—the API key previously used is replaced by an OAuth token generated during the authorization process.
 
 **Migrated the eSign services from SOAP APIs to REST APIs**
 
@@ -74,26 +74,26 @@ Send immediate reminder to current signer
 
 **Advanced Signer Authentication Policies** 
 
-* **Knowledge Based Authentication:** Answer questions to verify signer identity
+* **Knowledge-Based Authentication:** Answer questions to verify signer identity
     * Requires Signers to prove their identity by answering questions taken from hundreds of public and commercial databases
     * Name on signature is taken from the user’s authenticated name and cannot be changed at the time of signing
     * Powered by RSA
     * KBA usage is limited per account, per month. Contact Sales for more information.
 
-* **Web identity:** Sign in with Facebook, LinkedIn, Google, or other third party web service before signing.
+* **Web identity:** Sign in with Facebook, LinkedIn, Google, or other third-party web service before signing.
 
     * Signer can only sign after verifying their identity using a 3rd party Web service.
     * Name on signature is taken from the user’s web service pro!le and cannot be changed at the time of signing
     * Audit trail captures identity verification details
 
 * **One Time Password**
-    * Apply authentication methods for internal or external signers or all signers. External signers need to use a password or use Knowledge Based Authentication while Internal signers do not
+    * Apply authentication methods for internal or external signers or all signers. External signers must use a password or use Knowledge-Based Authentication while Internal signers do not
 
 **Additional Custom Preferences**
 
-* Add Signed PDF as a link to the !le URL or as attachment hosted in NetSuite
+* Add Signed PDF as a link to the URL or as attachment hosted in NetSuite
 * Add Audit Trail to Agreement record a$er agreement is signed
-* Use the transaction contact as !rst signer by default, instead of Customer email
+* Use the transaction contact as signer by default, instead of Customer email
 * Grant Senders the option to mark recipients as Approvers
 
 **Transaction Files** 
@@ -102,12 +102,12 @@ You can select files to attach from the current transaction with new ‘Transact
 
 **Adobe PDF Certification For All EchoSign Documents** 
 
-* All PDF files sent or downloaded from EchoSign will be certified with an Adobe EchoSign Digital Certificate
-* Acrobat or Reader will display the certification guaranteeing that the document has not been tampered with for additional trust and peace of mind
+* All PDF files sent or downloaded from EchoSign are certified with an Adobe EchoSign Digital Certificate
+* Acrobat or Reader displays the certification guaranteeing that the document has not been tampered with for additional trust and peace of mind
 
 **Collect Supporting Documents** 
 
-* Senders can collect additional supporting documents from Signers during signing (e.g. driver’s license, business certificate)
+* Senders can collect additional supporting documents from Signers during signing, such as a driver’s license, business certificate, and more.
 * Collected documents become part of the official record of the signed agreement
 
 **Conditional Data Fields** 
