@@ -31,7 +31,7 @@ Learn how to install, integrate, and use [!DNL Adobe Sign] solutions to the exis
   </td>
   <td>
     <a href="workday/tutorial-video.md">
-      <img alt="Integrating Adobe Sign with [!DNL Workday]" src="images/wd-integration.png"/>
+    <img alt="Integrating Adobe Sign with [!DNL Workday]" src="images/wd-integration.png"/>
     </a>
     <div>
     <a href="workday/tutorial-video.md"><strong>Integrating Adobe Sign with [!DNL Workday]</strong></a>
@@ -39,8 +39,13 @@ Learn how to install, integrate, and use [!DNL Adobe Sign] solutions to the exis
     <em>Learn how to configure Adobe Sign to work within [!DNL Workday] for managing all your documents</em>
   </td>
   <td>
-    <img alt="Spacer" src="images/whitespace.png"/>
+    <a href="https://community.adobe.com/t5/adobe-sign/bd-p/adobe-sign?page=1&sort=latest_replies&filter=all">
+    <img alt="Adobe Sign Support Community" src="images/sign-forum.png"/>
+    </a>
     <div>
+    <a href="https://community.adobe.com/t5/adobe-sign/bd-p/adobe-sign?page=1&sort=latest_replies&filter=all"><strong>Adobe Sign Support Community</strong></a>
+    </div>
+    <em>Ask questions, share feedback and tips, or discuss about Sign Integration products and services with other Adobe Sign users and enthusiasts.</em>
     <br>
   </td>
 </tr>
