@@ -240,6 +240,10 @@ Note: If an [!DNL EchoSign] Agreement is sent for signature and the record is de
 The [!UICONTROL Events] subpanel of an [!DNL EchoSign] Agreement tracks the status of agreements that are sent for signature. To see the latest updates on an [!DNL EchoSign] Agreement, select **[!UICONTROL Update Status]**. The [!UICONTROL Update Status] button is available only after an agreement is sent for signature. 
 
 ![Image](images/update-cancel-status.png)
+
+After an agreement is sent out for a signature, select **[!UICONTROL Update Status]** to retrieve the latest status.
+
+![Image](images/events-subpanel.png)
  
 ### Send reminders {#send-reminders}
 
