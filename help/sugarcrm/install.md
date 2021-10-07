@@ -7,8 +7,8 @@ type: Documentation
 solution: Adobe Sign
 role: User, Developer
 topic: Integrations
+exl-id: 0512f616-568a-4b96-9bd1-48e67bc3536b
 ---
-
 # [!DNL SugarCRM]  Installation Guide {#sugarcrm-install-guide}
 
 [Contact Customer Care](https://adobe.com/go/adobesign-support-center)

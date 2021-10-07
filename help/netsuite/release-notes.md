@@ -1,12 +1,12 @@
 ---
 title: Adobe Sign for NetSuite Release Notes
-description: Learn about the new features and changes that are included in the current release of the Adobe Sign integration for NetSuite.  
+description: Learn about the new features and changes that are included in the current release of the Adobe Sign integration for NetSuite.
 type: Documentation
 solution: Adobe Sign
 role: User, Developer
 topic: Integrations
+exl-id: 6317723e-447a-4506-a621-4d967bdd6561
 ---
-
 # Adobe Sign for NetSuite Release Notes
 
 ## Update to package v4.0.4
