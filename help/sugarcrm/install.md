@@ -9,7 +9,7 @@ role: User, Developer
 topic: Integrations
 ---
 
-# [!DNL SugarCRM]  Installation Guide {#sugarcrm-install-guide}
+# [!DNL SugarCRM] Installation Guide {#sugarcrm-install-guide}
 
 [Contact Customer Care](https://adobe.com/go/adobesign-support-center)
 
