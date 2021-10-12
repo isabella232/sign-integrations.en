@@ -277,7 +277,7 @@ Once lifecycle(s) is(are) properly configured, the system should ensure that Ado
 
 ## Connect [!DNL Veeva Vault] to Adobe Sign using middleware {#connect-middleware}
 
-After completing the setup for [!DNL Veeva Vault] and the Adobe Sign Admin account, the administrator must create a connection between the two accounts using the middleware. The [!DNL Veeva Vault] and Adobe Sign accounnt connection is initiated by Adobe Sign Identity and then it is used to store the Veeva Vault identity. An Adobe Sign account administrator must follow the below steps to connect [!DNL Veeva Vault] to Adobe Sign using middleware:
+After completing the setup for [!DNL Veeva Vault] and the Adobe Sign Admin account, the administrator must create a connection between the two accounts using the middleware. The [!DNL Veeva Vault] and Adobe Sign accounnt connection is initiated by Adobe Sign Identity and then it is used to store the Veeva Vault identity.An Adobe Sign account administrator must follow the below steps to connect [!DNL Veeva Vault] to Adobe Sign using middleware:
 
 1. Go to the [Adobe Sign for [!DNL Veeva Vault] Home page](https://static.adobesigncdn.com/veevavaultintsvc/index.html).
 1. Select **[!UICONTROL Login]** from the top-right corner. 
