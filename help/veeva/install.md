@@ -35,7 +35,7 @@ The high-level steps to complete the integration are:
 
 ## Configure [!DNL Veeva Vault]
 
-To configure [!DNL Veeva Vault] for integration with Adobe Sign, we create certain objects that help track the history of an agreement lifecycle in Vault. Admins must create the following objects:
+To configure [!DNL Veeva Vault] for integration with Adobe Sign, create certain objects that help track the history of an agreement lifecycle in Vault. Admins must create the following objects:
 
 * Signature
 * Signatory
@@ -51,7 +51,7 @@ Signature object is created to store agreement-related information. A Signature 
 | Field | Label | Type | Description |
 | --- | --- | ---| --- | 
 |external_id__c |Agreement Id|String (100) |Holds the Adobe Sign’s unique agreement id|
-|file_hash__c |File Hash|String (50) |Holds the md5 chcksum of the file that has been sent to Adobe Sign|
+|file_hash__c |File Hash|String (50) |Holds the md5 checksum of the file that has been sent to Adobe Sign|
 |name__v|Name|String (128)|Holds the agreement name|
 |sender__c  |Sender  |Object (User)  |Holds the reference to the Vault user that has created the agreement|
 |signature_status__c  |Signature Status  |String (75) |Holds the agreement’s status in Adobe Sign|
@@ -116,7 +116,7 @@ For successful integration of the Vault, a new security profile called *Adobe Si
 
 ![Image of signature event details](images/security-profiles.png) 
 
-Security profiles of users who require an access to Adobe Sign history in Vault must have Read permissions for Signature, Signatory, and Signature Event objects.
+Security profiles of users who require access to Adobe Sign history in Vault must have Read permissions for Signature, Signatory, and Signature Event objects.
 
 ![Image of signature event details](images/set-permissions.png) 
 
@@ -217,7 +217,7 @@ When a Vault document is sent to Adobe Sign, its state should correspond to the 
 
     ![Image of lifecycle state 1](images/lifecycle-state1.png)
 
-* **In Adobe Sign Draft**: This is a placeholder name for the state that indicates that the document is already uploaded to Adobe Sign and that its agreement is in a DRAFT state. It is a required state. This state must denine following five user actions:
+* **In Adobe Sign Draft**: This is a placeholder name for the state that indicates that the document is already uploaded to Adobe Sign and that its agreement is in a DRAFT state. It is a required state. This state must define following five user actions:
 
     * Action that changes the state of document to *In Adobe Sign Authoring* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
     * Action that changes the state of document to *In Adobe Signing state*. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
@@ -277,7 +277,7 @@ Once lifecycle(s) is(are) properly configured, the system should ensure that Ado
 
 ## Connect [!DNL Veeva Vault] to Adobe Sign using middleware {#connect-middleware}
 
-After completing the setup for [!DNL Veeva Vault] and the Adobe Sign Admin account, the administrator must create a connection between the two accounts using the middleware. The [!DNL Veeva Vault] and Adobe Sign accounnt connection is initiated by Adobe Sign Identity and then it is used to store the Veeva Vault identity. 
+After completing the setup for [!DNL Veeva Vault] and the Adobe Sign Admin account, the administrator must create a connection between the two accounts using the middleware. The [!DNL Veeva Vault] and Adobe Sign account connection is initiated by Adobe Sign Identity and then it is used to store the Veeva Vault identity. 
 For system security and stability, the administrator must use a dedicated [!DNL Veeva Vault] system/service/utility account, such as `adobe.for.veeva@xyz.com`, instead of a personal user account, such as `bob.smith@xyz.com`.
 
 An Adobe Sign account administrator must follow the below steps to connect [!DNL Veeva Vault] to Adobe Sign using middleware:
