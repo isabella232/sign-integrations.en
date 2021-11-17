@@ -540,9 +540,9 @@ After you send an agreement:
 * The document status changes to *Out for Signature* in the Agreement details section
 * The *Send for Signature* button is replaced by the following three buttons:
 
-   * **Update Status** —  To manually update the status if status updates have not been configured. See [Configuring automatic status updates](#asu) for more information.
-   * **Send Reminder** — To send a reminder to the current signer.
-   * **Cancel Agreement** — To cancel an agreement. An agreement may be canceled after it has been sent for a signature if all recipients have not yet signed.
+  * **Update Status** —  To manually update the status if status updates have not been configured. See [Configuring automatic status updates](#asu) for more information.
+  * **Send Reminder** — To send a reminder to the current signer.
+  * **Cancel Agreement** — To cancel an agreement. An agreement may be canceled after it has been sent for a signature if all recipients have not yet signed.
 
 ![Out for Signature](images/out-for-signature.png)
 
