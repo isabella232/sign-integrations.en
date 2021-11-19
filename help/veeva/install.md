@@ -178,11 +178,15 @@ Adobe Sign and Vault integration requires you to create and configure following 
     Target: Display within Vault
     URL: <https://api.na1.adobesign.com/api/gateway/veevavaultintsvc/partner/agreement?docId=${Document.id}&majVer=${Document.major_version_number__v}&minVer=${Document.minor_version_number__v}&vaultid=${Vault.id}&useWaitPage=true>
 
+    ![Image of create Adobe Sign](images/)
+
 * **Cancel Adobe Sign**: It cancels an existing agreement in Adobe Sign and reverts a document’s state to the initial one.
 
     Type: Document
     Target: Display within Vault
     URL: : <https://api.na1.adobesign.com/api/gateway/veevavaultintsvc/partner/agreement/cancel?docId=${Document.id}&majVer=${Document.major_version_number__v}&minVer=${Document.minor_version_number__v}&vaultid=${Vault.id}&useWaitPage=true>
+
+    ![Image of cancel Adobe Sign](images/cancel-adobe-sign.png)
 
 ## Update document lifecycle {#document-lifecycle}
 
@@ -190,12 +194,16 @@ For each document type eligible for Adobe Signature, corresponding document life
 
 ### Lifecycle role {#lifecycle-role}
 
-Adobe Sign Admin application role must be added in all lifecycles used by documents eligible for Adobe Signature. This role should be created with the following options:
-
-* Enable Dynamic Access Control
-* Document sharing rules that include only Document Type Group
+Adobe Sign Admin application role must be added in all lifecycles used by documents eligible for Adobe Signature, as shown below. 
 
 ![Image of lifecycle admin roles](images/document-lifecycle-admin-role.png)
+
+The admin role should be created with the following options:
+
+* Enabled Dynamic Access Control.
+* Document sharing rules that include only Document Type Group, as shown in the image below.
+
+![Image of adobe sign sharing rule](images/adobe-sign-sharing-rule.png)
 
 ### Lifecycle states {#lifecycle-states}
 
@@ -261,7 +269,9 @@ Admins must create new Document Type Group record called “Adobe Sign Document�
 
 ![Image of document type](images/document-type.png)
 
-![Image of document type](images/document-edit-details.png)
+![Image of document edit details](images/document-edit-details.png)
+
+![Image of document type groups](images/document-type-groups.png)
 
 ### Create User Role Setup {#create-user-role-setup}
 
