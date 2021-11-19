@@ -178,7 +178,7 @@ Adobe Sign and Vault integration requires you to create and configure following 
     Target: Display within Vault
     URL: <https://api.na1.adobesign.com/api/gateway/veevavaultintsvc/partner/agreement?docId=${Document.id}&majVer=${Document.major_version_number__v}&minVer=${Document.minor_version_number__v}&vaultid=${Vault.id}&useWaitPage=true>
 
-    ![Image of create Adobe Sign](images/)
+    ![Image of create Adobe Sign](images/create-adobe-sign.png)
 
 * **Cancel Adobe Sign**: It cancels an existing agreement in Adobe Sign and reverts a document’s state to the initial one.
 
