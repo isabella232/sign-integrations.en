@@ -255,7 +255,7 @@ When a Vault document is sent to Adobe Sign, its state should correspond to the 
     ![Image of lifecycle state 4](images/lifecycle-state4.png)
 
 * **Adobe Signed (Approved)**: This is a placeholder name for the state that indicates that the document is uploaded to Adobe Sign and that its agreement is completed (SIGNED or APPROVED state). It is a required state and it can be an existing lifecycle state, like Approved.
-This state does not require user actions. This state must have security that allows Adobe Sign Admin role to: view documents, view content and edit fields.
+This state does not require user actions. This state must have security that allows Adobe Sign Admin role to: view documents, view content, and edit fields.
 
 Following diagram illustrates the mappings between Adobe Sign agreement and Vault document states, where the ‘Before Adobe Signature’ state is Draft. 
 
@@ -361,7 +361,7 @@ An Adobe Sign account administrator must follow the below steps to connect [!DNL
 
 **Step 10.** Add the document type group called 'Adobe Sign Document' for all document classifications that are eligible for Adobe Sign process.
 
-**Step 11.** Once all configurations are complete, the system should ensure that Adobe Sign Admin user is added by DAC for all documents that are eligible for Adobe Sign process. This is done by creating the appropriate User Role Setup record that specifies the Document Type Group as 'Adobe Sign Document', Application Role as 'Adobe Sign Admin Role' and an integration user.
+**Step 11.** Once all configurations are complete, the system should ensure that Adobe Sign Admin user is added by DAC for all documents that are eligible for the Adobe Sign process. This is done by creating the appropriate User Role Setup record that specifies the Document Type Group as 'Adobe Sign Document', Application Role as 'Adobe Sign Admin Role' and an integration user.
 
 ### Specific deployment lifecycle {#specific-deployment}
 
