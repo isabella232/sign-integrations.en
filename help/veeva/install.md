@@ -236,18 +236,18 @@ To setup Document Fields:
 
     ![Image of document details](images/create-display-section.png)
 
-3. For the two shared Document fields (signature__c and allow_adobe_sign_user_actions__c), update the UI section with 'Adobe Signature' section label.
+1. For the two shared Document fields (signature__c and allow_adobe_sign_user_actions__c), update the UI section with 'Adobe Signature' section label.
 1. Add the three shared fields to all document types that are eligible for Adobe Signature. To so to, in the Base Dcoument page, select **Add** > **Existing Shared Field** from the top right corner.
 
     ![Image of document details](images/add-existing-fields.png)
 
     ![Image of document details](images/use-shared-fields.png)
 
-5. Note that both fields must have a specific security that allows only members of Adobe Sign Admin Group to update their values.
+1. Note that both fields must have a specific security that allows only members of Adobe Sign Admin Group to update their values.
 
     ![Image of document details](images/security-overrides.png)
 
-6. Admins must add the existing shared field *Disable Vault Overlays (disable_vault_overlays__v)* and set it to Active for all document types that are eligible for Adobe Signature. Optionally, the field can have a specific security that allows only members of Adobe Sign Admin group to update its value.
+1. Admins must add the existing shared field *Disable Vault Overlays (disable_vault_overlays__v)* and set it to Active for all document types that are eligible for Adobe Signature. Optionally, the field can have a specific security that allows only members of Adobe Sign Admin group to update its value.
 
     ![Image of allow adobe sign user actions](images/allow-adobe-sign-user-actions.png)
 
