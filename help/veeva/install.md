@@ -37,41 +37,13 @@ The high-level steps to complete the integration are:
 
 To configure [!DNL Veeva Vault] for integration with Adobe Sign, you need to implement the following steps:
 
-**Step 1.** Create a new group called 'Adobe Sign Admin Group'.
-
-**Step 2.** [Deploy the package](https://helpx.adobe.com/content/dam/help/en/PKG-AdobeSign-Integration.zip).
-
-**Step 3.** Create Security profiles
-  
-**Step 4.** Create User
-
-**Step 5.** Configure Document Type Group
-
-**Step 6.** Create User role setup
-
-**Step 7.** Setup document fields
-
-**Step 8.** Declare document renditions
-
-**Step 9.** Update web actions
-
-**Step 10.** Update documnet lifecycle
-
-**Step 11.** Add Adobe Sign stage to General Lifecycle in Lifecycle Stage groups
-
-**Step 12.** Set permissions for User Role in Lifecycle state
-
-**Step 13.** Set up atomic security based on the document state and the user role
-
-**Step 14.** Create Document messages for Adobe Sign Cancel
-
-### 1. Create Group {#create-group}
+### Step 1. Create Group {#create-group}
 
 To configure Adobe Sign for [!DNL Vault], a new group called *Adobe Sign Admin Group* is created. This group is used to set the document field level security for Adobe Sign related fields and should include *Adobe Sign Integration Profile* by default. 
 
 ![Image of signature event details](images/create-admin-group.png)
 
-### 2. Deploy the package {#deploy-package}
+### Step 2. Deploy the package {#deploy-package}
 
 [Deploy the package](https://helpx.adobe.com/content/dam/help/en/PKG-AdobeSign-Integration.zip) and follow through the steps. Once deployed, the package creates:
 
@@ -160,7 +132,7 @@ You must create application role called *Adobe Sign Admin Role*. This role must 
 
 ![Image of create application roles](images/create-application-roles.png)
 
-### 3. Setup Security profiles {#security-profiles}
+### Step 3. Setup Security profiles {#security-profiles}
 
 For successful integration of the Vault, a new security profile called *Adobe Sign Integration Profile* is created and its permission is set for *Adobe Sign Admin Actions*. The Adobe Sign Integration Profile is assigned to the system account and is used by the integration when calling Vault APIs. This profile allows permissions for:
 
@@ -173,7 +145,7 @@ Security profiles of users who require access to Adobe Sign history in Vault mus
 
 ![Image of signature event details](images/set-permissions.png) 
 
-## 4. Create User {#create-user}
+### Step 4. Create User {#create-user}
 
 The Vault system account user of Adobe Sign integration must:
 
@@ -192,7 +164,7 @@ To ensure that system account user belongs to the Adobe Sign Admin Group for the
 
     ![Image of signature event details](images/add-user.png)
 
-### 5. Create Document Type Group {#create-document-type-group}
+### Step 5. Configure Document Type Group {#create-document-type-group}
 
 When you deploy the Adobe Sign package, it creates a Document Type Group record called 'Adobe Sign Document'. 
 
@@ -206,13 +178,13 @@ You need to add this document type group for all document classifications that a
 
 **Note:** If User Role Setup object does not contain the field that refers to Document Type Group object, you must add the field. 
 
-### 6. Create User Role Setup {#create-user-role-setup}
+### Step 6. Create User Role Setup {#create-user-role-setup}
 
 Once lifecycle(s) is(are) properly configured, the system should ensure that Adobe Sign Admin user is added by DAC for all documents that are eligible for Adobe Sign process. This is done by creating the appropriate User Role Setup record that specifies:
 
-* Document Type Group as 'Adobe Sign Document',
-* Application Role as 'Adobe Sign Admin Role', and
-* Integration user.
+* Document Type Group as Adobe Sign Document
+* Application Role as Adobe Sign Admin Role
+* Integration user
 
 ![Image of user role setup](images/user-role-setup.png)
 
@@ -220,7 +192,7 @@ Once lifecycle(s) is(are) properly configured, the system should ensure that Ado
 
 ![Image of user role setup](images/create-setup-field.png)
 
-### 7. Setup Document Fields {#create-fields}
+### Step 7. Setup Document Fields {#create-fields}
 
 To establish integration with Adobe Sign, following two new shared document fields are required:
 
@@ -251,7 +223,7 @@ To setup Document Fields:
 
     ![Image of allow adobe sign user actions](images/allow-adobe-sign-user-actions.png)
 
-### 8. Declare Document Renditions {#declare-renditions}
+### Step 8. Declare Document Renditions {#declare-renditions}
 
 The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c) is used by Vault integration to upload signed PDF documents to Adobe Sign. The Adobe Sign rendition should be declared for each document type that is eligible for Adobe Signature.
 
@@ -259,7 +231,7 @@ The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c) is
 
 ![Image of rendition types](images/edit-details-clinical-type.png)
 
-### 9. Update web actions {#web-actions}
+### Step 9. Update Web Actions {#web-actions}
 
 Adobe Sign and Vault integration requires you to create and configure following two web actions:
 
@@ -279,7 +251,7 @@ Adobe Sign and Vault integration requires you to create and configure following 
 
     ![Image of cancel Adobe Sign](images/cancel-adobe-sign.png)
 
-### 10. Update document lifecycle {#document-lifecycle}
+### Step 10. Update document lifecycle {#document-lifecycle}
 
 For each document type eligible for Adobe Signature, corresponding document lifecycle must be updated by adding new lifecycle role and states. 
 
@@ -363,21 +335,21 @@ Following diagram illustrates the mappings between Adobe Sign agreement and Vaul
 
 ![Image of Adobe Sign Vault mappints](images/sign-vault-mappings.png)
 
-### 11. Add Adobe Sign stage to General Lifecycle in Lifecycle Stage groups
+### Step 11. Add Adobe Sign stage to General Lifecycle in Lifecycle Stage groups
 
 ![Image of Adobe Sign Vault mappints](images/add-adobe-sign-stage.png)
 
-### 12. Set permissions for User Role in Lifecycle state
+### Step 12. Set permissions for User Role in Lifecycle state
 
 You must set appropriate permissions for each User Role in Lifecycle State, as shown in the image below.
 
 ![Image of Adobe Sign Vault mappints](images/set-user-role-permissions.png)
 
-### 13. Set up atomic security based on the document state and the user role
+### Step 13. Set up atomic security based on the document state and the user role
 
 ![Image of Adobe Sign Vault mappints](images/set-atomic-security.png)
 
-### 14. Create Document messages for Adobe Sign Cancel
+### Step 14. Create Document messages for Adobe Sign Cancel
 
 ![Image of Adobe Sign Vault mappints](images/create-cancel-message.png)
 
