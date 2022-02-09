@@ -84,6 +84,19 @@ To send an agreement using Adobe Sign for Veeva:
 
     ![](images/iframe.png)
 
+    **Note:** If an Adobe Sign user account does not exist for the sender’s email, the iFrame window displays a message, as shown below. It also sends the user an email with the instructions to activate the account.
+
+    ![](images/iFrame-registration-message.png)
+
+    ![](images/iFrame-confirm-email.png)
+
+    However, if *Auto Provision Sign Users* feature is disabled, Adobe Sign user creation fails, and the iFrame window displays a message asking the user to contact their Adobe Sign account administrator. The Adobe Sign Account Administrator can take one of the following actions:
+
+    * Enable the *Auto Provision Sign Users* feature for the account.
+    * Create the user in Adobe Sign prior to using the Veeva Vault Adobe Sign Integration.
+
+    ![](images/iFrame-contact-administrator.png)
+
 1. Once the document is processed, drag and drop the Signature fields on from the right panel and select **[!UICONTROL Send]**.  
 
     ![](images/add-signature-fields.png)
