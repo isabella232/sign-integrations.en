@@ -21,7 +21,7 @@ This document explains how to establish integration of Adobe Sign with [!DNL Vee
 
 The high-level steps to complete the integration are: 
 
-* Activate your Administrative account in Adobe Sign (New Customers Only)
+* Activate your Administrative account in Adobe Sign (New Customers Only).
 * Create objects to track the history of an agreement lifecycle in Vault.
 * Create a new Security profile.
 * Configure a Group in Adobe Sign to hold the [!DNL Veeva Vault] integration user.
@@ -35,7 +35,7 @@ The high-level steps to complete the integration are:
 
 ## Configure [!DNL Veeva Vault] {#configure-veeva}
 
-To configure [!DNL Veeva Vault] for integration with Adobe Sign, you need to implement the following steps:
+To configure [!DNL Veeva Vault] for integration with Adobe Sign, you need to implement the below listed steps.
 
 ### Step 1. Create Group {#create-group}
 
@@ -188,7 +188,7 @@ Once lifecycle(s) is(are) properly configured, the system should ensure that Ado
 
 ![Image of user role setup](images/user-role-setup.png)
 
-**Note:** If User Role Setup object does not contain the field that refers to Document Type Group object, you must add the field. To do so, go to Object > User Role Setup > Fields and complete the required steps, as shown in the image below.
+**Note:** If User Role Setup object does not contain the field that refers to Document Type Group object, you must add the field. To do so, go to **[!UICONTROL Object]** > **[!UICONTROL User Role Setup]** > **[!UICONTROL Fields]** and complete the required steps, as shown in the image below.
 
 ![Image of user role setup](images/create-setup-field.png)
 
@@ -203,13 +203,13 @@ To establish integration with Adobe Sign, following two new shared document fiel
 
 To setup Document Fields:
 
-1. Go to the Configuration tab and select **Document Fields** > **Shared Fields**.
-1. In the Display Section field, select Create Display Section and assign Adobe Signature as the Section label.
+1. Go to the Configuration tab and select **[!UICONTROL Document Fields]** > **[!UICONTROL Shared Fields]**.
+1. In the Display Section field, select **[!UICONTROL Create Display Section]** and assign **[!UICONTROL Adobe Signature]** as the Section label.
 
     ![Image of document details](images/create-display-section.png)
 
-1. For the two shared Document fields (signature__c and allow_adobe_sign_user_actions__c), update the UI section with 'Adobe Signature' section label.
-1. Add the three shared fields to all document types that are eligible for Adobe Signature. To so to, in the Base Dcoument page, select **Add** > **Existing Shared Field** from the top right corner.
+1. For the two shared Document fields (signature__c and allow_adobe_sign_user_actions__c), update the UI section with **[!UICONTROL Adobe Signature]** as the section label.
+1. Add the three shared fields to all document types that are eligible for Adobe Signature. To do so, in the Base Dcoument page, select **[!UICONTROL Add]** > **[!UICONTROL Existing Shared Field]** from the top right corner.
 
     ![Image of document details](images/add-existing-fields.png)
 
@@ -219,13 +219,13 @@ To setup Document Fields:
 
     ![Image of document details](images/security-overrides.png)
 
-1. Admins must add the existing shared field *Disable Vault Overlays (disable_vault_overlays__v)* and set it to Active for all document types that are eligible for Adobe Signature. Optionally, the field can have a specific security that allows only members of Adobe Sign Admin group to update its value.
+1. Admins must add the existing shared field *Disable Vault Overlays (disable_vault_overlays__v)* and set it to **[!UICONTROL Active]** for all document types that are eligible for Adobe Signature. Optionally, the field can have a specific security that allows only members of Adobe Sign Admin group to update its value.
 
     ![Image of allow adobe sign user actions](images/allow-adobe-sign-user-actions.png)
 
 ### Step 8. Declare Document Renditions {#declare-renditions}
 
-The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c) is used by Vault integration to upload signed PDF documents to Adobe Sign. The Adobe Sign rendition should be declared for each document type that is eligible for Adobe Signature.
+The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c)* is used by Vault integration to upload signed PDF documents to Adobe Sign. You must declare the Adobe Sign rendition for each document type that is eligible for Adobe Signature.
 
 ![Image of rendition types](images/rendition-type.png)
 
@@ -253,22 +253,20 @@ Adobe Sign and Vault integration requires you to create and configure following 
 
 ### Step 10. Update document lifecycle {#document-lifecycle}
 
-For each document type eligible for Adobe Signature, corresponding document lifecycle must be updated by adding new lifecycle role and states. 
+For each document type eligible for Adobe Signature, you must update corresponding document lifecycle by adding new lifecycle role and states. 
 
 Adobe Sign agreement lifecycle has following states:
 
-    * DRAFT
-    * AUTHORING or DOCUMENTS_NOT_YET_PROCESSED
-    * OUT_FOR_SIGNATURE or OUT_FOR_APPROVAL
-    * SIGNED or APPROVED
-    * CANCELLED
-    * EXPIRED
+* DRAFT
+* AUTHORING or DOCUMENTS_NOT_YET_PROCESSED
+* OUT_FOR_SIGNATURE or OUT_FOR_APPROVAL
+* SIGNED or APPROVED
+* CANCELLED
+* EXPIRED
 
 To update document lifecycle, follow the steps below:
 
-1. Add Lifecycle role 
-
-    Adobe Sign Admin application role must be added in all lifecycles used by documents eligible for Adobe Signature, as shown below. 
+1. Add Lifecycle role. Adobe Sign Admin application role must be added in all lifecycles used by documents eligible for Adobe Signature, as shown below. 
 
     ![Image of lifecycle admin roles](images/document-lifecycle-admin-role.png)
 
@@ -279,61 +277,66 @@ To update document lifecycle, follow the steps below:
 
     ![Image of adobe sign sharing rule](images/adobe-sign-sharing-rule.png)
 
-2. Create Lifecycle states. To do so, go to **Settings** > **Configuration** > **Document Lifecycles** > **General Lifecycles** > **States** > **Create**. Next, create the following states:
+2. Create Lifecycle states. To do so, go to **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Document Lifecycles]** > **[!UICONTROL General Lifecycles]** > **[!UICONTROL States]** > **[!UICONTROL Create]**. Next, create the following states:
 
     * In Adobe Sign Draft
+
     ![Image of adobe sign sharing rule](images/create-draft-state.png)
+
     * In Adobe Sign Authoring
+
     ![Image of adobe sign sharing rule](images/create-authoring-state.png)
+
     * In Adobe Signing
+
     ![Image of adobe sign sharing rule](images/create-signing-state.png)
 
 3. Add User Actions to the below listed states. 
    
     When a Vault document is sent to Adobe Sign, its state should correspond to the state in which the agreement is. To do so, add following states in every lifecycle used by documents eligible for Adobe Signature:
 
-* **Before Adobe Signature** (Reviewed): This is a placeholder name for the state from which document can be sent to Adobe Sign. Based on the document type, it can be Draft state or Reviewed. Document state label can be customized as per the customer’s requirements. Before Adobe Signature state must define following two user actions:
+    * **Before Adobe Signature** (Reviewed): This is a placeholder name for the state from which document can be sent to Adobe Sign. Based on the document type, it can be Draft state or Reviewed. Document state label can be customized as per the customer’s requirements. Before Adobe Signature state must define following two user actions:
 
-  * Action that changes the state of document to *In Adobe Sign Draft* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”. 
-  * Action that calls the Web Action ‘Adobe Sign’. This state must have security that allows Adobe Sign Admin Role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.
+    * Action that changes the state of document to *In Adobe Sign Draft* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”. 
+    * Action that calls the Web Action ‘Adobe Sign’. This state must have security that allows Adobe Sign Admin Role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.
 
     ![Image of lifecycle state 1](images/lifecycle-state1.png)
 
-* **In Adobe Sign Draft**: This is a placeholder name for the state that indicates that the document is already uploaded to Adobe Sign and that its agreement is in a DRAFT state. It is a required state. This state must define following five user actions:
+    * **In Adobe Sign Draft**: This is a placeholder name for the state that indicates that the document is already uploaded to Adobe Sign and that its agreement is in a DRAFT state. It is a required state. This state must define following five user actions:
 
-  * Action that changes the state of document to *In Adobe Sign Authoring* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
-  * Action that changes the state of document to *In Adobe Signing state*. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
-  * Action that changes the state of document to *Adobe Sign Cancelled* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
-  * Action that calls the Web Action ‘Adobe Sign’ .
-  * Action that calls the Web Action ‘Cancel Adobe Sign’. This state must have security that allowsAdobe Sign Admin role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.
+    * Action that changes the state of document to *In Adobe Sign Authoring* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
+    * Action that changes the state of document to *In Adobe Signing state*. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
+    * Action that changes the state of document to *Adobe Sign Cancelled* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
+    * Action that calls the Web Action ‘Adobe Sign’ .
+    * Action that calls the Web Action ‘Cancel Adobe Sign’. This state must have security that allowsAdobe Sign Admin role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.
 
     ![Image of lifecycle state 2](images/lifecycle-state2.png)
 
-* **In Adobe Sign Authoring**: This is a placeholder name for state that indicates that the document is already uploaded to Adobe Sign and that its agreement is in AUTHORING or DOCUMENTS_NOT_YET_PROCESSED state. It is a required state. This state must have following four user actions defined:
+    * **In Adobe Sign Authoring**: This is a placeholder name for state that indicates that the document is already uploaded to Adobe Sign and that its agreement is in AUTHORING or DOCUMENTS_NOT_YET_PROCESSED state. It is a required state. This state must have following four user actions defined:
 
-  * Action that changes the state of document to Adobe Sign Cancelled state. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
-  * Action that changes the state of document to In Adobe Signing state. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
-  * Action that calls the Web Action ‘Adobe Sign’ 
-  * Action that calls the Web Action ‘Cancel Adobe Sign’. This state must have security that allowsAdobe Sign Admin role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.  
+    * Action that changes the state of document to Adobe Sign Cancelled state. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
+    * Action that changes the state of document to In Adobe Signing state. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
+    * Action that calls the Web Action ‘Adobe Sign’ 
+    * Action that calls the Web Action ‘Cancel Adobe Sign’. This state must have security that allowsAdobe Sign Admin role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.  
 
     ![Image of lifecycle state 3](images/lifecycle-state3.png)
 
-* **In Adobe Signing**: This is a placeholder name for the state that indicates that the document is uploaded to Adobe Sign and that its agreement is already sent to participants (OUT_FOR_SIGNATURE or OUT_FOR_APPROVAL state). It is a required state. This state must have following five user actions defined:
+    * **In Adobe Signing**: This is a placeholder name for the state that indicates that the document is uploaded to Adobe Sign and that its agreement is already sent to participants (OUT_FOR_SIGNATURE or OUT_FOR_APPROVAL state). It is a required state. This state must have following five user actions defined:
 
-  * Action that changes the state of document to Adobe Sign Cancelled state. The target state of this action can be whatever customer requirement is and it can be different for different types. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
-  * Action that changes the state of document to Adobe Sign Rejected state. The target state of this action can be whatever customer requirement is and it can be different for different types. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
-  * Action that changes the state of document to Adobe Signed state. The target state of this action can be whatever customer requirement is and it can be different for different types. However, the name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
-  * Action that calls the Web Action *Adobe Sign*.
-  * Action that calls Web Action *Cancel Adobe Sign*. This state must have security that allowsAdobe Sign Admin role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.  
+    * Action that changes the state of document to Adobe Sign Cancelled state. The target state of this action can be whatever customer requirement is and it can be different for different types. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
+    * Action that changes the state of document to Adobe Sign Rejected state. The target state of this action can be whatever customer requirement is and it can be different for different types. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
+    * Action that changes the state of document to Adobe Signed state. The target state of this action can be whatever customer requirement is and it can be different for different types. However, the name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
+    * Action that calls the Web Action *Adobe Sign*.
+    * Action that calls Web Action *Cancel Adobe Sign*. This state must have security that allowsAdobe Sign Admin role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.  
 
     ![Image of lifecycle state 4](images/lifecycle-state4.png)
 
-* **Adobe Signed (Approved)**: This is a placeholder name for the state that indicates that the document is uploaded to Adobe Sign and that its agreement is completed (SIGNED or APPROVED state). It is a required state and it can be an existing lifecycle state, like Approved.
-This state does not require user actions. This state must have security that allows Adobe Sign Admin role to: view documents, view content, and edit fields.
+    * **Adobe Signed (Approved)**: This is a placeholder name for the state that indicates that the document is uploaded to Adobe Sign and that its agreement is completed (SIGNED or APPROVED state). It is a required state and it can be an existing lifecycle state, like Approved.
+    This state does not require user actions. It must have security that allows Adobe Sign Admin role to: view documents, view content, and edit fields.
 
-Following diagram illustrates the mappings between Adobe Sign agreement and Vault document states, where the ‘Before Adobe Signature’ state is Draft. 
+    Following diagram illustrates the mappings between Adobe Sign agreement and Vault document states, where the ‘Before Adobe Signature’ state is Draft. 
 
-![Image of Adobe Sign Vault mappints](images/sign-vault-mappings.png)
+    ![Image of Adobe Sign Vault mappints](images/sign-vault-mappings.png)
 
 ### Step 11. Add Adobe Sign stage to General Lifecycle in Lifecycle Stage groups
 

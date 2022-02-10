@@ -14,7 +14,7 @@ exl-id: 39a43637-af3f-432e-a784-8f472aa86df5
 
 [**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
 
-This document is designed to help [!DNL Veeva Vault] customers learn how to use Adobe Sign for [!DNL Veeva Vault] integration to send an agreement. 
+This document is designed to help [!DNL Veeva Vault] customers learn how to use Adobe Sign for [!DNL Veeva Vault] integration for sending an agreement. 
 
 ## Overview {#overview}
 
@@ -24,7 +24,7 @@ The overall process of sending documents for signature is similar to sending an 
 
 Adobe Sign integration with [!DNL Veeva Vault] streamlines and expedite your document and signature workflows. By using the integration workflow, you:
 
-* Saving time and resources spent on snail mail, overnighting, and faxing.
+* Save time and resources spent on snail mails, overnighting, or faxing.
 * Send contracts for e-signature or approval from [!DNL Veeva Vault], access real-time contract history, and view saved contracts.
 * Track the deals in real-time across your organization and get updates when agreements are viewed, signed, canceled, or declined.
 * eSign in over 20 languages and support fax-back service in 50+ locales worldwide.
@@ -97,11 +97,11 @@ To send an agreement using Adobe Sign for Veeva:
 
     ![](images/iFrame-contact-administrator.png)
 
-1. Once the document is processed, drag and drop the Signature fields on from the right panel and select **[!UICONTROL Send]**.  
+1. Once the document is processed, drag and drop the Signature fields from the right panel and select **[!UICONTROL Send]**.  
 
     ![](images/add-signature-fields.png)
 
-1. It sends the document to the recipient for signature. Once the recipient receives the document email, the document status changes from [!UICONTROL Reviewed] to [!UICONTROL In Adobe Signing].
+1. It sends the document to the recipients for signature. Once the recipient receives the document email, the document status changes from [!UICONTROL Reviewed] to [!UICONTROL In Adobe Signing].
 
     ![](images/in-adobe-signing.png)
 
