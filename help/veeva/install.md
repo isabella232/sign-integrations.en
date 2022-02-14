@@ -28,6 +28,7 @@ The high-level steps to complete the integration are:
 * Create document fields and renditions.
 * Configure web actions and update the document lifecycle.
 * Create document type user and user role setup.
+* Connect Veeva Vault to Adobe Sign using middleware.
 
 >[!NOTE]
 >
@@ -229,6 +230,7 @@ Adobe Sign and Vault integration requires you to create and configure following 
 
     Type: Document
     Target: Display within Vault
+    Credentials: Enable Post Session credentials via Post Message
     URL: <https://api.na1.adobesign.com/api/gateway/veevavaultintsvc/partner/agreement?docId=${Document.id}&majVer=${Document.major_version_number__v}&minVer=${Document.minor_version_number__v}&vaultid=${Vault.id}&useWaitPage=true>
 
     ![Image of create Adobe Sign](images/create-adobe-sign.png)
@@ -237,6 +239,7 @@ Adobe Sign and Vault integration requires you to create and configure following 
 
     Type: Document
     Target: Display within Vault
+    Credentials: Enable Post Session credentials via Post Message
     URL: : <https://api.na1.adobesign.com/api/gateway/veevavaultintsvc/partner/agreement/cancel?docId=${Document.id}&majVer=${Document.major_version_number__v}&minVer=${Document.minor_version_number__v}&vaultid=${Vault.id}&useWaitPage=true>
 
     ![Image of cancel Adobe Sign](images/cancel-adobe-sign.png)
