@@ -119,13 +119,51 @@ Signature Event object is created to store an agreement's event-related informat
 |participant_role__c|Participant Role|String|Holds the Adobe Sign participant’s role|
 |signature__c|Signature|Object (Signature)|Holds the reference to the signature parent record|
 
-![Image of signature event details](images/signature-event-object-details.png) 
+![Image](images/signature-event-object-details.png) 
 
 #### Process Locker object {#process-locker}
 
 A Process Locker object is created to lock the Adobe Sign integration process. It does not require any custom fields.
 
 ![Image of signature event details](images/process-locker-details.png) 
+
+The Signature, Signatory, Signature Event, and Process Locker objects that come as a part of the deployment package have the 'Audit data changes for this object' property enabled by default.
+
+**Note:** To include the Vault caputure object record data changes in audit logs, enable the Audit data changes setting. This setting is Off by default. Once you enable this setting and create records, you cannot disable it. If this setting is off and records exist, only a Vault Owner can update the setting.
+
+#### **Display Participants and History for the Signature Object** {#display-participants-history}
+
+The Signature object that comes as a part of the deployment package comes with the [Signature Detail Page Layout](https://vvtechpartner-adobe-rim.veevavault.com/ui/#admin/content_setup/object_schema/pagelayout?t=signature__c&d=signature_detail_page_layout__c). The Page Layout has sections for Participants and History.
+
+* The *Participants* section has the Related Objects Section that is configured as shown in the image below.
+
+    ![Image](images/edit-related-objects.png)
+
+* You can edit the columns to be displayed for the Participants, as shown below.
+
+    ![Image](images/set-columns-to-display.png)
+
+* The *History* section has the Related Objects Section that is configured as shown in the image below.
+
+    ![Image](images/edit-related-object-in-history.png)
+
+* You can edit the columns to be displayed for the History, as shown below.
+
+    ![Image](images/select-columns-to-display.png)
+
+#### **View Participants & Audit History for the Adobe Sign Document** {#view-participants-audit-history}
+
+* To view Participants and Audit history for the Adobe Sign document, select the link in the 'Adobe Signature' section of the document.
+
+    ![Image](images/view-participants-audit-history.png)
+
+* The page that opens displays the Participants and History for the Adobe Sign document, as shown below.
+
+    ![Image](images/participants-and-history.png)
+
+* View the audiot trail for Signature as shown below.
+
+    ![Image](images/audit-trail.png)
 
 ### Step 3. Setup Security profiles {#security-profiles}
 
