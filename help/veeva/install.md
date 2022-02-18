@@ -129,7 +129,7 @@ A Process Locker object is created to lock the Adobe Sign integration process. I
 
 The Signature, Signatory, Signature Event, and Process Locker objects that come as a part of the deployment package have the 'Audit data changes for this object' property enabled by default.
 
-**Note:** To include the Vault caputure object record data changes in audit logs, enable the Audit data changes setting. This setting is Off by default. Once you enable this setting and create records, you cannot disable it. If this setting is off and records exist, only a Vault Owner can update the setting.
+**Note:** You can have Vault capture object record data changes in audit logs by enabling the Audit data changes setting. This setting is off by default. Once you enable this setting and create records, you can no longer disable it. If this setting is off and records exist, only a Vault Owner can update the setting.
 
 #### **Display Participants and History for the Signature Object** {#display-participants-history}
 
@@ -161,7 +161,7 @@ The Signature object that comes as a part of the deployment package comes with t
 
     ![Image](images/participants-and-history.png)
 
-* View the audiot trail for Signature as shown below.
+* View the audit trail for Signature as shown below.
 
     ![Image](images/audit-trail.png)
 
