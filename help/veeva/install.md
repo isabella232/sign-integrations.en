@@ -1,5 +1,5 @@
 ---
-title: [!DNL Veeva Vault] Installation Guide
+title: "[!DNL Veeva Vault] Installation Guide"
 description: Installation guide for enabling the Adobe Sign integration with Veeva
 product: Adobe Sign
 topic-tags: EchoSign/Integrations
