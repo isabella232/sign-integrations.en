@@ -1,5 +1,5 @@
 ---
-title: [!DNL Veeva Vault] Installation Guide
+title: Veeva Vault Installation Guide
 description: Installation guide for enabling the Adobe Sign integration with Veeva
 product: Adobe Sign
 topic-tags: EchoSign/Integrations
@@ -54,6 +54,7 @@ To configure Adobe Sign for [!DNL Vault], a new group called *Adobe Sign Admin G
 * Signatory object page layout
 * Process Locker object page layout
 * Adobe Sign Rendition type
+* Original Rendition type
 * Shared field signature__c , allow_adobe_sign_user_actions__c 
 * Adobe Sign Web Action
 * Cancel Adobe Sign Web Action
@@ -260,6 +261,10 @@ The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c)* i
 
 ![Image of rendition types](images/edit-details-clinical-type.png)
 
+The new rendition type called *Original Rendition (original_rendition__c)* is used by the Vault integration as the name of the rendition that should be used to store the original viewable rendition if the signed document is imported as viewable rendition.
+
+![Image](images/original-rendition.png)
+
 ### Step 9. Update Web Actions {#web-actions}
 
 Adobe Sign and Vault integration requires you to create and configure following two web actions:
@@ -440,6 +445,10 @@ An Adobe Sign account administrator must follow the below steps to connect [!DNL
     **Note:** Auto Provisioning of new Adobe Sign Users works only if it has been enabled at the Adobe Sign Account Level in Adobe Sign in addition to enabling **[!UICONTROL Auto Provision Sign Users]** for the[!DNL Veeva Vault]Adobe Sign integration as shown below by the Adobe Sign Account Administrator.
 
    ![Image](images/allow-auto-provisioning.png)
+
+1. To configure Adobe Sign Rendition to be displayed in Veeva instead of the Original Rendition, select the checkbox **[!UICONTROL Display Adobe Sign Rendition]**.
+
+   ![Image](images/edit-connection-dispplay-adobe-sign-rendition.png)
 
 1. Select **[!UICONTROL Save]** to save your new connection.
 
