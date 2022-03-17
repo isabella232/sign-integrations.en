@@ -259,7 +259,7 @@ The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c)* i
 
 ![Image of rendition types](images/rendition-type.png)
 
-![Image of rendition types](images/edit-details-clinical-type.png)
+![Image](images/edit-details-clinical-type.png)
 
 The new rendition type called *Original Rendition (original_rendition__c)* is used by the Vault integration as the name of the rendition that should be used to store the original viewable rendition if the signed document is imported as viewable rendition.
 
