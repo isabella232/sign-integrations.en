@@ -6,7 +6,7 @@ topic-tags: EchoSign/Integrations
 content-type: reference
 locnotes: All languages; screenshots for Tier 1 and 2 only (see the currently published localized page for guidance)
 type: Documentation
-solution: Adobe Sign
+solution: Acrobat Sign, Adobe Sign
 role: User, Developer
 topic: Integrations
 exl-id: 12c91be5-afec-4918-a8fc-ceb33bedf98b
