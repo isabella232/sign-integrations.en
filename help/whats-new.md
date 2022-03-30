@@ -5,7 +5,7 @@ landing-page-description: This metadata is for a landing page.
 exl-id: 204e5f43-59f6-4200-a9b7-6f67ecd32c4d
 products: Adobe Sign
 type: Documentation
-solution: Acrobat Sign, Adobe Sign
+solution: Acrobat Sign
 role: User, Developer
 topic: Integrations
 ---

@@ -4,7 +4,7 @@ description: Learn how to set up Adobe Sign Integrations
 audience: External
 products: Adobe Sign
 type: Documentation
-solution: Acrobat Sign, Adobe Sign
+solution: Acrobat Sign
 role: User, Developer
 topic: Integrations
 exl-id: b2fa280d-894c-47da-bbf5-8b4d0c6b6165
