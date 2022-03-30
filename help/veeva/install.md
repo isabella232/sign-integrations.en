@@ -36,7 +36,7 @@ The high-level steps to complete the integration are:
 
 ## Configure [!DNL Veeva Vault] {#configure-veeva}
 
-To configure [!DNL Veeva Vault] for integration with Adobe Acrobat Sign, you need to implement the below listed steps.
+To configure [!DNL Veeva Vault] for integration with Adobe Acrobat Sign, you must implement the below listed steps.
 
 ### Step 1. Create Group {#create-group}
 
@@ -183,7 +183,7 @@ You must update the Adobe Sign Admin Group (created in Step 1) by setting the in
 
 The Vault system account user of Adobe Acrobat Sign integration must:
 
-* Have a Adobe Sign Integration Profile
+* Have an Adobe Sign Integration Profile
 * Have a Security profile
 * Have Specific security policy that disables password expiration
 * Be a member of Adobe Sign Admin Group.
@@ -204,7 +204,7 @@ When you deploy the Adobe Acrobat Sign package, it creates a Document Type Group
 
 ![Image of document type groups](images/document-type-groups.png)
 
-You need to add this document type group for all document classifications that are eligible for Adobe Acrobat Sign process. Since document type group property is not inherited from type to subtype nor from subtype to classification level, it must be set for each document’s classification that is eligible for Adobe Acrobat Sign.
+You must add this document type group for all document classifications that are eligible for Adobe Acrobat Sign process. Since document type group property is not inherited from type to subtype nor from subtype to classification level, it must be set for each document’s classification that is eligible for Adobe Acrobat Sign.
 
 ![Image of document edit details](images/document-edit-details.png)
 
@@ -216,7 +216,7 @@ You need to add this document type group for all document classifications that a
 
 ### Step 6. Create User Role Setup {#create-user-role-setup}
 
-Once lifecycle(s) is(are) properly configured, the system should ensure that Adobe Sign Admin user is added by DAC for all documents that are eligible for Adobe Acrobat Sign process. This is done by creating the appropriate User Role Setup record that specifies:
+Once lifecycles is(are) properly configured, the system should ensure that Adobe Sign Admin user is added by DAC for all documents that are eligible for Adobe Acrobat Sign process. This is done by creating the appropriate User Role Setup record that specifies:
 
 * Document Type Group as Adobe Sign Document
 * Application Role as Adobe Sign Admin Role
@@ -233,7 +233,7 @@ The package deployment creates following two new shared document fields that are
 
 ![Image](images/2-document-fields.png)
 
-To setup Document Fields:
+To set up Document Fields:
 
 1. Go to the Configuration tab and select **[!UICONTROL Document Fields]** > **[!UICONTROL Shared Fields]**.
 1. In the Display Section field, select **[!UICONTROL Create Display Section]** and assign **[!UICONTROL Adobe Signature]** as the Section label.
@@ -241,7 +241,7 @@ To setup Document Fields:
     ![Image](images/create-display-section.png)
 
 1. For the two shared Document fields (signature__c and allow_adobe_sign_user_actions__c), update the UI section with **[!UICONTROL Adobe Signature]** as the section label.
-1. Add the three shared fields to all document types that are eligible for Adobe Acrobat Signature. To do so, in the Base Dcoument page, select **[!UICONTROL Add]** > **[!UICONTROL Existing Shared Field]** from the top right corner.
+1. Add the three shared fields to all document types that are eligible for Adobe Acrobat Signature. To do so, in the Base Document page, select **[!UICONTROL Add]** > **[!UICONTROL Existing Shared Field]** from the top-right corner.
 
     ![Image](images/create-document-fields.png)
 
@@ -249,7 +249,7 @@ To setup Document Fields:
 
     ![Image](images/use-shared-fields.png)
 
-1. Note that both fields must have a specific security that allows only members of Adobe Sign Admin Group to update their values.
+1. Both fields must have a specific security that allows only members of Adobe Sign Admin Group to update their values.
 
     ![Image](images/security-overrides.png)
 

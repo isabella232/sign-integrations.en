@@ -26,7 +26,7 @@ Adobe Acrobat Sign integration with [!DNL Veeva Vault] streamlines and expedite 
 
 * Save time and resources spent on snail mails, overnighting, or faxing.
 * Send contracts for e-signature or approval from [!DNL Veeva Vault], access real-time contract history, and view saved contracts.
-* Track the deals in real-time across your organization and get updates when agreements are viewed, signed, canceled, or declined.
+* Track the deals in real time across your organization and get updates when agreements are viewed, signed, canceled, or declined.
 * eSign in over 20 languages and support fax-back service in 50+ locales worldwide.
 * Create reusable Agreement Templates for sending options.
 
@@ -50,7 +50,7 @@ To send an agreement using Adobe Acrobat Sign for Veeva:
 
     ![](images/choose-document-type.png)
 
-1. Select **[!UICONTROL Ok]** to close the dialog.
+1. To close the dialog, select **[!UICONTROL Ok]**.
 
 1. Select **[!UICONTROL Next]**.
 
@@ -111,11 +111,11 @@ To send an agreement using Adobe Acrobat Sign for Veeva:
 
 1. Once all the signatures are captured and completed in Adobe Acrobat Sign, the document Status in Vault changes to [!UICONTROL Approved].
 
-1. Select **[!UICONTROL Document Files]** option and expand the **[!UICONTROL Renditions]** section in Vault. It automatically creates a new Rendition called 'Adobe Sign Rendition' once the document is in Approved state. 
+1. Select **[!UICONTROL Document Files]** option and expand the **[!UICONTROL Renditions]** section in Vault. It automatically creates a Rendition called 'Adobe Sign Rendition' once the document is in Approved state. 
 
     ![](images/document-files.png)
 
-1. Download the Adobe Sign Rendition for validating the reciepient signature.
+1. Download the Adobe Sign Rendition for validating the recipient signature.
 
     ![](images/verify-signature.png)
 
