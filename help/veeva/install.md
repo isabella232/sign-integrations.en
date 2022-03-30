@@ -13,34 +13,34 @@ exl-id: 5d61a428-06e4-413b-868a-da296532c964
 ---
 # [!DNL Veeva Vault] Installation Guide{#veeva-installation-guide}
 
-[**Contact Adobe Sign Support**](https://adobe.com/go/adobesign-support-center)
+[**Contact Adobe Acrobat Sign Support**](https://adobe.com/go/adobesign-support-center)
 
 ## Overview {#overview}
 
-This document explains how to establish integration of Adobe Sign with [!DNL Veeva Vault] platform. [!DNL Veeva Vault] is an Enterprise Content Management (ECM) platform built for life sciences. A "Vault" is a content and data repository with typical usage for regulatory filings, research reporting, grants applications, general contracting, and more. A single enterprise can have multiple 'vaults' that must be maintained separately.
+This document explains how to establish integration of Adobe Acrobat Sign with [!DNL Veeva Vault] platform. [!DNL Veeva Vault] is an Enterprise Content Management (ECM) platform built for life sciences. A "Vault" is a content and data repository with typical usage for regulatory filings, research reporting, grants applications, general contracting, and more. A single enterprise can have multiple 'vaults' that must be maintained separately.
 
 The high-level steps to complete the integration are: 
 
-* Activate your Administrative account in Adobe Sign (New Customers Only).
+* Activate your Administrative account in Adobe Acrobat Sign (New Customers Only).
 * Create objects to track the history of an agreement lifecycle in Vault.
 * Create a new Security profile.
-* Configure a Group in Adobe Sign to hold the [!DNL Veeva Vault] integration user.
+* Configure a Group in Adobe Acrobat Sign to hold the [!DNL Veeva Vault] integration user.
 * Create document fields and renditions.
 * Configure web actions and update the document lifecycle.
 * Create document type user and user role setup.
-* Connect Veeva Vault to Adobe Sign using middleware.
+* Connect Veeva Vault to Adobe Acrobat Sign using middleware.
 
 >[!NOTE]
 >
->Adobe Sign admin must perform the Adobe Sign setup steps within Adobe Sign.
+>Adobe Sign admin must perform the Adobe Acrobat Sign setup steps within Adobe Acrobat Sign.
 
 ## Configure [!DNL Veeva Vault] {#configure-veeva}
 
-To configure [!DNL Veeva Vault] for integration with Adobe Sign, you need to implement the below listed steps.
+To configure [!DNL Veeva Vault] for integration with Adobe Acrobat Sign, you need to implement the below listed steps.
 
 ### Step 1. Create Group {#create-group}
 
-To configure Adobe Sign for [!DNL Vault], a new group called *Adobe Sign Admin Group* is created. This group is used to set the document field level security for Adobe Sign related fields and should include *Adobe Sign Integration Profile* by default. 
+To configure Adobe Acrobat Sign for [!DNL Vault], a new group called *Adobe Sign Admin Group* is created. This group is used to set the document field level security for Adobe Acrobat Sign related fields and should include *Adobe Sign Integration Profile* by default. 
 
 ![Image of signature event details](images/create-admin-group.png)
 
@@ -71,12 +71,12 @@ Signature object is created to store agreement-related information. A Signature 
 
 | Field | Label | Type | Description |
 | --- | --- | ---| --- | 
-|external_id__c |Agreement Id|String (100) |Holds the Adobe Sign’s unique agreement id|
-|file_hash__c |File Hash|String (50) |Holds the md5 checksum of the file that has been sent to Adobe Sign|
+|external_id__c |Agreement Id|String (100) |Holds the Adobe Acrobat Sign’s unique agreement id|
+|file_hash__c |File Hash|String (50) |Holds the md5 checksum of the file that has been sent to Adobe Acrobat Sign|
 |name__v|Name|String (128)|Holds the agreement name|
 |sender__c  |Sender  |Object (User)  |Holds the reference to the Vault user that has created the agreement|
-|signature_status__c  |Signature Status  |String (75) |Holds the agreement’s status in Adobe Sign|
-|signature_type__c|Signature Type|String (20)|Holds the agreement’s signature type in Adobe Sign (WRITTEN or ESIGN)|
+|signature_status__c  |Signature Status  |String (75) |Holds the agreement’s status in Adobe Acrobat Sign|
+|signature_type__c|Signature Type|String (20)|Holds the agreement’s signature type in Adobe Acrobat Sign (WRITTEN or ESIGN)|
 |start_date__c|Start Date|DateTime|Date when agreement has been sent for signature|
 |cancellation_date__c|Cancellation Date|DateTime|Holds the date when agreement has been cancelled.|
 |completion_date__c|Completion Date|DateTime|Holds the date when agreement has been completed.|
@@ -92,13 +92,13 @@ Signatory object is created to store information related to the participants in 
 
 | Field | Label | Type | Description |
 | --- | --- | ---| --- | 
-|email__c |Email |String (120) |Holds the Adobe Sign’s unique agreement id|
-|external_id__c |Participant Id |String (80) |Holds Adobe Sign unique participant’s identifier|
-|name__v |Name |String (128) |Holds Adobe Sign participant’s name|
-|order__c |Order |Number |Holds Adobe Sign agreement participant’s order number|
-|role__c |Role |String (30) |Holds Adobe Sign agreement participant’s role|
+|email__c |Email |String (120) |Holds the Adobe Acrobat Sign’s unique agreement id|
+|external_id__c |Participant Id |String (80) |Holds Adobe Acrobat Sign unique participant’s identifier|
+|name__v |Name |String (128) |Holds Adobe Acrobat Sign participant’s name|
+|order__c |Order |Number |Holds Adobe Acrobat Sign agreement participant’s order number|
+|role__c |Role |String (30) |Holds Adobe Acrobat Sign agreement participant’s role|
 |signature__c |Signature |Object (Signature) |Holds the reference to the signature parent record|
-|signature_status__c |Signature Status |String (100) |Holds Adobe Sign agreement participant’s status|
+|signature_status__c |Signature Status |String (100) |Holds Adobe Acrobat Sign agreement participant’s status|
 |user__c |User |Object (User) |Holds the reference to the signatory’s user record if participant is a Vault user|
 
 ![Image of signatory details](images/signatory-object-details.png) 
@@ -107,24 +107,26 @@ Signatory object is created to store information related to the participants in 
 
 Signature Event object is created to store an agreement's event-related information. It contains information under following specific fields:
 
+Signature Event Object Fields
+
 | Field | Label | Type | Description |
 | --- | --- | ---| --- | 
-|acting_user_email__c|Acting User Email|String|Holds the email of Adobe Sign user that performed the action that caused event to be generated|
-|acting_user_name__c|Acting User Name|String|Holds the name of Adobe Sign user that performed the action that caused event to be generated|
-|description__c|Description|String|Holds the Adobe Sign event’s description|
-|event_date__c|Event Date|DateTime|Holds the Adobe Sign event’s date and time|
-|event_type__c|Event type|String|Holds the Adobe Sign event’s type|
+|acting_user_email__c|Acting User Email|String|Holds the email of Adobe Acrobat Sign user that performed the action that caused event to be generated|
+|acting_user_name__c|Acting User Name|String|Holds the name of Adobe Acrobat Sign user that performed the action that caused event to be generated|
+|description__c|Description|String|Holds the Adobe Acrobat Sign event’s description|
+|event_date__c|Event Date|DateTime|Holds the Adobe Acrobat Sign event’s date and time|
+|event_type__c|Event type|String|Holds the Adobe Acrobat Sign event’s type|
 |name__v|Name|String|Auto-generated event name|
-|participant_comment__c|Participant comment|String|Holds the Adobe Sign participant’s comment if any|
-|participant_email__c|Participant Email|String|Holds the Adobe Sign participant’s email|
-|participant_role__c|Participant Role|String|Holds the Adobe Sign participant’s role|
+|participant_comment__c|Participant comment|String|Holds the Adobe Acrobat Sign participant’s comment if any|
+|participant_email__c|Participant Email|String|Holds the Adobe Acrobat Sign participant’s email|
+|participant_role__c|Participant Role|String|Holds the Adobe Acrobat Sign participant’s role|
 |signature__c|Signature|Object (Signature)|Holds the reference to the signature parent record|
 
 ![Image](images/signature-event-object-details.png) 
 
 #### Process Locker object {#process-locker}
 
-A Process Locker object is created to lock the Adobe Sign integration process. It does not require any custom fields.
+A Process Locker object is created to lock the Adobe Acrobat Sign integration process. It does not require any custom fields.
 
 ![Image of signature event details](images/process-locker-details.png) 
 
@@ -152,13 +154,13 @@ The Signature object that comes as a part of the deployment package comes with t
 
     ![Image](images/select-columns-to-display.png)
 
-#### **View Participants & Audit History for the Adobe Sign Document** {#view-participants-audit-history}
+#### **View Participants & Audit History for the Adobe Acrobat Sign Document** {#view-participants-audit-history}
 
-* To view Participants and Audit history for the Adobe Sign document, select the link in the 'Adobe Signature' section of the document.
+* To view Participants and Audit history for the Adobe Acrobat Sign document, select the link in the 'Adobe Signature' section of the document.
 
     ![Image](images/view-participants-audit-history.png)
 
-* The page that opens displays the Participants and History for the Adobe Sign document, as shown below.
+* The page that opens displays the Participants and History for the Adobe Acrobat Sign document, as shown below.
 
     ![Image](images/participants-and-history.png)
 
@@ -179,7 +181,7 @@ You must update the Adobe Sign Admin Group (created in Step 1) by setting the in
 
 ### Step 4. Create User {#create-user}
 
-The Vault system account user of Adobe Sign integration must:
+The Vault system account user of Adobe Acrobat Sign integration must:
 
 * Have a Adobe Sign Integration Profile
 * Have a Security profile
@@ -188,7 +190,7 @@ The Vault system account user of Adobe Sign integration must:
 
 To do so, follow the steps below:
 
-1. Create Vault system account user of Adobe Sign integration.
+1. Create Vault system account user of Adobe Acrobat Sign integration.
 
     ![Image of signature event details](images/create-user.png)
 
@@ -198,11 +200,11 @@ To do so, follow the steps below:
 
 ### Step 5. Configure Document Type Group {#create-document-type-group}
 
-When you deploy the Adobe Sign package, it creates a Document Type Group record called 'Adobe Sign Document'. 
+When you deploy the Adobe Acrobat Sign package, it creates a Document Type Group record called 'Adobe Sign Document'. 
 
 ![Image of document type groups](images/document-type-groups.png)
 
-You need to add this document type group for all document classifications that are eligible for Adobe Sign process. Since document type group property is not inherited from type to subtype nor from subtype to classification level, it must be set for each document’s classification that is eligible for Adobe Sign.
+You need to add this document type group for all document classifications that are eligible for Adobe Acrobat Sign process. Since document type group property is not inherited from type to subtype nor from subtype to classification level, it must be set for each document’s classification that is eligible for Adobe Acrobat Sign.
 
 ![Image of document edit details](images/document-edit-details.png)
 
@@ -214,7 +216,7 @@ You need to add this document type group for all document classifications that a
 
 ### Step 6. Create User Role Setup {#create-user-role-setup}
 
-Once lifecycle(s) is(are) properly configured, the system should ensure that Adobe Sign Admin user is added by DAC for all documents that are eligible for Adobe Sign process. This is done by creating the appropriate User Role Setup record that specifies:
+Once lifecycle(s) is(are) properly configured, the system should ensure that Adobe Sign Admin user is added by DAC for all documents that are eligible for Adobe Acrobat Sign process. This is done by creating the appropriate User Role Setup record that specifies:
 
 * Document Type Group as Adobe Sign Document
 * Application Role as Adobe Sign Admin Role
@@ -239,7 +241,7 @@ To setup Document Fields:
     ![Image](images/create-display-section.png)
 
 1. For the two shared Document fields (signature__c and allow_adobe_sign_user_actions__c), update the UI section with **[!UICONTROL Adobe Signature]** as the section label.
-1. Add the three shared fields to all document types that are eligible for Adobe Signature. To do so, in the Base Dcoument page, select **[!UICONTROL Add]** > **[!UICONTROL Existing Shared Field]** from the top right corner.
+1. Add the three shared fields to all document types that are eligible for Adobe Acrobat Signature. To do so, in the Base Dcoument page, select **[!UICONTROL Add]** > **[!UICONTROL Existing Shared Field]** from the top right corner.
 
     ![Image](images/create-document-fields.png)
 
@@ -255,7 +257,7 @@ Disable Vault Overlays (disable_vault_overlays__v) is an existing shared field. 
 
 ### Step 8. Declare Document Renditions {#declare-renditions}
 
-The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c)* is used by Vault integration to upload signed PDF documents to Adobe Sign. You must declare the Adobe Sign rendition for each document type that is eligible for Adobe Signature.
+The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c)* is used by Vault integration to upload signed PDF documents to Adobe Acrobat Sign. You must declare the Adobe Sign rendition for each document type that is eligible for Adobe Acrobat Signature.
 
 ![Image of rendition types](images/rendition-type.png)
 
@@ -267,9 +269,9 @@ The new rendition type called *Original Rendition (original_rendition__c)* is us
 
 ### Step 9. Update Web Actions {#web-actions}
 
-Adobe Sign and Vault integration requires you to create and configure following two web actions:
+Adobe Acrobat Sign and Vault integration requires you to create and configure following two web actions:
 
-* **Create Adobe Sign**: It creates or displays Adobe Sign Agreement.
+* **Create Adobe Sign**: It creates or displays Adobe Acrobat Sign Agreement.
 
     Type: Document
     Target: Display within Vault
@@ -278,7 +280,7 @@ Adobe Sign and Vault integration requires you to create and configure following 
 
     ![Image of create Adobe Sign](images/create-adobe-sign.png)
 
-* **Cancel Adobe Sign**: It cancels an existing agreement in Adobe Sign and reverts a document’s state to the initial one.
+* **Cancel Adobe Sign**: It cancels an existing agreement in Adobe Acrobat Sign and reverts a document’s state to the initial one.
 
     Type: Document
     Target: Display within Vault
@@ -291,7 +293,7 @@ Adobe Sign and Vault integration requires you to create and configure following 
 
 For each document type eligible for Adobe Signature, you must update corresponding document lifecycle by adding new lifecycle role and states. 
 
-Adobe Sign agreement lifecycle has following states:
+Adobe Acrobat Sign agreement lifecycle has following states:
 
 * DRAFT
 * AUTHORING or DOCUMENTS_NOT_YET_PROCESSED
@@ -302,7 +304,7 @@ Adobe Sign agreement lifecycle has following states:
 
 To update document lifecycle, follow the steps below:
 
-1. Add Lifecycle role. Adobe Sign Admin application role must be added in all lifecycles used by documents eligible for Adobe Signature, as shown below. 
+1. Add Lifecycle role. Adobe Sign Admin application role must be added in all lifecycles used by documents eligible for Adobe  Acrobat Signature, as shown below. 
 
     ![Image of lifecycle admin roles](images/document-lifecycle-admin-role.png)
 
@@ -329,26 +331,26 @@ To update document lifecycle, follow the steps below:
 
 3. Add User Actions to the below listed states. 
    
-    When a Vault document is sent to Adobe Sign, its state should correspond to the state in which the agreement is. To do so, add following states in every lifecycle used by documents eligible for Adobe Signature:
+    When a Vault document is sent to Adobe Acrobat Sign, its state should correspond to the state in which the agreement is. To do so, add following states in every lifecycle used by documents eligible for Adobe Signature:
 
-    * **Before Adobe Signature** (Reviewed): This is a placeholder name for the state from which document can be sent to Adobe Sign. Based on the document type, it can be Draft state or Reviewed. Document state label can be customized as per the customer’s requirements. Before Adobe Signature state must define following two user actions:
+    * **Before Adobe Signature** (Reviewed): This is a placeholder name for the state from which document can be sent to Adobe Acrobat Sign. Based on the document type, it can be Draft state or Reviewed. Document state label can be customized as per the customer’s requirements. Before Adobe Signature state must define following two user actions:
 
         * Action that changes the state of document to *In Adobe Sign Draft* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”. 
         * Action that calls the Web Action ‘Adobe Sign’. This state must have security that allows Adobe Sign Admin Role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.
 
         ![Image of lifecycle state 1](images/lifecycle-state1.png)
 
-    * **In Adobe Sign Draft**: This is a placeholder name for the state that indicates that the document is already uploaded to Adobe Sign and that its agreement is in a DRAFT state. It is a required state. This state must define following five user actions:
+    * **In Adobe Sign Draft**: This is a placeholder name for the state that indicates that the document is already uploaded to Adobe Acrobat Sign and that its agreement is in a DRAFT state. It is a required state. This state must define following five user actions:
 
         * Action that changes the state of document to *In Adobe Sign Authoring* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
         * Action that changes the state of document to *In Adobe Signing state*. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
         * Action that changes the state of document to *Adobe Sign Cancelled* state. The name of this user action must be the same for all document types for any lifecycle. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
         * Action that calls the Web Action ‘Adobe Sign’ .
-        * Action that calls the Web Action ‘Cancel Adobe Sign’. This state must have security that allowsAdobe Sign Admin role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.
+        * Action that calls the Web Action ‘Cancel Adobe Sign’. This state must have security that allows Adobe Sign Admin role to: view document, view content, edit fields, edit relationships, download source, manage viewable rendition, and change state.
 
         ![Image of lifecycle state 2](images/lifecycle-state2.png)
 
-    * **In Adobe Sign Authoring**: This is a placeholder name for state that indicates that the document is already uploaded to Adobe Sign and that its agreement is in AUTHORING or DOCUMENTS_NOT_YET_PROCESSED state. It is a required state. This state must have following four user actions defined:
+    * **In Adobe Sign Authoring**: This is a placeholder name for state that indicates that the document is already uploaded to Adobe Acrobat Sign and that its agreement is in AUTHORING or DOCUMENTS_NOT_YET_PROCESSED state. It is a required state. This state must have following four user actions defined:
 
         * Action that changes the state of document to Adobe Sign Cancelled state. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
         * Action that changes the state of document to In Adobe Signing state. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
@@ -357,7 +359,7 @@ To update document lifecycle, follow the steps below:
 
         ![Image of lifecycle state 3](images/lifecycle-state3.png)
 
-    * **In Adobe Signing**: This is a placeholder name for the state that indicates that the document is uploaded to Adobe Sign and that its agreement is already sent to participants (OUT_FOR_SIGNATURE or OUT_FOR_APPROVAL state). It is a required state. This state must have following five user actions defined:
+    * **In Adobe Signing**: This is a placeholder name for the state that indicates that the document is uploaded to Adobe Acrobat Sign and that its agreement is already sent to participants (OUT_FOR_SIGNATURE or OUT_FOR_APPROVAL state). It is a required state. This state must have following five user actions defined:
 
         * Action that changes the state of document to Adobe Sign Cancelled state. The target state of this action can be whatever customer requirement is and it can be different for different types. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
         * Action that changes the state of document to Adobe Sign Rejected state. The target state of this action can be whatever customer requirement is and it can be different for different types. The name of this user action must be the same for all document types no matter what lifecycle is. If necessary, the criteria for this action can be set to “Allow Adobe Sign user actions equals Yes”.
@@ -367,10 +369,10 @@ To update document lifecycle, follow the steps below:
 
         ![Image of lifecycle state 4](images/lifecycle-state4.png)
 
-        * **Adobe Signed (Approved)**: This is a placeholder name for the state that indicates that the document is uploaded to Adobe Sign and that its agreement is completed (SIGNED or APPROVED state). It is a required state and it can be an existing lifecycle state, like Approved.
+        * **Adobe Signed (Approved)**: This is a placeholder name for the state that indicates that the document is uploaded to Adobe Acrobat Sign and that its agreement is completed (SIGNED or APPROVED state). It is a required state and it can be an existing lifecycle state, like Approved.
         This state does not require user actions. It must have security that allows Adobe Sign Admin role to: view documents, view content, and edit fields.
 
-    Following diagram illustrates the mappings between Adobe Sign agreement and Vault document states, where the ‘Before Adobe Signature’ state is Draft. 
+    Following diagram illustrates the mappings between Adobe Acrobat Sign agreement and Vault document states, where the ‘Before Adobe Signature’ state is Draft. 
 
     ![Image](images/sign-vault-mappings.png)
 
@@ -392,19 +394,19 @@ You must set appropriate permissions for each User Role in Lifecycle State, as s
 
 ![Image](images/create-cancel-message.png)
 
-## Connect [!DNL Veeva Vault] to Adobe Sign using middleware {#connect-middleware}
+## Connect [!DNL Veeva Vault] to Adobe Acrobat Sign using middleware {#connect-middleware}
 
-After completing the setup for [!DNL Veeva Vault] and the Adobe Sign Admin account, the administrator must create a connection between the two accounts using the middleware. The [!DNL Veeva Vault] and Adobe Sign account connection is initiated by Adobe Sign Identity and then it is used to store the[!DNL Veeva Vault]identity. 
+After completing the setup for [!DNL Veeva Vault] and the Adobe Acrobat Sign Admin account, the administrator must create a connection between the two accounts using the middleware. The [!DNL Veeva Vault] and Adobe Acrobat Sign account connection is initiated by Adobe Acrobat Sign Identity and then it is used to store the[!DNL Veeva Vault] identity. 
 For system security and stability, the administrator must use a dedicated [!DNL Veeva Vault] system/service/utility account, such as `adobe.for.veeva@xyz.com`, instead of a personal user account, such as `bob.smith@xyz.com`.
 
-An Adobe Sign account administrator must follow the below steps to connect [!DNL Veeva Vault] to Adobe Sign using middleware:
+An Adobe Acrobat Sign account administrator must follow the below steps to connect [!DNL Veeva Vault] to Adobe Acrobat Sign using middleware:
 
-1. Go to the [Adobe Sign for [!DNL Veeva Vault] Home page](https://static.adobesigncdn.com/veevavaultintsvc/index.html).
+1. Go to the [Adobe Acrobat Sign for [!DNL Veeva Vault] Home page](https://static.adobesigncdn.com/veevavaultintsvc/index.html).
 1. Select **[!UICONTROL Login]** from the top-right corner. 
 
     ![Image of middleware login](images/middleware_login.png)
 
-1. In the Adobe Sign login page that opens, provide the account administrator email and password, then select **[!UICONTROL Sign in]**.
+1. In the Adobe Acrobat Sign login page that opens, provide the account administrator email and password, then select **[!UICONTROL Sign in]**.
 
     ![Image](images/middleware-signin.png)
 
@@ -422,7 +424,7 @@ An Adobe Sign account administrator must follow the below steps to connect [!DNL
 
 1. In the Add Connection dialog that opens, provide the required details including the [!DNL Veeva Vault] credentials. 
 
-    The Adobe Sign Credentials are autopopulated from the initial Adobe Sign login.
+    The Adobe Acrobat Sign Credentials are autopopulated from the initial Adobe Sign login.
 
     ![Image](images/middleware_addconnection.png)
 
@@ -432,7 +434,7 @@ An Adobe Sign account administrator must follow the below steps to connect [!DNL
 
     ![Image](images/middleware_validated.png)
 
-1. To restrict the usage to a particular Adobe Sign Group, expand the **[!UICONTROL Group]** drop-down list and select one of the available groups.
+1. To restrict the usage to a particular Adobe Acrobat Sign Group, expand the **[!UICONTROL Group]** drop-down list and select one of the available groups.
 
    ![Image](images/middleware_group.png)
 
@@ -440,19 +442,19 @@ An Adobe Sign account administrator must follow the below steps to connect [!DNL
 
    ![Image](images/add-audit-report.png)
 
-1. To allow auto-provisioning of users in Adobe Sign, select the checkbox **[!UICONTROL Auto Provision Sign Users]**.
+1. To allow auto-provisioning of users in Adobe Acrobat Sign, select the checkbox **[!UICONTROL Auto Provision Sign Users]**.
 
-    **Note:** Auto Provisioning of new Adobe Sign Users works only if it has been enabled at the Adobe Sign Account Level in Adobe Sign in addition to enabling **[!UICONTROL Auto Provision Sign Users]** for the[!DNL Veeva Vault]Adobe Sign integration as shown below by the Adobe Sign Account Administrator.
+    **Note:** Auto Provisioning of new Adobe Acrobat Sign Users works only if it has been enabled at the Adobe Acrobat Sign Account Level in Adobe Acrobat Sign in addition to enabling **[!UICONTROL Auto Provision Sign Users]** for the[!DNL Veeva Vault] Adobe Acrobat Sign integration as shown below by the Adobe Acrobat Sign Account Administrator.
 
    ![Image](images/allow-auto-provisioning.png)
 
-1. To configure Adobe Sign Rendition to be displayed in Veeva instead of the Original Rendition, select the checkbox **[!UICONTROL Display Adobe Sign Rendition]**.
+1. To configure Adobe Sign Rendition to be displayed in Veeva instead of the Original Rendition, select the checkbox **[!UICONTROL Display Acrobat Sign Rendition]**.
 
    ![Image](images/edit-connection-dispplay-adobe-sign-rendition.png)
 
 1. Select **[!UICONTROL Save]** to save your new connection.
 
-    The new connection appears under the Settings tab showing successful integration between [!DNL Veeva Vault] and Adobe Sign.
+    The new connection appears under the Settings tab showing successful integration between [!DNL Veeva Vault] and Adobe Acrobat Sign.
 
     ![Image](images/middleware_setup.png)
 
