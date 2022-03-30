@@ -4,7 +4,7 @@ description: Learn about Adobe Sign Integrations versions and support lifecycle
 audience: External
 products: Adobe Sign
 type: Documentation
-solution: Adobe Sign
+solution: Acrobat Sign, Adobe Sign
 role: User, Developer
 topic: Integrations
 exl-id: c1f22848-7951-4066-84d4-f8cf6c2f3a6f
