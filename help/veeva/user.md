@@ -80,7 +80,7 @@ To send an agreement using Adobe Acrobat Sign for Veeva:
 
     ![](images/select-adobe-sign.png)
 
-1. If UMG (Users in Multiple Groups) feature is enabled on the Adobe Acrobat Sign account and the sender belongs to multiple groups, you see a dialog as shown below. In the dialog, select the group and then select **[!UICONTROL Ok]**.
+1. If UMG (Users in Multiple Groups) feature is enabled on the Adobe Acrobat Sign account and the sender belongs to multiple groups, you see a dialog as shown below. In the dialog, select the group and then select **[!UICONTROL Next]**.
 
     ![](images/umg-dialog.png)
 
