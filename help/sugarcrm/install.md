@@ -4,7 +4,7 @@ description: Installation guide for enabling the Adobe Sign integration with Sug
 product: Adobe Sign
 content-type: reference
 type: Documentation
-solution: Acrobat Sign, Adobe Sign
+solution: Acrobat Sign
 role: User, Developer
 topic: Integrations
 exl-id: 0512f616-568a-4b96-9bd1-48e67bc3536b

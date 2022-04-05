@@ -7,7 +7,7 @@ content-type: reference
 discoiquuid: 13135c88-4c39-4707-b7ba-63ff94769258
 locnotes: All languages; screenshots to follow what's there already (seems there is a mix within a given language version of the article)
 type: Documentation
-solution: Acrobat Sign, Adobe Sign
+solution: Acrobat Sign
 role: User, Developer
 topic: Integrations
 exl-id: 8b6fa8b4-e240-4ebe-ae2a-8807d75a6c69
