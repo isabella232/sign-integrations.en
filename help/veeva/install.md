@@ -144,11 +144,11 @@ AgreementsEventsProcessingJob: This task ensures that all Documents with active 
 Adobe Sign Integration Task Log Object Fields
 
 | Field | Label | Type | Description |
-|---|---|---|---| 
+|:--|:--|:--|:---------| 
 |start_date__c|Start Date|DateTime|Task Start date|
 |end_date__c|End Date|DateTime|Task End date|
-|task_status__c|Task Status|Picklist|Holds task status: Completed (task_completed__c) Completed With Errors (task_completed_with_errors__c) Failed (task_failed__c)|
-|task_type__c|Task Type|Picklist|Holds task type: Agreements Events Synchronization (agreements_events_synchronization__c) Agreements Events Processing (agreements_events_processing__c)|
+|task_status__c|Task Status|Picklist|Holds task status: <br><br> Completed (task_completed__c) <br><br> Completed With Errors (task_completed_with_errors__c) <br><br> Failed (task_failed__c)|
+|task_type__c|Task Type|Picklist|Holds task type: <br><br> Agreements Events Synchronization (agreements_events_synchronization__c) <br><br> Agreements Events Processing (agreements_events_processing__c)|
 |messages__c|Message|Long (32000)|Holds task message|
 
 ![Image of task log object details](images/task-log.png)
