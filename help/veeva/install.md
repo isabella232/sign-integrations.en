@@ -86,7 +86,6 @@ Signature object is created to store agreement-related information. A Signature 
 |plugin_version__c|Plugin Version|Text (10)|It is used to allow the appropriate processing of all agreements created before a new version 4.0 is deployed. Note: After 4.0 custom web application version is deployed, this field will be set to 4.0 each time Signature record is created.|
 |external_environment__c|External Environment|Text (20)|Holds the Adobe Sign’s environment name in which the agreement has been created.|
 
-
 ![Image of signature object details](images/signature-object-details.png) 
 
 #### Signatory object {#signatory-object}
@@ -145,7 +144,7 @@ AgreementsEventsProcessingJob: This task ensures that all Documents with active 
 Adobe Sign Integration Task Log Object Fields
 
 | Field | Label | Type | Description |
-| --- | --- | ---| --- | 
+|---|---|---|---| 
 |start_date__c|Start Date|DateTime|Task Start date|
 |end_date__c|End Date|DateTime|Task End date|
 |task_status__c|Task Status|Picklist|Holds task status: Completed (task_completed__c) Completed With Errors (task_completed_with_errors__c) Failed (task_failed__c)|
