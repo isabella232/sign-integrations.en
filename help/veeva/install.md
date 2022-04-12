@@ -71,7 +71,7 @@ Signature object is created to store agreement-related information. A Signature 
 
 **Signature object fields**
 
-| Field | Label | Type | Description |
+|Field|Label|Type|Description &nbsp; &nbsp; &nbsp; &nbsp;|
 |:---|:---|:---|:------- | 
 |external_id__c |Agreement Id|String (100) |Holds the Adobe Acrobat Sign’s unique agreement id|
 |file_hash__c |File Hash|String (50) |Holds the md5 checksum of the file that has been sent to Adobe Acrobat Sign|
