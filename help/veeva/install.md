@@ -72,7 +72,7 @@ Signature object is created to store agreement-related information. A Signature 
 **Signature object fields**
 
 | Field | Label | Type | Description |
-| --- | --- | ---| --- | 
+|:---|:---|:---|:------- | 
 |external_id__c |Agreement Id|String (100) |Holds the Adobe Acrobat Sign’s unique agreement id|
 |file_hash__c |File Hash|String (50) |Holds the md5 checksum of the file that has been sent to Adobe Acrobat Sign|
 |name__v|Name|String (128)|Holds the agreement name|
@@ -95,7 +95,7 @@ Signatory object is created to store information related to the participants in 
 **Signatory object fields**
 
 | Field | Label | Type | Description |
-| --- | --- | ---| --- | 
+|:---|:---|:---|:------- | 
 |email__c |Email |String (120) |Holds the Adobe Acrobat Sign’s unique agreement id|
 |external_id__c |Participant Id |String (80) |Holds Adobe Acrobat Sign unique participant’s identifier|
 |name__v |Name |String (128) |Holds Adobe Acrobat Sign participant’s name|
@@ -114,7 +114,7 @@ Signature Event object is created to store an agreement's event-related informat
 Signature Event Object Fields
 
 | Field | Label | Type | Description |
-| --- | --- | ---| --- | 
+|:---|:---|:---|:-------- | 
 |acting_user_email__c|Acting User Email|String|Holds the email of Adobe Acrobat Sign user that performed the action that caused event to be generated|
 |acting_user_name__c|Acting User Name|String|Holds the name of Adobe Acrobat Sign user that performed the action that caused event to be generated|
 |description__c|Description|String|Holds the Adobe Acrobat Sign event’s description|
@@ -147,8 +147,8 @@ Adobe Sign Integration Task Log Object Fields
 |:--|:--|:--|:---------| 
 |start_date__c|Start Date|DateTime|Task Start date|
 |end_date__c|End Date|DateTime|Task End date|
-|task_status__c|Task Status|Picklist|Holds task status: <br><br> Completed (task_completed__c) <br><br> Completed With Errors (task_completed_with_errors__c) <br><br> Failed (task_failed__c)|
-|task_type__c|Task Type|Picklist|Holds task type: <br><br> Agreements Events Synchronization (agreements_events_synchronization__c) <br><br> Agreements Events Processing (agreements_events_processing__c)|
+|task_status__c|Task Status|Picklist|Holds task status: <br><br> Completed (task_completed__c) Completed With Errors (task_completed_with_errors__c) Failed (task_failed__c)|
+|task_type__c|Task Type|Picklist|Holds task type: <br><br> Agreements Events Synchronization (agreements_events_synchronization__c) Agreements Events Processing (agreements_events_processing__c)|
 |messages__c|Message|Long (32000)|Holds task message|
 
 ![Image of task log object details](images/task-log.png)
