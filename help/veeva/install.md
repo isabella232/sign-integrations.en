@@ -83,8 +83,7 @@ Signature object is created to store agreement-related information. A Signature 
 |cancellation_date__c|Cancellation Date|DateTime|Holds the date when agreement has been cancelled.|
 |completion_date__c|Completion Date|DateTime|Holds the date when agreement has been completed.|
 |viewable_rendition_used__c|Viewable Rendition Used|Boolean|Flag that indicates if viewable rendition has been sent for signature. (by default, it is true)|
-|plugin_version__c|Plugin Version|Text (10)|It is used to allow the appropriate processing of all agreements created before a new version 4.0 is deployed.
-**Note:** After 4.0 custom web application version is deployed, this field will be set to 4.0 each time Signature record is created.|
+|plugin_version__c|Plugin Version|Text (10)|It is used to allow the appropriate processing of all agreements created before a new version 4.0 is deployed. Note: After 4.0 custom web application version is deployed, this field will be set to 4.0 each time Signature record is created.|
 |external_environment__c|External Environment|Text (20)|Holds the Adobe Sign’s environment name in which the agreement has been created.|
 
 
