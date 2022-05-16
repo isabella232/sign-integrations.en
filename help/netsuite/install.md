@@ -347,7 +347,7 @@ Most [!DNL NetSuite] roles should have permission to use Adobe Sign without addi
 
    >[!NOTE]
    >
-   >See the *[Setting Up a Permissions List for a Custom Record Type](https://system.[!DNL NetSuite].com/app/help/helpcenter.nl?fid=section_N2879931.html)* topic in the [!DNL NetSuite] Help Center for more information
+   >See the *[Setting Up a Permissions List for a Custom Record Type](https://system.[!DNL NetSuite].com/app/help/helpcenter.nl?fid=section_N2879931.html)* topic in the NetSuite Help Center for more information
 
     1. Select the role from the *Role* list.
     1. Set *Level* to **[!UICONTROL Full]**.

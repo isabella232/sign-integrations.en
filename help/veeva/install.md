@@ -71,7 +71,7 @@ Signature object is created to store agreement-related information. A Signature 
 
 **Signature object fields**
 
-|Field|Label|Type|Description &nbsp; &nbsp; &nbsp; &nbsp;|
+|Field|Label|Type|Description|
 |:---|:---|:---|:------- | 
 |external_id__c |Agreement Id|String (100) |Holds the Adobe Acrobat Sign’s unique agreement id|
 |file_hash__c |File Hash|String (50) |Holds the md5 checksum of the file that has been sent to Adobe Acrobat Sign|
@@ -147,7 +147,7 @@ Adobe Sign Integration Task Log Object Fields
 |:--|:--|:--|:---------| 
 |start_date__c|Start Date|DateTime|Task Start date|
 |end_date__c|End Date|DateTime|Task End date|
-|task_status__c|Task Status|Picklist|Holds task status: <br><br> Completed (task_completed__c) Completed With Errors (task_completed_with_errors__c) Failed (task_failed__c)|
+|task_status__c|Task Status|Picklist|Holds task status: <br /> Completed (task_completed__c) Completed With Errors (task_completed_with_errors__c) Failed (task_failed__c)|
 |task_type__c|Task Type|Picklist|Holds task type: <br><br> Agreements Events Synchronization (agreements_events_synchronization__c) Agreements Events Processing (agreements_events_processing__c)|
 |messages__c|Message|Long (32000)|Holds task message|
 
