@@ -60,7 +60,7 @@ See [Create an Adobe Sign agreement](#createagreement) for more information abou
 
 1. If you are already an Adobe Sign customer account, follow the steps to  [Configure OAuth after installing or upgrading](#oauth).
 
-   If you do not have an Adobe Sign account, you can [sign up for an enterprise trial](https://esign.adobe.com/adobe-sign-DNL NetSuite-trial-registration.html) account to test the system. Follow the online registration steps to enable your Adobe Sign account.
+   If you do not have an Adobe Sign account, you can [sign up for an enterprise trial](https://esign.adobe.com/adobe-sign-netsuite-trial-registration.html) account to test the system. Follow the online registration steps to enable your Adobe Sign account.
 
 ## Configure OAuth after installing or upgrading {#oauth}
 
@@ -105,13 +105,13 @@ The [!DNL NetSuite] administrator who configures OAuth must also have an account
    >When configuring OAuth in your Sandbox account, you may encounter the error “Could not determine customer comp ID” when the authorization completes.
    >
    >
-   >To proceed, you must change the account domain portion of the URL (system.[!DNL NetSuite].com) in your browser to point back to the [!DNL NetSuite] Sandbox as follows:
+   >To proceed, you must change the account domain portion of the URL (system.netsuite.com) in your browser to point back to the [!DNL NetSuite] Sandbox as follows:
    >
    >
    >Change:
    >
    >
-   >system.[!DNL NetSuite].com/app/site/hosting/scriptlet.nl?script=745&deploy=1&web_access_point=https://echosign.com
+   >system.netsuite.com/app/site/hosting/scriptlet.nl?script=745&deploy=1&web_access_point=https://echosign.com
    >
    >
    >To:
@@ -575,7 +575,7 @@ Do NOT uninstall the bundle if you must retain your unsigned agreements.
 
 ## Troubleshoot
 
-### Determine the progress of the update  
+### Determine the progress of the update  {#determineprogress}
 
 If the update appears to be taking longer than, you can check the Execution Log sub-tab for the Adobe Sign Bundle Installation script to determine the progress of your update as follows:
 
