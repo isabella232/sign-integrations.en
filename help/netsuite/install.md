@@ -575,7 +575,7 @@ Do NOT uninstall the bundle if you must retain your unsigned agreements.
 
 ## Troubleshoot
 
-### Determine the progress of the update  {#determineprogress}
+### Determine the progress of the update {#determineprogress}
 
 If the update appears to be taking longer than, you can check the Execution Log sub-tab for the Adobe Sign Bundle Installation script to determine the progress of your update as follows:
 
