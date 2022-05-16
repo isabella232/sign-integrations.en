@@ -15,7 +15,7 @@ exl-id: 378cac01-87c9-4288-8839-482121d49402
 
 Adobe Sign for [!DNL NetSuite] provides a complete eSignature integration with [!DNL NetSuite]. You can use Adobe Sign for [!DNL NetSuite] integration to send agreements such as contracts, quotes, and other documents, which require electronic signatures, to recipients directly from [!DNL NetSuite]. You can create and send Adobe Sign agreements from customer, lead, quote, and other [!DNL NetSuite] records. Adobe Sign updates [!DNL NetSuite] with the status of agreements and stores the agreements with the associated [!DNL NetSuite] records once they are fully executed. You can view the history of all agreements sent from [!DNL NetSuite] from within the product.
 
-Refer to the [Adobe Sign for [!DNL NetSuite] release notes](https://experienceleague.adobe.com/docs/sign-integrations/using/netsuite/release-notes.html?lang=en) for more information.
+Refer to the [Adobe Sign for DNL NetSuite] release notes](https://experienceleague.adobe.com/docs/sign-integrations/using/netsuite/release-notes.html?lang=en) for more information.
 
 ## Install the bundle and configure OAuth {#install}
 
@@ -60,7 +60,7 @@ See [Create an Adobe Sign agreement](#createagreement) for more information abou
 
 1. If you are already an Adobe Sign customer account, follow the steps to  [Configure OAuth after installing or upgrading](#oauth).
 
-   If you do not have an Adobe Sign account, you can [sign up for an enterprise trial](https://esign.adobe.com/adobe-sign-[!DNL NetSuite]-trial-registration.html) account to test the system. Follow the online registration steps to enable your Adobe Sign account.
+   If you do not have an Adobe Sign account, you can [sign up for an enterprise trial](https://esign.adobe.com/adobe-sign-DNL NetSuite-trial-registration.html) account to test the system. Follow the online registration steps to enable your Adobe Sign account.
 
 ## Configure OAuth after installing or upgrading {#oauth}
 
@@ -117,7 +117,7 @@ The [!DNL NetSuite] administrator who configures OAuth must also have an account
    >To:
    >
    >
-   >system.**sandbox.**[!DNL NetSuite].com/app/site/hosting/scriptlet.nl?script=745&deploy=1&web_access_point=https://echosign.com
+   >system.**sandbox.** netsuite.com/app/site/hosting/scriptlet.nl?script=745&deploy=1&web_access_point=https://echosign.com
 
 ## Update the bundle (existing users)  
 
@@ -347,7 +347,7 @@ Most [!DNL NetSuite] roles should have permission to use Adobe Sign without addi
 
    >[!NOTE]
    >
-   >See the *[Setting Up a Permissions List for a Custom Record Type](https://system.[!DNL NetSuite].com/app/help/helpcenter.nl?fid=section_N2879931.html)* topic in the NetSuite Help Center for more information
+   >See the *[Setting Up a Permissions List for a Custom Record Type](https://system.netsuite.com/app/help/helpcenter.nl?fid=section_N2879931.html)* topic in the NetSuite Help Center for more information
 
     1. Select the role from the *Role* list.
     1. Set *Level* to **[!UICONTROL Full]**.
@@ -567,7 +567,7 @@ After the agreement is signed:
 
 ## Uninstall the Bundle 
 
-To uninstall the bundle, follow the steps provided in the [!DNL NetSuite] Help. See the *[Uninstalling a Bundle](https://docs.oracle.com/cloud/latest/[!DNL NetSuite]cs_gs/NSBDL/NSBDL.pdf)* topic in the [!DNL NetSuite] Help Center for more information.
+To uninstall the bundle, follow the steps provided in the [!DNL NetSuite] Help. See the *[Uninstalling a Bundle](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3400972.html)* topic in the [!DNL NetSuite] Help Center for more information.
 
 When you uninstall the bundle, the unsigned agreements are deleted. The signed agreements and their corresponding audit PDF files are not affected.
 

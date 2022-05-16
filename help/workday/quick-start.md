@@ -72,7 +72,7 @@ From the related actions menu of a [!UICONTROL Review Document Step], select **[
 
 ## Business process step notes {#business-process-step-notes}
 
-[!UICONTROL The Business Process Framework] is powerful; however, you must ensure that:
+The [!UICONTROL Business Process Framework] is powerful; however, you must ensure that:
 
 * Every Business Process must have a completion step, which is ideally at the end of the business process.
 
@@ -180,7 +180,7 @@ The [!DNL Workday] community has several good articles on how to troubleshoot th
 
 Adobe Sign is the integration partner, and should be contacted if the integration is failing to obtain signatures, or if notification of pending signatures fails.
 
-Adobe Sign Customers should contact their Customer Success Manager for support. Alternatively, [!UICONTROL Adobe Technical Support] can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
+Adobe Sign Customers should contact their [!UICONTROL Customer Success Manager] for support. Alternatively, [!UICONTROL Adobe Technical Support] can be reached by phone: 1-866-318-4100, wait for product list then enter: 4 and then 2 (as prompted).
 
 * [Adding Adobe Text Tags to Documents](https://www.adobe.com/go/adobesign_text_tag_guide)
 
