@@ -15,7 +15,7 @@ exl-id: 378cac01-87c9-4288-8839-482121d49402
 
 Adobe Sign for [!DNL NetSuite] provides a complete eSignature integration with [!DNL NetSuite]. You can use Adobe Sign for [!DNL NetSuite] integration to send agreements such as contracts, quotes, and other documents, which require electronic signatures, to recipients directly from [!DNL NetSuite]. You can create and send Adobe Sign agreements from customer, lead, quote, and other [!DNL NetSuite] records. Adobe Sign updates [!DNL NetSuite] with the status of agreements and stores the agreements with the associated [!DNL NetSuite] records once they are fully executed. You can view the history of all agreements sent from [!DNL NetSuite] from within the product.
 
-Refer to the [Adobe Sign for DNL NetSuite] release notes](https://experienceleague.adobe.com/docs/sign-integrations/using/netsuite/release-notes.html?lang=en) for more information.
+Refer to the [Adobe Sign for NetSuite release notes](https://experienceleague.adobe.com/docs/sign-integrations/using/netsuite/release-notes.html?lang=en) for more information.
 
 ## Install the bundle and configure OAuth {#install}
 
