@@ -456,6 +456,10 @@ An Adobe Acrobat Sign account administrator must follow the below steps to conne
 
     ![Image of middleware login](images/middleware_login.png)
 
+1. To authorize the level of access to the application, select Acrobat Sign OAuth scope as **[!UICONTROL ACCOUNT]** or **[!UICONTROL GROUP]**. Next, select **[!UICONTROL Authorize]**.
+
+    ![Image](images/middleware_oauth.png)
+
 1. In the Adobe Acrobat Sign login page that opens, provide the account administrator email and password, then select **[!UICONTROL Sign in]**.
 
     ![Image](images/middleware-signin.png)
