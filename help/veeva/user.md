@@ -48,6 +48,7 @@ To send an agreement using Adobe Acrobat Sign for Veeva:
 
 1. In the dialog that appears, select **[!UICONTROL Type]** as *[!UICONTROL Clinical]* and then select a **[!UICONTROL Subtype]** and **[!UICONTROL Classification]**, if required. 
 
+
     ![](images/choose-document-type.png)
 
 1. To close the dialog, select **[!UICONTROL Ok]**.

@@ -46,7 +46,7 @@ To configure Adobe Acrobat Sign for [!DNL Vault], a new group called *Adobe Sign
 
 ### Step 2. Deploy the package {#deploy-package}
 
-[Deploy the package](https://helpx.adobe.com/content/dam/help/en/PKG-AdobeSign-Integration.zip) and follow through the steps. Once deployed, the package creates:
+[Deploy the package](https://helpx.adobe.com/content/dam/help/en/PKG-AdobeSign-Integration-veeva.zip) and follow through the steps. Once deployed, the package creates:
 
 * Custom objects: Signature object, Signatory object, Signature Event object, Process Locker object 
 * Signature object page layout
