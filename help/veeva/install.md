@@ -314,7 +314,7 @@ When a user opts for a digital signature agreement with the above settings, a me
 
 To view the document content along with the digital signature and Audit Trail, do not select 'Attach Audit Report to Signed Rendition' with 'Display Acrobat Sign Rendition' in Admin UI for digital signature.
 
-You can download or view the Adobe audit trail as a separate rendition from the signed rendition using the "Adobe Audit Trail Rendition" feature.
+You can use Adobe Audit Trail Rendition to download or view the Adobe audit trail as a separate rendition.
 
 ![Image](images/audit-trail-rendition-setup-4.png)
 
