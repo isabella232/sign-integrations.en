@@ -283,13 +283,13 @@ Disable Vault Overlays (disable_vault_overlays__v) is an existing shared field. 
 
 The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c)* is used by Vault integration to upload signed PDF documents to Adobe Acrobat Sign. You must declare the Adobe Sign rendition for each document type that is eligible for Adobe Acrobat Signature.
 
-You must declare the original rendition for each document type that is eligible for Adobe Acrobat Signature.
-
 ![Image of rendition types](images/rendition-type.png)
 
 ![Image](images/edit-details-clinical.png)
 
 The new rendition type called *Original Rendition* (original_rendition__c) is used by the Vault integration as the name of the rendition that should be used to store the original viewable rendition if the signed document is imported as viewable rendition.
+
+You must declare the original rendition for each document type that is eligible for Adobe Acrobat Signature.
 
 ![Image](images/original-rendition.png)
 
