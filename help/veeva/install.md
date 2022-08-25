@@ -283,13 +283,40 @@ Disable Vault Overlays (disable_vault_overlays__v) is an existing shared field. 
 
 The new rendition type called *Adobe Sign Rendition (adobe_sign_rendition__c)* is used by Vault integration to upload signed PDF documents to Adobe Acrobat Sign. You must declare the Adobe Sign rendition for each document type that is eligible for Adobe Acrobat Signature.
 
+You must declare the original rendition for each document type that is eligible for Adobe Acrobat Signature.
+
 ![Image of rendition types](images/rendition-type.png)
 
 ![Image](images/edit-details-clinical.png)
 
-The new rendition type called *Original Rendition (original_rendition__c)* is used by the Vault integration as the name of the rendition that should be used to store the original viewable rendition if the signed document is imported as viewable rendition.
+The new rendition type called *Original Rendition* (original_rendition__c) is used by the Vault integration as the name of the rendition that should be used to store the original viewable rendition if the signed document is imported as viewable rendition.
 
 ![Image](images/original-rendition.png)
+
+Optionally, the vault can have a new rendition type Adobe Audit Trail Rendition (adobe_audit_trail_rendition__c), which is used by Vault integration to store Adobe audit trail report.
+
+Follow the steps below to set up Adobe Audit Trail Rendition:
+
+1. Go to Rendition Type > Create New Rendition Type. 
+    Create the new Rendition Type as Audit Trail Rendition (adobe_audit_trail_rendition__c).
+
+    ![Image](images/audit-trail-rendition-setup-1.png)
+
+1. To view and download the Adobe Audit Trail Rendition for document, declare *Adobe Audit Trail rendition* for each document type that is eligible for Adobe Acrobat Signature.
+
+    ![Image](images/audit-trail-rendition-setup-2.png)
+
+**Note**: You can choose to attach the audit report to the signed rendition by enabling **[!UICONTROL Attach Audit Report to Signed Rendition]** and also display the rendition by enabling ****[!UICONTROL Display Acrobat Sign Rendition]**** options in Admin UI settings.
+
+![Image](images/audit-trail-rendition-setup-3.png)
+
+When a user opts for a digital signature agreement with the above settings, a message (as shown below) is displayed indicating that Adobe Acrobat Sign is using PDF Portfolio for combining digitally signed PDF and audit trail reports.
+
+To view the document content along with the digital signature and Audit Trail, do not select 'Attach Audit Report to Signed Rendition' with 'Display Acrobat Sign Rendition' in Admin UI for digital signature.
+
+You can download or view the Adobe audit trail as a separate rendition from the signed rendition.
+
+![Image](images/audit-trail-rendition-setup-4.png)
 
 ### Step 9. Update Web Actions {#web-actions}
 
