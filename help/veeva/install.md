@@ -297,7 +297,7 @@ Optionally, the vault can have a new rendition type Adobe Audit Trail Rendition 
 
 Follow the steps below to set up Adobe Audit Trail Rendition:
 
-1. Go to Rendition Type > Create New Rendition Type. 
+1. Go to **Rendition Type** > **Create New Rendition Type**. 
     Create the new Rendition Type as Audit Trail Rendition (adobe_audit_trail_rendition__c).
 
     ![Image](images/audit-trail-rendition-setup-1.png)
