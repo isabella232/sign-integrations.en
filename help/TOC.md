@@ -7,7 +7,6 @@ role: Leader
 # Adobe Sign Integrations Guide {#using}
 
 + [Adobe Sign Integrations](home.md)
-+ [What's New](whats-new.md)
 + [Product Versions and Lifecycle](versions.md)
 + Adobe Sign for [!DNL Workday] {#workday}
   + [Installation Guide](workday/install.md)
